@@ -1,0 +1,97 @@
+// Intro
+//
+//
+
+.s-intro {
+  @extend %full-screen;
+  @extend %dark;
+  padding: 0 rem(30px);
+  background-color: transparent;
+  .wrapper {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    .inner {
+      position: absolute;
+      left: 0;
+      bottom: rem(80px);
+      right: 0;
+    }
+  }
+}
+
+.intro-header,
+.intro-text {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.intro-header {
+  border-bottom: 1px solid rgba(255,255,255, .4);
+  .sub-heading {
+    margin-bottom: rem(14px);
+    line-height: $heading-line-height;
+    text-transform: uppercase;
+    @extend %white-muted;
+  }
+  .heading {
+    font-weight: $font-weight-n;
+    margin-bottom: rem(15px);
+    line-height: 1.1666;
+  }
+}
+
+.intro-text {
+  padding-top: rem(10px);
+  font-size: $font-size-medium;
+}
+
+.intro-scroll {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-left: 75px;
+  font-size: $font-size-smaller;
+  transform: translate(100%, .4em) rotate(-90deg);
+  transform-origin: left 80%;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    animation: scroll .8s infinite ease-out;
+  }
+}
+@keyframes scroll {
+  to { width: 0; }
+}
+
+// intro ~ sales 방판 센션 사이에 바탕에 깔리는 부문
+.s-intro-bg {
+  @extend %full-screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  &.fixed {
+    position: fixed;
+    top: $header-height;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: center center no-repeat;
+    background-size: cover;
+  }
+  .bg-sales {
+    opacity: 0;
+  }
+}

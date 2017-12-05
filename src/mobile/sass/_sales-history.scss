@@ -1,0 +1,87 @@
+// Sales
+//
+//
+
+.s-history {
+  position: relative;
+  @extend %section-margin;
+  text-align: center;
+  &:before, &:after { // 배경 년도 숫자
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -120%);
+    @extend .num;
+    font-size: $display-2;
+    color: rgba(#000, .07);
+  }
+  &:before {
+    content: '1964';
+    left: 10px;
+  }
+  &:after {
+    content: '2016';
+    right: 10px;
+  }
+}
+
+.history-slider {
+  position: relative;
+  .item {
+    position: relative;
+    white-space: nowrap;
+    width: rem(220px);
+    .year {
+      font-size: $font-size-medium;
+      color: $brand-primary;
+      line-height: 1;
+    }
+    .sales {
+      margin-top: rem(20px);
+      font-size: $font-size-lead;
+      color: $text-color-dark;
+    }
+    .text {
+      margin-top: rem(10px);
+      color: $brand-primary;
+    }
+    &:after { // 년도 아래 선
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: rem(24px);
+      transform: translate(-50%, -1px);
+      display: block;
+      width: 28px;
+      height: 3px;
+      background: $brand-primary;
+    }
+  }
+  &:before { // 가로 선 - 년도 아래 선 관통함.
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: rem(24px);
+    height: 1px;
+    background: $border-color-gray-lighter;
+  }
+
+  .owl-dots {
+    margin-top: rem(30px);
+    counter-reset: history;
+    .owl-dot {
+      display: inline;
+      padding: 0 .5em;
+      color: $text-color-lighter;
+      font-size: $font-size-smaller;
+      &.active {
+        color: $brand-primary;
+      }
+      &:before {
+        counter-increment: history;
+        content: counter(history);
+        @extend .buri;
+      }
+    }
+  }
+}

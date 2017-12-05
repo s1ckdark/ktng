@@ -1,0 +1,43 @@
+// Fonts
+//
+//
+
+// Arita Buri
+//
+@font-face {
+  font-family: 'Arita Buri';
+  font-weight: 500;
+  src: local('Arita-buri-Medium'),
+  url('../../font/Arita-buri-Medium.woff') format('woff');
+}
+
+// Spoqa Han Sans JP
+//
+//@font-face {
+//  font-family: 'Spoqa Han Sans JP';
+//  font-weight: 700;
+//  src: local('Spoqa Han Sans JP Bold'),
+//       url('../../font/subset-SpoqaHanSansJP-Bold.woff2') format('woff2'),
+//       url('../../font/subset-SpoqaHanSansJP-Bold.woff') format('woff');
+//}
+//@font-face {
+//  font-family: 'Spoqa Han Sans JP';
+//  font-weight: 400;
+//  src: local('Spoqa Han Sans JP Regular'),
+//       url('../../font/subset-SpoqaHanSansJP-Regular.woff2') format('woff2'),
+//       url('../../font/subset-SpoqaHanSansJP-Regular.woff') format('woff');
+//}
+@font-face {
+  font-family: 'Spoqa Han Sans JP';
+  font-weight: 300;
+  src: local('Spoqa Han Sans JP Light'),
+       url('../../font/subset-SpoqaHanSansJP-Light.woff2') format('woff2'),
+       url('../../font/subset-SpoqaHanSansJP-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans JP';
+  font-weight: 100;
+  src: local('Spoqa Han Sans JP Thin'),
+       url('../../font/subset-SpoqaHanSansJP-Thin.woff2') format('woff2'),
+       url('../../font/subset-SpoqaHanSansJP-Thin.woff') format('woff');
+}

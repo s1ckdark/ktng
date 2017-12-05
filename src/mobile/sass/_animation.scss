@@ -1,0 +1,28 @@
+// Animation
+//
+//
+
+// 스크롤에 따라 화면에 나타나면 애니메이션 할 클래스
+.animation-init {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: opacity .8s, transform 1s;
+  .video-play .poster {
+    transform: scale(1.15);
+    transition: transform .8s;
+  }
+}
+
+// 화면에 나타났을 때
+.animation-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  .video-play .poster {
+    transform: scale(1);
+  }
+}
+
+// trigger 위치 조정을 위한 스타일 - 원래 위치보다 먼저 나타나기
+.sense-top-summary .text {
+  padding-top: 100px;
+}

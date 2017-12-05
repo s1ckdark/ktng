@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249" height="284" viewBox="0 0 249 284">
+  <defs>
+    <clipPath id="cosmetics-a">
+      <rect x="1.55" y="31.48" width="242.5" height="200.92" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <path d="M2.25,34.43H30.81V210.94H2.25Zm-.7,177.21h30V33.73h-30Z" style="fill: #062c5e"/>
+  <path d="M76.59,210.94H48V34.43H76.59Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
+  <path d="M120.93,210.94H92.37V34.43h28.55Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
+  <path d="M166.46,210.94H137.9V34.43h28.55Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
+  <path d="M211.59,210.94H183V34.43h28.55Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
+  <g style="clip-path: url(#cosmetics-a)">
+    <line x1="1.55" y1="74.97" x2="31.51" y2="74.97" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
+  </g>
+  <line x1="47.34" y1="80.06" x2="77.29" y2="80.06" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
+  <line x1="91.67" y1="80.06" x2="121.62" y2="80.06" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
+  <line x1="137.2" y1="82.05" x2="167.16" y2="82.05" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
+  <line x1="182.34" y1="85.65" x2="212.29" y2="85.65" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
+  <g style="clip-path: url(#a)">
+    <line x1="1.55" y1="33.73" x2="31.51" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
+    <line x1="47.34" y1="33.73" x2="77.29" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
+    <line x1="91.67" y1="33.73" x2="121.62" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
+    <line x1="137.2" y1="33.73" x2="167.16" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
+    <line x1="182.34" y1="33.73" x2="212.29" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
+  </g>
+  <text transform="translate(5.33 88.04) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.025035511363636364em">7<tspan x="6.28" y="0" style="letter-spacing: -0.024014559659090908em">6</tspan><tspan x="12.57" y="0" style="letter-spacing: -0.024991122159090908em">.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">8</tspan></text>
+  <text transform="translate(5.33 47.46) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.025035511363636364em">2</tspan><tspan x="6.28" y="0" style="letter-spacing: -0.024014559659090908em">3.</tspan><tspan x="15.88" y="0">2</tspan></text>
+  <text transform="translate(51.07 92.65) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.025035511363636364em">74<tspan x="12.56" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">1</tspan></text>
+  <text transform="translate(51.26 47.46) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700;letter-spacing: -0.025035511363636364em">25<tspan x="12.56" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.87" y="0" style="letter-spacing: -0.00004438920454545455em">9</tspan></text>
+  <text transform="translate(95.8 92.65) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.025035511363636364em">73.</tspan><tspan x="15.34" y="0">5</tspan></text>
+  <text transform="translate(95.8 47.28) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700;letter-spacing: -0.025035511363636364em">26<tspan x="12.56" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.87" y="0" style="letter-spacing: -0.00004438920454545455em">5</tspan></text>
+  <text transform="translate(141.13 95.05) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">7<tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">2.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">9</tspan></text>
+  <text transform="translate(141.13 47.28) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.024014559659090908em">2</tspan><tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">7</tspan><tspan x="12.57" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.88" y="0">1</tspan></text>
+  <text transform="translate(186.61 98.64) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">7<tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">1.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">2</tspan></text>
+  <g style="clip-path: url(#a)">
+    <text transform="translate(2.64 227.13) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">20</tspan><tspan x="13.73" y="0" style="letter-spacing: -0.0250244140625em">1</tspan><tspan x="20.58" y="0">2</tspan></text>
+    <text transform="translate(48.38 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024983723958333332em">20</tspan><tspan x="13.7" y="0" style="letter-spacing: -0.023966471354166668em">1</tspan><tspan x="20.57" y="0">3</tspan></text>
+    <text transform="translate(92.91 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024983723958333332em">201</tspan><tspan x="20.56" y="0">4</tspan></text>
+    <text transform="translate(138.14 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">2</tspan><tspan x="6.86" y="0" style="letter-spacing: -0.024983723958333332em">0</tspan><tspan x="13.72" y="0" style="letter-spacing: -0.024007161458333332em">1</tspan><tspan x="20.58" y="0">5</tspan></text>
+    <text transform="translate(183.43 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">2</tspan><tspan x="6.86" y="0" style="letter-spacing: -0.024983723958333332em">0</tspan><tspan x="13.72" y="0" style="letter-spacing: -0.024007161458333332em">1</tspan><tspan x="20.58" y="0">6</tspan></text>
+  </g>
+  <text transform="translate(186.62 47.27) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.024014559659090908em">2</tspan><tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">8</tspan><tspan x="12.57" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.88" y="0">8</tspan></text>
+  <text transform="translate(219.84 40.86) scale(1 1.03)" style="font-size: 11px;fill: #999;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024014559659090908em">100</tspan><tspan x="18.88" y="0">%</tspan></text>
+  <text transform="translate(219.84 212.04) scale(1 1.03)" style="font-size: 11px;fill: #999;font-family: 'Spoqa Han Sans'">0</text>
+  <text transform="translate(62.32 11.04) scale(0.97 1)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans';letter-spacing: -0.025001343152819943em">기초</text>
+  <text transform="translate(1.55 11.04) scale(0.97 1)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans';letter-spacing: -0.025001343152819943em">색조</text>
+  <line x1="28.67" y1="6.95" x2="49.96" y2="6.95" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
+  <line x1="88.74" y1="6.95" x2="110.02" y2="6.95" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
+  <text transform="translate(0.16 259.47) scale(0.97 1)" style="font-size: 12px;fill: #999;font-family: 'Spoqa Han Sans';letter-spacing: -0.025001343152819943em">자료: 칸타월드채널 (국내 소비자 기준)<tspan x="0" y="17.46">메리츠종금증권 리서치센터</tspan></text>
+</svg>

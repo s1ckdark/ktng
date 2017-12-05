@@ -1,0 +1,61 @@
+// Layout
+//
+//
+
+
+body {
+  min-width: $max-width;
+  padding-top: $header-height !important; // gnb.css 가 덮어쓰지 않도록 important 추가
+}
+
+.viewport {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $wrapper-horizontal-margin;
+  padding-right: $wrapper-horizontal-margin;
+}
+
+%full-screen {
+  transform: translate3D(0,0,0); // ios safari scroll bug fix
+  height: calc(100vh - #{$header-height});
+  min-height: 500px;
+}
+
+%flex-v-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+%flex-h-center {
+  display: flex;
+  //flex-direction: row;
+  justify-content: center;
+}
+
+%dark {
+  background: $brand-primary center center no-repeat;
+  background-size: cover;
+  &, * {
+    color: #ffffff;
+  }
+}
+
+// Section
+//
+// 섹션에 따른 마진 일원화하기 - 배경 넣어야해서 margin 대신 padding으로 작업.
+%section-margin {
+  padding-top:    $vertical-margin;
+  padding-bottom: $vertical-margin;
+}
+%section-margin-lg {
+  padding-top:    $vertical-margin-lg;
+  padding-bottom: $vertical-margin-lg;
+}

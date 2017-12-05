@@ -1,0 +1,18 @@
+// Nav Tips
+//
+//
+
+
+.body-tips {
+  .nav {
+    .nav-menu {
+      background-color: rgba($brand-primary, .9);
+      @at-root .nav-opened & {
+        background: transparent;
+      }
+    }
+    .inner {
+      background-color: rgba($brand-primary, .85);
+    }
+  }
+}

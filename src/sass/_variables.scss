@@ -1,0 +1,113 @@
+// Variables
+//
+//
+
+
+// Color
+//
+
+$brand-primary-dark:  #02142e;
+$brand-primary:       #062c5e;
+$brand-primary-light: #093874;
+
+$text-color-white:    #e3e3e3;
+$text-color-lighter:  #999999;
+$text-color-light:    #666666;
+$text-color:          #444444;
+$text-color-dark:     #222222;
+
+$body-bg:             #fff;
+
+$border-color-gray-lighter:   #bfbfbf;
+$border-color-gray-light:     $text-color-light;
+
+
+// Typography
+//
+$font-family:         'NotoSansKR', sans-serif;
+$font-family-eng:     'Merriweather', sans-serif; // 숫자 전용
+
+$font-weight-n:       300;
+$font-weight-b:       400;
+$font-weight:         $font-weight-n;
+$line-height:         1.65;
+$letter-spacing:      -.025em;
+$font-size-base:      16px; // 디자인 기준 폰트 사이즈, rem 함수 기준
+$font-sizes: ( // responsive font sizes
+  xs: $font-size-base
+);
+
+$font-size-smaller:   rem(12px);
+$font-size-small:     rem(14px);
+$font-size-medium:    rem(15px);
+$font-size-lead:      rem(18px);
+
+$heading-6:           rem(20px);
+$heading-5:           rem(25px);
+$heading-4:           rem(30px);
+$heading-3:           rem(35px);
+$heading-2:           rem(40px);
+$heading-1:           rem(45px);
+
+$display-4:           rem(50px);
+$display-3:           rem(55px);
+$display-2:           rem(75px);
+$display-1:           rem(90px);
+$display-0:           rem(120px);
+
+$display-a:           rem(170px);
+
+$heading-font-weight:    $font-weight-b;
+$heading-text-color:     $text-color-dark;
+$heading-line-height:    1.5;
+$heading-letter-spacing: -.025em;
+
+$link-color:          $text-color;
+$link-color-hover:    $text-color;
+
+
+// Button
+//
+$btn-height-lg:         rem(45px);
+$btn-height:            rem(40px);
+$btn-height-sm:         rem(30px);
+
+$btn-padding-lg:        rem(48px);
+$btn-padding:           rem(43px);
+$btn-padding-sm:        rem(33px);
+
+$btn-font-size-lg:      $font-size-medium;
+$btn-font-size:         1rem;
+$btn-font-size-sm:      $font-size-small;
+
+$btn-border-color:      $brand-primary;
+$btn-text-color:        $brand-primary;
+$btn-bg-color:          transparent;
+
+
+// Responsive Design
+//
+$breakpoints: (
+  xs:     0,
+  //sm:   425px,
+  //md:   800px,
+  //lg:  1024px,
+  //xl:  1100px,
+  //xxl: 1400px
+);
+
+
+// Layout
+//
+$max-width: 1120px; // 화면 $max-width 이상일 경우 중앙 박스로 정렬
+$wrapper-horizontal-margin: 0;
+
+$header-height: 78px;
+
+// section margin
+$vertical-margin:    120px;
+$vertical-margin-lg: 150px;
+
+$vertical-padding:   110px;
+$vertical-padding-lg: 117px;
+

@@ -1,0 +1,58 @@
+// Senses
+//
+//
+
+.s-sense-more {
+  position: relative;
+  z-index: 1;
+  margin-bottom: rem(-20px);
+  text-align: center;
+  .wrapper {
+    position: relative;
+  }
+  .box {
+    transform: translate(0, rem(-20px));
+    padding: rem(20px);
+    background: #fff;
+    .heading {
+      font-size: $font-size-medium;
+      &:not(:first-child) {
+        margin-top: rem(20px);
+        padding-top: rem(20px);
+        border-top: 1px solid $border-color-gray-lighter;
+      }
+    }
+    .link {
+      margin-top: rem(10px);
+      .btn {
+      }
+    }
+
+    // 기사 두개일 경우
+    .col2 {
+      margin: rem(-10px) rem(-5px);
+    }
+    .col {
+      &:first-child {
+        padding-right: rem(30px);
+      }
+      &:last-child {
+        position: relative;
+        padding-left: rem(30px);
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: rem(15px);
+          bottom: rem(15px);
+          left: 0;
+          width: 1px;
+          background: $brand-primary;
+        }
+      }
+      .heading {
+        padding-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// Mixins
+//
+//
+
+@mixin media-breakpoint-up($name) {
+  $min: map_get($breakpoints, $name);
+  @if $min {
+    @if $min == 0 {
+      @content
+    } @else {
+      @media screen and (min-width: $min + 1) {
+        @content;
+      }
+    }
+  } @else {
+    @error "Breakpoint $name is not valid, was #{$name}";
+  }
+}
+
+@mixin media-breakpoint-down($name) {
+  $max: map_get($breakpoints, $name);
+  @if $max {
+    @if $max == 0 {
+      @content
+    } @else {
+      @media screen and (max-width: $max) {
+        @content;
+      }
+    }
+  } @else {
+    @error "Breakpoint $name is not valid, was #{$name}";
+  }
+}
+
+@mixin responsive-font-size() {
+  @each $breakpoint-name, $font-size in $font-sizes {
+    $breakpoint: map_get($breakpoints, $breakpoint-name);
+
+    @if $breakpoint == 0 {
+      font-size: $font-size;
+    } @else {
+      @include media-breakpoint-up($breakpoint-name) {
+        font-size: $font-size;
+      }
+    }
+  }
+}

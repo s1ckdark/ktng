@@ -1,0 +1,56 @@
+// Sales
+//
+//
+
+.s-door2door {
+  background-color: transparent;
+}
+
+.door-header {
+  margin: 100px 0 50px; // 풀스크린보다 높은 영역 차지하도록
+  @extend %full-screen;
+  box-sizing: border-box;
+  padding-top: 50px;
+  text-align: center;
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 50px;
+    margin: 0 auto rem(10px);
+    background: #fff;
+  }
+  .heading {
+    color: #ffffff;
+    font-weight: $font-weight-n;
+    .cn,
+    .ko {
+      display: block;
+      width: 1em;
+      margin: 0 auto;
+      letter-spacing: normal;
+    }
+    .cn {
+      line-height: 1.2;
+      font-size: $display-4;
+    }
+    .ko {
+      margin-top: rem(10px);
+      font-size: $font-size-lead;
+      line-height: $heading-line-height;
+    }
+  }
+}
+
+.door-content {
+  @extend %section-margin;
+  background: #fff;
+  .heading {
+    margin-bottom: rem(25px);
+    line-height: 1;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      font-size: $heading-5;
+    }
+  }
+}

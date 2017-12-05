@@ -1,0 +1,165 @@
+{# 각 감각은 .s-sense-top .s-sense-body .s-sense-more 의 세 섹션으로 나뉜다. #}
+<div class="section s-sense-top">
+  <header class="sense-top-header animation-init">
+    <h2 class="heading"><span class="cn">嗅</span> <span class="ko">맡을 후</span></h2>
+    <p class="sub-heading"><span>향<br>기<br>를<br></span> <span>좇<br>다</span></p>
+  </header>
+  {% if page != "tips" %}
+  <div class="sense-top-video animation-init">{# 레이아웃은 left, right 두 가지가 있음. #}
+    <div class="video-play">
+      <video id="video-smell"></video>
+      <a href="javascript:void(0)" class="play" aria-label="play movie">
+        <div class="poster lazyload" data-src="../img/senses/poster-smell.jpg"></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="sense-top-footer animation-init layout-right">
+    <div class="sense-top-summary">
+      <p class="num">02</p>
+      <p class="text animation-init">
+        “향기는<br>
+        사람을 만든다.<br>
+        향에 따라<br>
+        같은 사람도<br>
+        달라 보일 수 있다.”
+      </p>
+    </div>
+    <div class="sense-top-quote-wrapper">
+      <blockquote class="sense-top-quote animation-init">
+        <div class="inner">
+          <p class="text">
+            잘 고른<br>향수 하나,<br>
+            <strong class="colored">열 옷</strong><br>
+            <strong class="colored">안 부럽죠.</strong>
+          </p>
+          <p class="from"><b class="name">전병배</b> 향료 마스터</p>
+        </div>
+      </blockquote>
+      {% include "_sense-share.njk" %}
+    </div>
+  </div>
+  {% else %}
+  <div class="sense-top-footer animation-init">
+    {% include "_sense-share.njk" %}
+  </div>
+  {% endif %}
+</div>
+
+<div class="section s-sense-body smell lazyload" data-src="./img/senses/bg-smell.jpg">
+  <div class="inner">
+    <div class="sense-slider-header">
+      {% if page != "tips" %}
+      <h3 class="heading"><span class="num"></span> 여성인구 경제활동 활발해지면서 커지는 향수 시장</h3>
+      {% endif %}
+      <h3 class="heading"><span class="num"></span> 꿀팁! 알아두면 유용한 TPO 향수 사용법 <small>(Time Place Occasion)</small></h3>
+      <h3 class="heading"><span class="num"></span> Q&amp;A 올바른 향수 사용법</h3>
+    </div>
+    <div class="sense-slider">
+      {% if page != "tips" %}
+      <div class="box padding">
+        <h4 class="box-heading">국내 향수 시장</h4>
+        <div class="graph-perfume">{% include "graph-perfume.svg" %}</div>
+      </div>
+      {% endif %}
+      <div class="box padding">
+        <div class="tab tab-perfume-tpo">
+          <div class="tab-nav">
+            <a class="active" href="javascript:void(0)">계절별</a>
+            <a href="javascript:void(0)">장소별</a>
+            <a href="javascript:void(0)">연령별</a>
+          </div>
+          <div class="tab-content">
+            <div class="item item1 active">
+              <div class="tab inner-tab">
+                <div class="tab-nav">
+                  <a class="active" href="javascript:void(0)" data-name="봄"><span class="icon">{% include "icon-spring.svg" %}</span> 봄</a>
+                  <a href="javascript:void(0)" data-name="여름"><span class="icon">{% include "icon-summer.svg" %}</span> 여름</a>
+                  <a href="javascript:void(0)" data-name="가을"><span class="icon">{% include "icon-fall.svg" %}</span> 가을</a>
+                  <a href="javascript:void(0)" data-name="겨울"><span class="icon">{% include "icon-winter.svg" %}</span> 겨울</a>
+                </div>
+                <div class="tab-content">
+                  <div class="item active">화사하고 밝은 느낌의 향 <br>추천 향수: 장미, 자스민, 수선화 등 꽃 향을 주원료로한 플로랄(Floral) 계열의 향수</div>
+                  <div class="item">땀이 많이 나는 여름엔 강한 향은 피하고 양도 적게 <br>추천 향수: 싱그러운 풀잎의 향취를 느낄 수 있는 그린(Green) 계열이나 깨끗한 물의 느낌이 연상되는 워터리(Watery) 계열.</div>
+                  <div class="item">우아한 향기로 <br>추천 향수: 초가을엔 내추럴 시프레(Natural Chypre) 계열. 지적인 느낌을 주는 플로랄 알데하이딕(Floral Aldedhydic) 계열.</div>
+                  <div class="item">건조하고 추운 겨울엔 진한 향수로 <br>추천 향수: 따스한 느낌의 동양적인 오리엔탈(Oriental) 계열의 향수.</div>
+                </div>
+              </div>
+            </div>
+            <div class="item item2">
+              <div class="tab inner-tab">
+                <div class="tab-nav">
+                  <a class="active" href="javascript:void(0)" data-name="사무실"><span class="icon">{% include "icon-office.svg" %}</span> 사무실</a>
+                  <a href="javascript:void(0)" data-name="파티"><span class="icon">{% include "icon-party.svg" %}</span> 파티</a>
+                  <a href="javascript:void(0)" data-name="업무회의"><span class="icon">{% include "icon-meeting.svg" %}</span> 업무회의</a>
+                  <a href="javascript:void(0)" data-name="운동전후"><span class="icon">{% include "icon-workout.svg" %}</span> 운동전후</a>
+                </div>
+                <div class="tab-content">
+                  <div class="item active">실내공간이라는 점과 여러 사람이 공간을 같이 사용한다는 점을 고려해 자극적이거나 강한 향은 피하고 가볍고 무난한 플로랄(Floral) 계열 향수로.</div>
+                  <div class="item">낮에 열리는 파티엔 평상시 선호하는 향수로. 그러나 밤에 열리는 파티에선 화려한 오리엔탈(Oriental) 향으로 연출. 관능적인 느낌의 머스크(Musk) 계열 향수도 추천.</div>
+                  <div class="item">모르는 사람과의 첫 만남에선 깔끔한 느낌을 줄 수 있는 후레쉬 플로랄(Fresh Floral) 계열로. 밝고 귀여운 이미지를 주려면 푸루티 프로랄(Fruity Floral) 계열의 향수를 추천.</div>
+                  <div class="item">땀과 열이 많이 나기 때문에 열기를 식힐 시원한 향이 필수. 상큼한 시트러스(Citrus) 계열이나 그린(Green) 계열의 향수, 깨끗한 워터리(Watery) 계열의 향수로.</div>
+                </div>
+              </div>
+            </div>
+            <div class="item item3">
+              <div class="tab inner-tab">
+                <div class="tab-nav">
+                  <a class="active" href="javascript:void(0)" data-name="10대">{% include "icon-10.svg" %}</a>
+                  <a href="javascript:void(0)" data-name="20대">{% include "icon-20.svg" %}</a>
+                  <a href="javascript:void(0)" data-name="30대">{% include "icon-30.svg" %}</a>
+                  <a href="javascript:void(0)" data-name="40대">{% include "icon-40.svg" %}</a>
+                </div>
+                <div class="tab-content">
+                  <div class="item active">향수를 처음 접하는 시기로 가급적 가벼운 느낌의 향수로. 달콤한 플로랄 <br>시트러스(Floral Citrus) 계열이나 마린(Marine) 계열의 향수.</div>
+                  <div class="item">은은하고 부드러운 느낌의 플로랄 부케(Floral Bouquet) 계열이나 <br>산뜻하면서도 우아한 느낌의 그린 플로랄(Green Floral) 계열 향수.</div>
+                  <div class="item">따스함을 느낄 수 있는 후루티 플로랄(Fruity Floral) 계열이나 <br>시프레(Chypre) 계열의 향수.</div>
+                  <div class="item">중년의 중후함을 느끼게 하는 플로리엔탈 (Floriental) 계열이나 <br>오리엔탈(Oriental) 계열의 향수.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box padding-lg">
+        <div class="perfume-slider owl-carousel owl-carousel-normal">
+          <div class="item item1" data-dot="01">
+            <p class="question">Q. 향수를 신체 어느 부분에 뿌리는 것이 가장 좋을까?</p>
+            <p class="answer">A. 향기는 아래에서 위로 올라오는 성질을 가지고 있기 때문에 복사뼈 부위, 무릎이나 스커트 끝단과 같이 일반적으로 움직임이 많은 부분에 사용하는 것이 효과적이다. 또 손목 안쪽과 같이 맥박이 뛰는 부위에 향수를 사용하면 맥박이 뛰면서 향을 조금씩 발산함으로 향수를 사용하는데 적절한 부위이다. 그리고 햇빛에 의한 알러지나 가려움을 막기 위해 귀 뒷면에 사용해도 좋다.</p>
+          </div>
+          <div class="item item2" data-dot="02">
+            <p class="question">Q. 피부상태에 따라 향수를 선택하는 방법은.</p>
+            <p class="answer">A. 보통 지성피부인 사람은 신선하고 깔끔한 느낌을 갖는 오데코롱의 사용을 권하고, 건성피부인 사람은 지성피부인 사람보다 향기 지속시간이 짧은 편이므로 소량씩 자주 사용하거나, 향수를 사용하기 전에 바디로션을 발라 향의 지속을 좋게 한다. 피부가 민감한 사람의 경우에는 직접 피부에 사용하는 것을 피하고 스커트나 스카프 같은 섬유에 뿌리는 것을 권한다.</p>
+          </div>
+          <div class="item item3" data-dot="03">
+            <p class="question">Q. 향수를 다른 용도로 사용한다면.</p>
+            <p class="answer">
+              A. 1.편지지의 모서리나 메모지, 손수건, 모자 등에도 몇 방울의 향수가 큰 효과를 낸다. <br>
+              2. 샴푸할 때나 목욕할 때 마지막 헹구는 물에 향수 몇 방울을 떨어뜨려도 상쾌한 향기 속에서 생활할 수 있다.<br>
+              3. 옷장이나 서랍에 향수를 뿌리거나 향수를 묻힌 거즈를 넣어두면 옷에 적당한 향기가 베이는 것은 물론이고 향수자체가 방충제, 방부제의 역할도 함으로 일석이조의 효과를 볼 수 있다.<br>
+              4. 오래돼서 향이 변한 향수는 향수병을 열어 신발장, 욕실 등에 놓아 두면 방향제 대용으로 사용할 수 있다.
+            </p>
+          </div>
+          <div class="item item4" data-dot="04">
+            <p class="question">Q. 향수 사용이 거북한 사람은.</p>
+            <p class="answer">A. 속옷이나 블라우스를 다림질 할 때 다림판 위에 향수를 몇 방울 떨어뜨려 자신의 옷에 자연스런 향기가 배게 하는 것이 향수 사용이 거북스러운 사람에게 추천할 만한 활용 방법이다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section s-sense-more">
+  <div class="wrapper">
+    <div class="box">
+      <p class="heading">
+        가죽향·곰팡이향까지 솔솔~ 독특한 <br>개성미 철철~
+      </p>
+      <div class="link">
+        <a href="http://news.joins.com/article/19378228" target="_blank" class="btn btn-sm">기사 더읽기</a>
+      </div>
+    </div>
+  </div>
+</div>

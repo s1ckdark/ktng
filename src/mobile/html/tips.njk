@@ -1,0 +1,20 @@
+{% set page = 'tips' %}
+{% set url = baseurl + '/tips.html' %}
+{% set title = '올 가을 내 피부 어쩌지? 향수는 어떻게 고를까?' %}
+{% set description = 'Asian Beauty Creator가 제안하는 오감(五感)만족 꿀팁 총정리' %}
+{% set og_image = baseurl + '/img/og-image-tips.jpg' %}
+
+{% extends '_layout.njk' %}
+
+{% block content %}
+
+{% include "_nav.njk" %}
+<div class="ja_section_wrap" ja-section-title="Intro">{% include "_intro-tips.njk" %}</div>
+<div id="vision" class="hash-section ja_section_wrap" ja-section-title="시각">{% include "_sense-vision.njk" %}</div>
+<div id="smell" class="hash-section ja_section_wrap" ja-section-title="후각">{% include "_sense-smell.njk" %}</div>
+<div id="taste" class="hash-section ja_section_wrap" ja-section-title="미각">{% include "_sense-taste.njk" %}</div>
+<div id="touch" class="hash-section ja_section_wrap" ja-section-title="촉각">{% include "_sense-touch.njk" %}</div>
+<div id="hearing" class="hash-section ja_section_wrap" ja-section-title="청각">{% include "_sense-hearing.njk" %}</div>
+<div class="ja_section_wrap" ja-section-title="Outro">{% include "_outro.njk" %}</div>
+
+{% endblock %}

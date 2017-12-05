@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g style="opacity: 0.5">
+    <path d="M42.12,12.34h1.47V8.73H47V7.32H43.59V3.72H42.12V7.32H38.73v1.4h3.39Z" style="fill: #062c5e"/>
+    <path d="M46.75,15a24.12,24.12,0,1,1-10-11.21" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;fill-rule: evenodd"/>
+  </g>
+  <text transform="translate(7.77 29.52)" style="font-size: 15px;fill: #062c5e;font-family: 'Spoqa Han Sans'">40대</text>
+</svg>

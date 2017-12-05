@@ -1,0 +1,38 @@
+// Buttons
+//
+//
+
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  height: $btn-height;
+  border: 1px solid $btn-border-color;
+  padding: 0 $btn-padding;
+  background: $btn-bg-color;
+  line-height: calc(#{$btn-height} - 1px);
+  font-size: $btn-font-size;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  color: $btn-text-color;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-sm {
+  height: $btn-height-sm;
+  padding: 0 $btn-padding-sm;
+  line-height: calc(#{$btn-height-sm} - 1px);
+  font-size: $btn-font-size-sm;
+}
+.btn-lg {
+  height: $btn-height-lg;
+  padding: 0 $btn-padding-lg;
+  line-height: calc(#{$btn-height-lg} - 1px);
+  font-size: $btn-font-size-lg;
+}
+.btn-white {
+  color: #fff;
+  border-color: #fff;
+}

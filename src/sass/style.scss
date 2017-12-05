@@ -1,0 +1,31 @@
+// Styles
+//
+//
+
+@import 'fonts';
+@import 'functions';
+@import 'variables'; // 프로젝트 공통 변수
+@import 'mixins';
+
+@import 'common'; // reset, header 스타일. 기존 공통 스타일. - 최대한 원본 그대로 유지함.
+
+@import "typography";
+@import "buttons";
+@import "grid";
+@import "slider";
+@import "video";
+@import "utilities";
+
+// 프로젝트 메인 컨텐츠 스타일
+@import 'layout';
+
+// hero
+@import 'hero';
+
+
+// outro
+@import 'more';
+
+// scroll load animation
+@import 'animation';
+

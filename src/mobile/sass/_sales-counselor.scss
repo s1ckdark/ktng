@@ -1,0 +1,48 @@
+// Sales
+//
+//
+
+.s-counselor {
+  @extend %dark;
+  @extend %section-margin;
+  text-align: center;
+  line-height: 1;
+}
+
+.counselor-header {
+  .sub-heading {
+    display: inline-block;
+    padding-bottom: rem(4px);
+    border-bottom: 1px solid rgba(#fff, .5);
+  }
+  .heading {
+    margin-top: rem(10px);
+    line-height: 1;
+  }
+}
+
+.counselor-body {
+  margin-top: rem(15px);
+  .date {
+    font-size: $font-size-small;
+    line-height: 1;
+  }
+  .counselor-stats {
+    margin-top: rem(25px);
+    .item {
+      padding: rem(15px) 0;
+      &:not(:first-child) {
+        border-top: 1px solid rgba(#fff, .5);
+      }
+      .number {
+        font-size: $font-size-lead;
+        .num {
+          font-size: $display-4;
+        }
+      }
+      .name {
+        margin-top: rem(12px);
+      }
+    }
+  }
+}

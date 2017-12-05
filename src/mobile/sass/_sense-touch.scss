@@ -1,0 +1,47 @@
+// Senses
+//
+//
+
+// 1. 레이어링 보습 케어
+.layering-tab {
+  .tab-nav {
+    a {
+      width: 33.333%;
+      .icon {
+        height: auto;
+      }
+    }
+  }
+}
+
+// 2. 눈, 발 피로 풀기
+.massage-tab {
+  .tab-nav {
+    a {
+      width: auto;
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin: 0 rem(10px);
+      .icon {
+        height: auto;
+      }
+      &.active {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-top: rem(15px);
+  }
+  strong {
+    display: block;
+    margin-bottom: rem(5px);
+    color: $brand-primary;
+    letter-spacing: -.04em;
+    &:not(:first-child) {
+      padding-top: rem(15px);
+    }
+  }
+}

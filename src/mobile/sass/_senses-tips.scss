@@ -1,0 +1,20 @@
+// Senses Tips
+//
+//
+
+
+.body-tips {
+  .sense-top-footer {
+    display: block;
+    margin-top: rem(20px);
+    .section-sns {
+      position: relative;
+      .section-sns-list {
+        right: auto;
+        left: 100%;
+        bottom: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!-- 상단공통 -->
+<div id="roof" class="rooftop">
+  <script>
+    layout.gnb.renderHtml();
+    $(function() {
+      $(".rooftop").addClass("on");
+
+      // header - 공유 설정
+      $(".sns-share-box .sns-more").on("click", function() {
+        $("#snsMore").toggleClass("open");
+        return false;
+      });
+    });
+  </script>
+  <div class="forehead">
+    <div class="inner">
+      <div class="brandsolution-logo"><a href="/" title="Innovation Lab"></a></div>
+      <div class="brand-identity"><a href="#viewport"><img src="./img/header-logo.png" alt="{{ brand }}"></a></div>
+      <div class="sns-share-box">
+        <ul>
+          <li><a href="javascript:void(0)" onclick="fnSendSns(&#39;facebook&#39;);" class="sns-fb" title="facebook"></a></li>
+          <li><a href="javascript:void(0)" onclick="fnSendSns(&#39;twitter&#39;);" class="sns-tw" title="twitter"></a></li>
+          <li><a href="javascript:void(0)" onclick="fnSendSns(&#39;kakaostory&#39;);" class="sns-ks" title="kakaostory"></a></li>
+          <li><a href="javascript:void(0)" class="sns-more" title="더 보기"></a></li>
+        </ul>
+        <div id="snsMore" class="sns-more-box">
+          <ul>
+            <li><a href="javascript:void(0)" onclick="fnSendSns(&#39;googleplus&#39;);" class="sns-gp" title="googleplus"><i></i>구글+</a></li>
+            <li><a href="javascript:void(0)" onclick="fnSendSns(&#39;pinterest&#39;);" class="sns-pt" title="pinterest"><i></i>핀터레스트</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //상단공통 -->

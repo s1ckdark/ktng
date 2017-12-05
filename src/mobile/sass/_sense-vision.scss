@@ -1,0 +1,48 @@
+// Senses
+//
+//
+
+// 1. 색조 화장품
+.graph-color-cosmetic {
+
+}
+
+// 2. 올해 컬러
+.color-slider {
+  text-align: center;
+  .item {
+    img {
+      display: inline-block;
+    }
+  }
+  .item1 {
+    img {
+      width: 181px;
+    }
+  }
+  .item2 {
+    img {
+      width: 240px;
+    }
+  }
+}
+
+// 3. 색조 화장품 고르기
+.tab-color-cosmetics {
+  position: relative;
+  .tab-nav {
+    flex-wrap: wrap;
+    font-size: $font-size-small;
+    a {
+      width: 33.33%;
+      margin-top: rem(15px);
+      &:nth-child(4),
+      &:nth-child(5) {
+        width: 50%;
+      }
+      .icon {
+        height: 40px;
+      }
+    }
+  }
+}

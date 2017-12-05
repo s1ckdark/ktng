@@ -1,0 +1,57 @@
+<!-- 상단공통 -->
+<div id="roof" class="rooftop">
+  <script>
+    $(function() {
+      $(".rooftop").addClass("on");
+      //공유 설정
+      var snsMore = $("#snsMore");
+      $(".forehead .btn-sns-more").on("click",function() {
+        snsMore.toggleClass('open');
+        return false;
+      });
+      $("#snsMore .close-modal").on("click",function() {
+        snsMore.removeClass('open');
+        popupWechat.removeClass("open");
+        return false;
+      });
+
+      var shareUrl = $("meta[property='og:url']").attr("content");
+      var popupWechat = $("#popup_wechat");
+      $("#snsMore .sns-wc").on("click", function() {
+        popupWechat.addClass("open");
+        var getWidth =  $("#qrcode").width();
+        $("#qrcode").empty().qrcode({width:getWidth,height:getWidth,text:shareUrl});
+        return false;
+      });
+    });
+  </script>
+  <div class="forehead">
+    <div class="brandsolution-logo"><a href="/" title="Innovation Lab"></a></div>
+    <div class="brand-identity"><a href="#viewport"><img src="../img/header-logo.png" alt="{{ brand }}" height="12"></a></div>
+    <div class="sns-share-box">
+      <a href="#snsMore" class="btn-sns-more">SNS공유</a>
+    </div>
+  </div>
+  <!-- SNS공유모달 -->
+  <div id="snsMore" class="sns-modal">
+    <div class="cover"></div>
+    <div class="sns-modal-inner">
+      <div class="modal-head">
+        공유하기<button type="button" class="close-modal">닫기</button>
+      </div>
+      <ul class="sns-list">
+        <li><a href="javascript:void(0)" onclick="fnSendSns('facebook');" class="sns-fb" title="facebook"><i></i><span>페이스북</span></a></li>
+        <li><a href="javascript:void(0)" onclick="fnSendSns('twitter');" class="sns-tw" title="twitter"><i></i><span>트위터</span></a></li>
+        <!-- <li><a href="javascript:void(0)" onclick="fnSendSns('googleplus');" class="sns-gp" title="googleplus"><i></i><span>구글+</span></a></li> -->
+        <!-- <li><a href="javascript:void(0)" onclick="#none" class="sns-pi" title="pinterest"><i></i><span>핀터레스트</span></a></li> -->
+         <li><a href="javascript:void(0)" onclick="fnSendSns('kakaotalk');" class="sns-kt" title="kakaotalk"><i></i><span>카카오톡</span></a></li>
+        <!-- <li><a href="javascript:void(0)" onclick="#none" class="sns-it" title="instagram"><i></i><span>인스타그램</span></a></li> -->
+        <li><a href="javascript:void(0)" onclick="fnSendSns('kakaostory');" class="sns-ks" title="kakaostory"><i></i><span>카카오스토리</span></a></li>
+        <!-- <li><a href="javascript:void(0)" onclick="#none" class="sns-pk" title="poket"><i></i><span>포켓</span></a></li> -->
+        <!-- <li><a href="javascript:void(0)" onclick="#none" class="sns-ml" title="email"><i></i><span>메일</span></a></li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- //SNS공유모달 -->
+</div>
+<!-- //상단공통 -->

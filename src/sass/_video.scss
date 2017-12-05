@@ -1,0 +1,73 @@
+// Video
+//
+//
+
+// Custom poster and play button
+//
+.video-play {
+  position: relative;
+  .play {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: $font-size-medium;
+    color: #ffffff;
+    letter-spacing: normal;
+    text-align: center;
+    @extend %flex-v-center;
+    &:after {
+      content: 'Play Movie';
+      display: block;
+      width: 96px;
+      padding-top: 100px;
+      background: url('../img/play.svg') 50% 0 no-repeat;
+      background-size: 96px auto;
+    }
+    &:after,
+    div { // after  보다 위로
+      position: relative;
+      z-index: 1;
+    }
+    .poster { // poster image
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000 50% 50% no-repeat;
+      background-size: cover;
+      transition: transform .4s;
+    }
+    &:hover .poster {
+      transform: scale(1.15) !important;
+    }
+  }
+  video {
+    display: block;
+    width: 100%;
+  }
+}
+
+// Background video
+//
+.has-background-video {
+  overflow: hidden;
+  position: relative;
+}
+video.background-video {
+  z-index: -100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
