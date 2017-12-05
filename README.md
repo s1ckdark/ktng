@@ -1,9 +1,4 @@
 # Innovation Lab Project Template
-[![pipeline status](https://gitlab.com/ja-innovationlab/innovationlab-amore/badges/master/pipeline.svg)](https://gitlab.com/ja-innovationlab/innovationlab-amore/commits/master)
-
-## 프로젝트별 정보
-- /src/doc/ 에 기획서 추가하여 변경사항 트래킹함.
-
 ## 로컬에서 작업하기
 1. `npm install` 실행
 1. 빌드: `gulp build` 실행
@@ -18,9 +13,7 @@
 
 - `public` 배포용 - 개발용 소스 컴파일 등 처리 후 자동으로 생성됩니다. 이 폴더 내부의 소스가 FTP에 올라갑니다. 수정 금지. (*GiLab Pages 사용을 위해 폴더 이름을 꼭 *public*로 해야 함.)
 - `src` 개발용. 모든 소스는 여기서 작성합니다.
-   - `doc` 기획서 내용
    - `font` CDN을 사용하지 않는 웹폰트
-      - `original` subset 만들어서 사용하는 폰트의 오리지널 파일 (이 폴더 안의 폰트는 빌드에 포함하지 않음.)
    - `html`
       - `_head.html` 프로젝트마다 달리 들어가야할 내용(제목, 설명 등)은 변수로 출력되기 때문에 직접 내용을 써넣지 않습니다. 수정 금지.
       - `_header.html` 상단 공통 레이아웃. 수정 금지.
@@ -55,21 +48,9 @@
 ### Webfont
 웹폰트는 [Webfont Loader](https://github.com/typekit/webfontloader)를 사용해 불러옵니다.
 
-#### 한문 폰트
-원본을 그대로 사용하면 용량이 너무 크기 때문에 사용하는 문자만 서브셋으로 만들어서 생성하였습니다.
-- Subset 문자
-   - 訪販五感視嗅味觸聽茶
-   - 방판오감시후미촉청차 (참조용 한글 음)
-- Spoqa Han Sans JP
-   - 각 폰트 무게별로 1.5~1.7MB에서 약 6KB로 줄어듬 (woff2 확장자 기준)
-   - 오리지널 다운로드: https://github.com/spoqa/spoqa-han-sans
-- 서브셋 폰트 만들기: https://transfonter.org/
-   - Add Fonts 버튼을 누르고 /src/font/original/ 폴더에 있는 폰트를 선택합니다.
-   - 옵션 중 Formats 영역에서 TTF, WOFF, WOFF2를 선택합니다.
-   - Characters에 위의 Subset 문자를 입력합니다.
-   - Convert 버튼을 눌러 생성합니다.
-   
-   
+#### 폰트
+폰트 추가 Noto Sans CJK KR
+  
 ### 브라우저 호환성
 - PC: Chrome, Firefox, Safari, Edge, IE11, IE10
 - Mobile: iPhone Safari, Android Browser
