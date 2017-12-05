@@ -93,19 +93,6 @@ body {
 }
 
 
-//
-// Lists
-//
-//ol, ul {
-//  padding-left: 2em;
-//}
-//dt {
-//  font-weight: 700;
-//}
-//dd {
-//  margin-left: 2em;
-//}
-
 
 //
 // Quotes
@@ -130,11 +117,6 @@ a {
 //
 // Etc
 //
-.cn {
-  font-family: $font-family-cn;
-  font-weight: 300; // 300이 기본이며, 100을 사용하는 곳이 있음.
-  letter-spacing: normal;
-}
 .num {
   font-family: $font-family-eng;
 }
