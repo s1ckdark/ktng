@@ -117,11 +117,12 @@ a {
 //
 // Etc
 //
+
 .num {
   font-family: $font-family-eng;
 }
-.buri {
-  font-family: $font-family-brand;
+.paper {
+  // font-family: $font-family-brand;
   font-weight: 500;
 }
 b, strong {
@@ -132,4 +133,10 @@ b, strong {
 }
 %white-muted {
   opacity: .7;
+}
+.bold {
+  font-weight:500;
+}
+.bold700 {
+  font-weight:700;
 }

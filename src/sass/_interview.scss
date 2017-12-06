@@ -1,48 +1,74 @@
-// Intro Tips
+// 
+// Interview
 //
-//
-
-.s-intro-tips {
-  @extend %dark;
-  background-image: url('../img/senses/bg-senses.jpg');
-  background-color: transparent;
-  height: rem(550px);
-  transition: background-image 5s;
+.interview-video {
+  width: rem(740px);
+  height: rem(416px);
+}
+#fighter {
+  background: url('../img/interview/bg-fighter.jpg') no-repeat 50% 50%/cover;
   .wrapper {
-    position: relative;
-    height: 100%;
-    @extend %flex-v-center;
-    .inner {
-      width: 100%;
-      padding-top: rem(50px);
+  @extend %flex-v-center;
+  @extend %section-margin;
+  position: relative;
+    .bg-people {
+      position:absolute;
+      bottom:0px;
+      left:rem(-20px);
+      background: url('../img/interview/bg-people-fighter.png') no-repeat 50% 50%/cover;
+      width: rem(382px);
+      height: rem(405px); 
     }
   }
 }
+#dancer {
+
+}
+#baristar {
+
+}
+
+// .s-intro-tips {
+//   @extend %dark;
+//   background-image: url('../img/senses/bg-senses.jpg');
+//   background-color: transparent;
+//   height: rem(550px);
+//   transition: background-image 5s;
+//   .wrapper {
+//     position: relative;
+//     height: 100%;
+//     @extend %flex-v-center;
+//     .inner {
+//       width: 100%;
+//       padding-top: rem(50px);
+//     }
+//   }
+// }
  
-.intro-tips-header,
-.intro-tips-text {
-  overflow: hidden;
-  opacity: 0;
-}
+// .intro-tips-header,
+// .intro-tips-text {
+//   overflow: hidden;
+//   opacity: 0;
+// }
 
-.intro-tips-header {
-  line-height: 1;
-  .sub-heading {
-    margin-top: rem(30px);
-    font-size: $heading-5;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  .heading {
-    margin-top: rem(15px);
-    line-height: 1;
-  }
-}
+// .intro-tips-header {
+//   line-height: 1;
+//   .sub-heading {
+//     margin-top: rem(30px);
+//     font-size: $heading-5;
+//     text-transform: uppercase;
+//     font-weight: 400;
+//   }
+//   .heading {
+//     margin-top: rem(15px);
+//     line-height: 1;
+//   }
+// }
 
-.intro-tips-text {
-  padding-bottom: .5em;
-  border-bottom: 1px solid rgba(255,255,255, .4);
-  line-height: 1;
-  font-size: $heading-5;
-  text-align: right;
-}
+// .intro-tips-text {
+//   padding-bottom: .5em;
+//   border-bottom: 1px solid rgba(255,255,255, .4);
+//   line-height: 1;
+//   font-size: $heading-5;
+//   text-align: right;
+// }

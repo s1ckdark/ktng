@@ -35,25 +35,6 @@ function initScrollMagic() {
   //   .addTo(controller);
 
 
-
-//
-// hero parallax
-//
-new ScrollMagic.Scene(
-{  
-  triggerElement: ".hero-sub",          
-  triggerHook: "onEnter",            
-  duration: "200%"           
-})   
-.setTween(".hero-intro", {y: "80%",zIndex:-1,ease: Linear.easeNone})    
-
-
-
-
-
-
-
-
   // 인터뷰 백그라운드 비디오 컨트롤
   //
   var interview = document.getElementById('interview');

@@ -36,3 +36,13 @@
   color: #fff;
   border-color: #fff;
 }
+.btn-blue, .btn-aqua {
+  color: #fff;
+  border: none;
+}
+.btn-blue {
+  background-color: $blue;
+}
+.btn-aqua {
+  background-color: $aqua;
+}

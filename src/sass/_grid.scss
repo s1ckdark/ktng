@@ -6,11 +6,46 @@
 .container {
   @extend %clearfix;
   &.col2 {
+    .col {
+      float: left;
+      box-sizing: border-box;
+    }
     > .col {
       width: 50%;
+     
+      &:nth-child(1) {
+        float: left;
+      }
+      &:nth-child(2) {
+        float: right;
+      }
+    }
+  }
+    &.type-line {
+      position: relative;
+      > .odd {
+          width:calc(50% - 29.5px);
+        }
+      > .even {
+          width:calc(50% - 29.5px);
+      }
+      > .line-wrapper {
+        width: 60px;
+        height: 100%;
+        position:absolute;
+        left:50%;
+        margin-left: -30px;
+      } 
     }
     &.type-ltr {
-
+      > .col {
+        &:nth-child(1) {
+          width: rem(360px);
+        }
+        &:nth-child(2) {
+          width: rem(740px);
+        }
+      }
     }
     &.type-rtl {
 
@@ -18,16 +53,24 @@
     &.type-center {
 
     }
-    &.type-line {
-
+    &.type-localizing {
+      > .col:nth-child(1) {
+          float: left;
+          width: 760px;
+      }
+      > .col:nth-child(2) {
+          float: right;
+          width: 360px;
+      }
     }
+    &.type-more {
+      > .col {
+        width: rem(550px);
+      }
+    }
+
   }
 
-  .col {
-    float: left;
-    box-sizing: border-box;
-  }
-}
 
 .container-flex {
   display: flex;

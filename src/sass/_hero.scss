@@ -4,7 +4,7 @@
 
 .hero {
   @extend %full-screen;
-  @extend %dark;
+  // @extend %dark;
   padding: 0 50px;
   background-color: transparent;
   .wrapper {

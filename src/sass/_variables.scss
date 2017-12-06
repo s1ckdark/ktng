@@ -5,18 +5,20 @@
 
 // Color
 //
-
-$brand-primary-dark:  #02142e;
+$aqua			   :  #1ab7ca;
+$blue 			   :  #3f8ee7;
+$brand-primary-dark:  #ffffff;
 $brand-primary:       #062c5e;
 $brand-primary-light: #093874;
 
 $text-color-white:    #e3e3e3;
-$text-color-lighter:  #999999;
+$text-color-lighter:  #888888;
 $text-color-light:    #666666;
 $text-color:          #444444;
 $text-color-dark:     #222222;
 
 $body-bg:             #fff;
+$bg-gray: 			  #efefef;
 
 $border-color-gray-lighter:   #bfbfbf;
 $border-color-gray-light:     $text-color-light;
@@ -32,7 +34,7 @@ $font-weight-b:       400;
 $font-weight:         $font-weight-n;
 $line-height:         1.65;
 $letter-spacing:      -.025em;
-$font-size-base:      16px; // 디자인 기준 폰트 사이즈, rem 함수 기준
+$font-size-base:      18px;
 $font-sizes: ( // responsive font sizes
   xs: $font-size-base
 );
@@ -47,7 +49,7 @@ $heading-5:           rem(25px);
 $heading-4:           rem(30px);
 $heading-3:           rem(35px);
 $heading-2:           rem(40px);
-$heading-1:           rem(45px);
+$heading-1:           rem(50px);
 
 $display-4:           rem(50px);
 $display-3:           rem(55px);
@@ -100,14 +102,12 @@ $breakpoints: (
 // Layout
 //
 $max-width: 1120px; // 화면 $max-width 이상일 경우 중앙 박스로 정렬
-$wrapper-horizontal-margin: 0;
+$wrapper-horizontal-margin: 40px;
 
 $header-height: 78px;
 
 // section margin
-$vertical-margin:    120px;
-$vertical-margin-lg: 150px;
+$vertical-margin:    110px;
+$vertical-margin-lg: 117px;
 
-$vertical-padding:   110px;
-$vertical-padding-lg: 117px;
 

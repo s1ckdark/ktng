@@ -46,5 +46,6 @@ module.exports = {
     "playBgVideo": true,
     "pauseVideo": true,
     "lazyload": true,
+    "Swiper": true
   }
 };
