@@ -1,48 +1,45 @@
-// Intro Tips
 //
+// Info 
 //
 
-.s-intro-tips {
-  @extend %dark;
-  background-image: url('../img/senses/bg-senses.jpg');
-  background-color: transparent;
-  height: rem(550px);
-  transition: background-image 5s;
+#info {
+  background: url('../img/info/bg-info.jpg') no-repeat 50% 50%/cover;
   .wrapper {
-    position: relative;
-    height: 100%;
-    @extend %flex-v-center;
-    .inner {
-      width: 100%;
-      padding-top: rem(50px);
+    padding: rem(216px) 0 rem(275px);
+    
+    .heading-1 {
+      text-align: center;
+      color: #fff;
+      padding: 0 0 rem(155px);
+    }
+    .col {
+      width:23%;
+      margin:0 auto;
+      .number {
+        font-size: rem(36px);
+        color: #fff;
+        text-align: center;
+        position:relative;
+        padding: 0 0 rem(60px);
+        &:after {
+          content:'';
+          position: absolute;
+          width: rem(30px);
+          height: rem(4px);
+          background-color: rgb(245, 148, 30);
+          left:50%;
+          top: rem(68px);
+          margin:0 0 0 rem(-15px);
+        }
+      }
+      .descText {
+        .text {
+          text-align: left;
+          color: #fff;
+          line-height: rem(28px);
+        }
+      }
     }
   }
 }
- 
-.intro-tips-header,
-.intro-tips-text {
-  overflow: hidden;
-  opacity: 0;
-}
 
-.intro-tips-header {
-  line-height: 1;
-  .sub-heading {
-    margin-top: rem(30px);
-    font-size: $heading-5;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  .heading {
-    margin-top: rem(15px);
-    line-height: 1;
-  }
-}
-
-.intro-tips-text {
-  padding-bottom: .5em;
-  border-bottom: 1px solid rgba(255,255,255, .4);
-  line-height: 1;
-  font-size: $heading-5;
-  text-align: right;
-}

@@ -24,10 +24,12 @@
     &.type-line {
       position: relative;
       > .odd {
-          width:calc(50% - 29.5px);
+          float: left;
+          width: rem(530px);
         }
       > .even {
-          width:calc(50% - 29.5px);
+          float: right;
+          width: rem(530px);
       }
       > .line-wrapper {
         width: 60px;
@@ -48,6 +50,14 @@
       }
     }
     &.type-rtl {
+      > .col {
+        &:nth-child(2) {
+          width: rem(360px);
+        }
+        &:nth-child(1) {
+          width: rem(740px);
+        }
+      }
 
     }
     &.type-center {

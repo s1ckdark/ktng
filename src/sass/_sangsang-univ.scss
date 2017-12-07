@@ -1,0 +1,28 @@
+//
+// sangsang univ
+//
+#sangsang-univ {
+  background-color: $bg-gray;
+  @extend %flex-v-center;
+  .container {
+    .col {
+		padding:rem(30px);
+      .icon {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+          background-color: #fff;
+          position: absolute;
+          width: rem(170px);
+          height: rem(170px);
+          z-index: 9;
+        }
+      }
+      .descText {
+        margin-left: rem(190px);
+      }
+    }
+  }
+}

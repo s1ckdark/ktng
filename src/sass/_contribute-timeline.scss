@@ -1,48 +1,71 @@
-// Intro Tips
 //
+// contribute timeline
 //
 
-.s-intro-tips {
-  @extend %dark;
-  background-image: url('../img/senses/bg-senses.jpg');
-  background-color: transparent;
-  height: rem(550px);
-  transition: background-image 5s;
-  .wrapper {
-    position: relative;
-    height: 100%;
-    @extend %flex-v-center;
-    .inner {
-      width: 100%;
-      padding-top: rem(50px);
+#contribute-timeline {
+  background: $bg-gray;
+  .type-line {
+    .line-wrapper {
+      b {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        background-color: #ccc;
+      }
+    }
+    .card {
+      background: #fff;
+      position: relative;
+      padding: rem(30px);
+      margin: 0 0 rem(40px);
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+      &:before {
+        top: rem(38px);
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+      }
+      &:after {
+        top: 40px;
+        width: rem(20px);
+        height: rem(20px);
+        border-radius: 100%;
+        z-index:11;
+      }
+    }
+    .odd {
+      .card {
+        &:before {
+          left: 100%;
+          border-left: rem(14px) solid #fff;
+        }
+        &:after {
+          background-color: #1ab7ca;
+          left: 100%;
+          margin-left: rem(20px);
+        }     
+      }
+    }    
+    .even {
+      .card {
+        &:before {
+          right: 100%;
+          border-right: rem(14px) solid #fff;
+        }
+        &:after {
+          background-color: #3f8ee7;
+          right: 100%;
+          margin-right: rem(20px);
+        }     
+      }
     }
   }
-}
- 
-.intro-tips-header,
-.intro-tips-text {
-  overflow: hidden;
-  opacity: 0;
-}
-
-.intro-tips-header {
-  line-height: 1;
-  .sub-heading {
-    margin-top: rem(30px);
-    font-size: $heading-5;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  .heading {
-    margin-top: rem(15px);
-    line-height: 1;
-  }
-}
-
-.intro-tips-text {
-  padding-bottom: .5em;
-  border-bottom: 1px solid rgba(255,255,255, .4);
-  line-height: 1;
-  font-size: $heading-5;
-  text-align: right;
 }
