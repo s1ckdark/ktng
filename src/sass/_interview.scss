@@ -1,55 +1,80 @@
 // 
 // Interview
 //
-.interview-video {
-  width: rem(740px);
-  height: rem(416px);
-}
-#fighter {
-  background: url('../img/interview/bg-fighter.jpg') no-repeat 50% 50%/cover;
-  .wrapper {
-  @extend %flex-v-center;
-  @extend %section-margin;
-  position: relative;
-    .bg-people {
-      position:absolute;
-      bottom:0px;
-      left:rem(-20px);
-      background: url('../img/interview/bg-people-fighter.png') no-repeat 50% 50%/cover;
-      width: rem(382px);
-      height: rem(405px); 
+
+.interview {
+  .interview-video {
+    width: rem(740px);
+    height: rem(416px);
+  }
+  .interview-desc {
+    padding: rem(60px) 0 0;
+  }
+  .heading-1 {
+    text-align: left;
+    line-height: rem(60px);
+  }
+  &#fighter {
+    @extend %has-bg;
+    background: url('../img/interview/bg-fighter.jpg') no-repeat 50% 50%/cover;
+    .wrapper {
+    @extend %flex-v-center;
+    @extend %section-margin;
+    position: relative;
+      .heading-1 {
+        span {
+          color: $opacity-blue;
+        }
+      }
+      .bg-people {
+        position:absolute;
+        bottom:0px;
+        left:rem(-20px);
+        background: url('../img/interview/bg-people-fighter.png') no-repeat 50% 50%/cover;
+        width: rem(382px);
+        height: rem(405px); 
+      }
     }
   }
-}
-#dancer {
-  background: url('../img/interview/bg-dancer.jpg') no-repeat 50% 50%/cover;
-  .wrapper {
-  @extend %flex-v-center;
-  @extend %section-margin;
-  position: relative;
-    .bg-people {
-      position:absolute;
-      bottom:0px;
-      left:rem(-20px);
-      background: url('../img/interview/bg-people-dancer.png') no-repeat 50% 50%/cover;
-      width: rem(422px);
-      height: rem(560px); 
+  &#dancer {
+    @extend %has-bg;
+    background: url('../img/interview/bg-dancer.jpg') no-repeat 50% 50%/cover;
+    .wrapper {
+    @extend %flex-v-center;
+    @extend %section-margin;
+    position: relative;
+      .bg-people {
+        position:absolute;
+        bottom:0px;
+        left:rem(-20px);
+        background: url('../img/interview/bg-people-dancer.png') no-repeat 50% 50%/cover;
+        width: rem(422px);
+        height: rem(560px); 
+      }
     }
   }
-}
-#baristar {
-  background: url('../img/interview/bg-baristar.jpg') no-repeat 50% 50%/cover;
-  .wrapper {
-  @extend %flex-v-center;
-  @extend %section-margin;
-  position: relative;
+  &#barista {
+    @extend %has-bg;
+    background: url('../img/interview/bg-barista.jpg') no-repeat 50% 50%/cover;
+    .wrapper {
+    @extend %flex-v-center;
+    @extend %section-margin;
+    position: relative;
+      .bg-people {
+        position:absolute;
+        bottom:0px;
+        right:rem(-20px);
+        background: url('../img/interview/bg-people-barista.png') no-repeat 50% 50%/cover;
+        width: rem(329px);
+        height: rem(476px); 
+      }
+    }
+  }
+
+  &#professor {
     .bg-people {
-      position:absolute;
-      bottom:0px;
-      right:rem(-20px);
-      background: url('../img/interview/bg-people-baristar.png') no-repeat 50% 50%/cover;
-      width: rem(329px);
-      height: rem(476px); 
+      width: rem(406px);
+      height: rem(346px);
     }
   }
 }

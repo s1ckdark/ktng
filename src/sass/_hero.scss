@@ -2,99 +2,65 @@
 // hero
 //
 
-// .hero {
-//   @extend %full-screen;
-//   // @extend %dark;
-//   padding: 0 50px;
-//   background-color: transparent;
-//   .wrapper {
-//     position: relative;
-//     max-width: 1200px; // 기준보다 넓은 박스
-//     height: 100%;
-//     .inner {
-//       position: absolute;
-//       left: 0;
-//       bottom: 136px;
-//       right: 0;
-//     }
-//   }
-// }
-
-// .hero-main,
-// .intro-text {
-//   overflow: hidden;
-//   opacity: 0;
-// }
-
-// .hero-main {
-//   border-bottom: 1px solid rgba(255,255,255, .4);
-//   .sub-heading {
-//     margin-bottom: rem(25px);
-//     line-height: 1;
-//     font-size: $heading-5;
-//     text-transform: uppercase;
-//   }
-//   .heading {
-//     margin-bottom: rem(25px);
-//     line-height: 1;
-//     font-weight: $font-weight-n;
-//   }
-// }
-
-// .intro-text {
-//   padding-top: rem(35px);
-// }
-
-// .intro-scroll {
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   padding-left: 65px;
-//   font-size: $font-size-small;
-//   transform: translate(100%, .4em) rotate(-90deg);
-//   transform-origin: left 80%;
-//   &:before {
-//     content: '';
-//     position: absolute;
-//     top: 50%;
-//     left: 0;
-//     display: inline-block;
-//     width: 60px;
-//     height: 1px;
-//     background-color: #fff;
-//     //animation: scroll 1.2s infinite alternate ease-in-out;
-//     animation: scroll 1s infinite ease-out;
-//   }
-// }
-// @keyframes scroll {
-//   to { width: 0; }
-// }
-
 .hero {
   @extend %full-screen;
-#bg-hero {
-  @extend %full-screen;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-position:50% 50%;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.hero-sub {
-  .intro-text {
-    text-align:center;
-    .tween {
-      span {
-        &.blue {}
-        &.green {
-        &.orange {}
-        &.red {}
-        }
-      }
+  @extend %has-bg;
+  #bg-hero {
+    @extend %full-screen;
+    @extend %flex-v-center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    .num {
+      letter-spacing: rem(-5px);
     }
   }
 }
+#hero-sub {
+  padding: rem(80px) 0;
+  text-align: center;
+  .intro-text {
+    padding: 0 0 rem(60px);
+    .tween {
+      font-weight:300;
+      color: $text-color-lighter;
+      font-size: $heading-3;
+      }
+    }
+    .heading-2 {
+        span {
+          color: $blue;
+        }
+      }
+    }
+
+.intro-scroll {
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  padding-left: 65px;
+  font-size: $font-size-small;
+  transform: translate(100%, .4em);
+  transform-origin: left 80%;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    animation: scroll 1s infinite ease-out;
+  }
+}
+
+@keyframes scroll {
+  to { width: 0; }
 }

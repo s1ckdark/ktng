@@ -5,6 +5,7 @@
 
 .container {
   @extend %clearfix;
+  width:100%;
   &.col2 {
     .col {
       float: left;

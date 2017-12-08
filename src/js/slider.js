@@ -20,7 +20,11 @@ $(function(){
 
   var localizing = new Swiper('#localizeSwiper', {
     speed: 400,
-    spaceBetween: 100
+    spaceBetween: 100,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
   // // dynamic numbering

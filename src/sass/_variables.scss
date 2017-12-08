@@ -7,6 +7,8 @@
 //
 $aqua			   :  #1ab7ca;
 $blue 			   :  #3f8ee7;
+$opacity-blue      :  #9fc8f7;
+
 $brand-primary-dark:  #ffffff;
 $brand-primary:       #062c5e;
 $brand-primary-light: #093874;
@@ -14,7 +16,7 @@ $brand-primary-light: #093874;
 $text-color-white:    #e3e3e3;
 $text-color-lighter:  #888888;
 $text-color-light:    #666666;
-$text-color:          #444444;
+$text-color:          #000000;
 $text-color-dark:     #222222;
 
 $body-bg:             #fff;
@@ -27,13 +29,13 @@ $border-color-gray-light:     $text-color-light;
 // Typography
 //
 $font-family:         'NotoSansKR', sans-serif;
-$font-family-eng:     'Merriweather', sans-serif; // 숫자 전용
+$font-family-paper:   'Paper', sans-serif;
 
-$font-weight-n:       300;
+$font-weight-n:       200;
 $font-weight-b:       400;
 $font-weight:         $font-weight-n;
 $line-height:         1.65;
-$letter-spacing:      -.025em;
+$letter-spacing:      -.05556rem;
 $font-size-base:      18px;
 $font-sizes: ( // responsive font sizes
   xs: $font-size-base
@@ -47,22 +49,15 @@ $font-size-lead:      rem(18px);
 $heading-6:           rem(20px);
 $heading-5:           rem(25px);
 $heading-4:           rem(30px);
-$heading-3:           rem(35px);
-$heading-2:           rem(40px);
+$heading-3:           rem(24px);
+$heading-2:           rem(36px);
 $heading-1:           rem(50px);
-
-$display-4:           rem(50px);
-$display-3:           rem(55px);
-$display-2:           rem(75px);
-$display-1:           rem(90px);
-$display-0:           rem(120px);
-
-$display-a:           rem(170px);
+$heading-0:			  rem(60px);
 
 $heading-font-weight:    $font-weight-b;
 $heading-text-color:     $text-color-dark;
 $heading-line-height:    1.5;
-$heading-letter-spacing: -.025em;
+$heading-letter-spacing: -.05556rem;
 
 $link-color:          $text-color;
 $link-color-hover:    $text-color;

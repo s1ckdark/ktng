@@ -1,48 +1,14 @@
-// Intro Tips
 //
+// Sangsang Madang
 //
 
-.s-intro-tips {
-  @extend %dark;
-  background-image: url('../img/senses/bg-senses.jpg');
-  background-color: transparent;
-  height: rem(550px);
-  transition: background-image 5s;
-  .wrapper {
-    position: relative;
-    height: 100%;
-    @extend %flex-v-center;
-    .inner {
-      width: 100%;
-      padding-top: rem(50px);
-    }
-  }
-}
- 
-.intro-tips-header,
-.intro-tips-text {
-  overflow: hidden;
-  opacity: 0;
-}
 
-.intro-tips-header {
-  line-height: 1;
-  .sub-heading {
-    margin-top: rem(30px);
-    font-size: $heading-5;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  .heading {
-    margin-top: rem(15px);
-    line-height: 1;
-  }
-}
 
-.intro-tips-text {
-  padding-bottom: .5em;
-  border-bottom: 1px solid rgba(255,255,255, .4);
-  line-height: 1;
-  font-size: $heading-5;
-  text-align: right;
+#artist-1 {
+  width: rem(418px);
+  height: rem(316px);
+}
+#artist-2 {
+  width: rem(428px);
+  height: rem(434px);
 }

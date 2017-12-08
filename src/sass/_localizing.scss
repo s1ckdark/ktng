@@ -1,48 +1,24 @@
-// Intro Tips
 //
+// Localizing 
 //
 
-.s-intro-tips {
-  // @extend %dark;
-  background-image: url('../img/senses/bg-senses.jpg');
-  background-color: transparent;
-  height: rem(550px);
-  transition: background-image 5s;
-  .wrapper {
-    position: relative;
-    height: 100%;
-    @extend %flex-v-center;
-    .inner {
+#localizing {
+  padding:rem(150px) 0 0;
+  .heading-1 {
+    text-align: center;
+    line-height: rem(60px);
+  }
+  #localizeSwiper {
+    .type-localizing {
+      padding: rem(120px) 0 0;
+      p.text {
+        margin: 0 0 rem(30px);
+      }
+    }
+    #localizing-nav {
+      position:absolute;
+      top: rem(180px);
       width: 100%;
-      padding-top: rem(50px);
     }
   }
-}
- 
-.intro-tips-header,
-.intro-tips-text {
-  overflow: hidden;
-  opacity: 0;
-}
-
-.intro-tips-header {
-  line-height: 1;
-  .sub-heading {
-    margin-top: rem(30px);
-    font-size: $heading-5;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  .heading {
-    margin-top: rem(15px);
-    line-height: 1;
-  }
-}
-
-.intro-tips-text {
-  padding-bottom: .5em;
-  border-bottom: 1px solid rgba(255,255,255, .4);
-  line-height: 1;
-  font-size: $heading-5;
-  text-align: right;
 }

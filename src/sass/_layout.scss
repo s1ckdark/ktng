@@ -40,9 +40,7 @@ body {
   justify-content: center;
 }
 
-%dark {
-  background: $brand-primary center center no-repeat;
-  background-size: cover;
+%has-bg {
   &, * {
     color: #ffffff;
   }

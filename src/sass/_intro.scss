@@ -4,14 +4,70 @@
 
 #intro {
   @extend %flex-v-center;
+  @extend %has-bg;
   background:url('../img/intro/bg-intro.jpg') no-repeat 50% 50%/cover;
   .wrapper {
-    padding: rem(185px) 0 rem(182px);
-    position: relative;
-    .col:nth-child(2) {
-      height:100%;
-      width:50%;
-      background: rgba(0,0,0, 0.5);
+    z-index:10;
+    .container {
+      position:relative;
+      padding: rem(185px) 0 rem(182px);
+      .title {
+        display: block;
+        width: rem(360px);
+        padding: 0 0 rem(50px);
+        .heading-1 {
+          text-align: left;
+          line-height: rem(80px);
+        }
+        .heading-0 {
+          text-align: left;
+          position: relative;
+          line-height: rem(60px);
+          &:after {
+            content:'';
+            background: #fff;
+            position: absolute;
+            bottom: rem(10px);
+            left: 100%;
+            width: rem(720px);
+            height: rem(1px);
+            z-index: 10;
+          }
+        }
+      }
+      .col:nth-child(1) {
+        width: rem(550px);
+        margin-right:rem(95px);
+        height:100%;
+        #video-intro {
+          width: rem(550px);
+          height: rem(308px);
+          font-size: rem(-1px);
+        }
+      }
+      .col:nth-child(2) {
+        padding: rem(200px) 0 0;
+        width: rem(475px);
+        height:100%;
+        .text {
+          padding: 0 rem(55px) 0 rem(55px);
+          z-index:11;
+          &.bold {
+            padding-top: rem(30px);
+          }
+        }
+
+        &:after {
+          content:'';
+          position: absolute;
+          width: rem(475px);
+          height: 100%;
+          right: 0;
+          top:0;
+          background: rgba(0,0,0, 0.5);
+          z-index: -1;
+        }
+      }
     }
   }
 }
