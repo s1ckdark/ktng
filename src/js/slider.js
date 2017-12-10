@@ -27,6 +27,16 @@ $(function(){
     },
   });
 
+  var contribute = new Swiper('.contribute', {
+    speed: 400,
+    spaceBetween: 100,
+    autoplay: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  });
+
   // // dynamic numbering
   // $bodies.find('.sense-slider-header > .heading').each(function(){
   //   var index = $(this).index();

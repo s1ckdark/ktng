@@ -9,38 +9,17 @@
     width: rem(550px);
     height: rem(309px);
   }
+  .heading-3 {
+  	text-align: left;
+  	padding: rem(25px) 0 rem(35px);
+  }
+  .text {
+  	color: $text-color-light;
+  }
+  .btn {
+  	margin:0 0 rem(5px);
+  	height: rem(60px);
+  	border-radius:0;
+  }
 }
 
-// .s-outro {
-//   text-align: center;
-//   .lead {
-//     @extend %section-margin;
-//     @extend .paper;
-//     font-size: $heading-4;
-//   }
-
-//   .footer {
-//     @extend %dark;
-//     @extend %section-margin-lg;
-//     line-height: 1;
-//     .logo {
-//       margin-bottom: rem(30px);
-//     }
-//     .more {
-//       font-size: $heading-6;
-//       font-weight: $font-weight-n;
-//       span {
-//         padding-bottom: rem(4px);
-//         border-bottom: 1px solid #fff;
-//         &:after {
-//           position: relative;
-//           top: 0;
-//           content: '>';
-//           display: inline;
-//           margin-left: .8em;
-//           font-size: .8em;
-//         }
-//       }
-//     }
-//   }
-// }

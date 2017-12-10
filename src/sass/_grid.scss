@@ -50,6 +50,18 @@
         }
       }
     }
+    &.type-ltr2 {
+      border-bottom: 1px solid #ccc;
+      > .col {
+        &:nth-child(1) {
+          width: rem(455px);
+        }
+        &:nth-child(2) {
+          margin-left: rem(20px);
+          width: rem(645px);
+        }
+      }
+    }
     &.type-rtl {
       > .col {
         &:nth-child(2) {
@@ -59,7 +71,16 @@
           width: rem(740px);
         }
       }
-
+    }
+    &.type-rtl2 {
+      > .col {
+        &:nth-child(1) {
+          width: rem(665px);
+        }
+        &:nth-child(2) {
+          width: rem(455px);
+        }
+      }
     }
     &.type-center {
 

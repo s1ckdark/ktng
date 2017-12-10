@@ -1,14 +1,29 @@
 //
 // Sangsang Madang
 //
-
-
-
-#artist-1 {
-  width: rem(418px);
-  height: rem(316px);
-}
-#artist-2 {
-  width: rem(428px);
-  height: rem(434px);
+#sangsang-madang {
+	@extend %full-screen;
+	@extend %flex-v-center;
+	background: url('../img/sangsang-madang/bg-sangsang-madang.jpg') no-repeat 0% 50%/cover;
+	padding-top: rem(110px);
+	.heading-1 {
+		text-align: left;
+		line-height: rem(60px);
+		margin-bottom: rem(90px);
+		span {
+			color: $blue;
+		}
+	}
+	.text {
+		padding: 0 0 rem(50px);
+	}
+	#artist-1 {
+	  margin: rem(70px) 0 rem(50px);
+	  width: rem(418px);
+	  height: rem(316px);
+	}
+	#artist-2 {
+	  width: rem(428px);
+	  height: rem(434px);
+	}
 }

@@ -12,11 +12,34 @@
     top: 0;
     left: 0;
     right: 0;
-    background-position:50% 50%;
-    background-repeat:no-repeat;
-    background-size: cover;
-    .num {
-      letter-spacing: rem(-5px);
+    .tween {
+        span {
+          position: relative;
+        &.up {
+          top: rem(-10px);
+        }
+        &.up2 {
+          top: rem(-20px);
+        }
+        &.num {
+          letter-spacing: rem(-5px);
+        }
+      }
+    }
+  }
+  #bg-img {
+    position:absolute;
+    overflow:hidden;
+    @extend %full-screen;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .lazyload {
+      position:absolute;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
   }
 }

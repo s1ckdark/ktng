@@ -5,5 +5,17 @@
 #curriculum {
   @extend %flex-v-center;
   @extend %section-margin;
+  @extend %has-bg;
   background: url('../img/curriculum/bg-curriculum.jpg') no-repeat 50% 50%/cover;
+  .inner {
+	width: rem(780px);
+	margin:0 auto;
+	.heading-1 {
+		padding: 0 0 rem(80px);
+	}
+	.text {
+		text-align: left;
+		padding-bottom: rem(30px);
+	}
+  }
 }

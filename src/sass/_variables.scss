@@ -8,6 +8,8 @@
 $aqua			   :  #1ab7ca;
 $blue 			   :  #3f8ee7;
 $opacity-blue      :  #9fc8f7;
+$opacity-aqua      :  #a4eaf3;
+$opacity-violet    :  #aabbf5;
 
 $brand-primary-dark:  #ffffff;
 $brand-primary:       #062c5e;
@@ -43,12 +45,9 @@ $font-sizes: ( // responsive font sizes
 
 $font-size-smaller:   rem(12px);
 $font-size-small:     rem(14px);
-$font-size-medium:    rem(15px);
+$font-size-medium:    rem(16px);
 $font-size-lead:      rem(18px);
 
-$heading-6:           rem(20px);
-$heading-5:           rem(25px);
-$heading-4:           rem(30px);
 $heading-3:           rem(24px);
 $heading-2:           rem(36px);
 $heading-1:           rem(50px);

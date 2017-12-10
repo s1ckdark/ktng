@@ -14,6 +14,9 @@
     text-align: left;
     line-height: rem(60px);
   }
+  .text {
+    line-height: rem(28px);
+  }
   &#fighter {
     @extend %has-bg;
     background: url('../img/interview/bg-fighter.jpg') no-repeat 50% 50%/cover;
@@ -43,6 +46,11 @@
     @extend %flex-v-center;
     @extend %section-margin;
     position: relative;
+      .heading-1 {
+        span {
+          color: $opacity-aqua;
+        }
+      }
       .bg-people {
         position:absolute;
         bottom:0px;
@@ -60,6 +68,12 @@
     @extend %flex-v-center;
     @extend %section-margin;
     position: relative;
+      .heading-1 {
+        text-align: right;
+        span {
+          color: $opacity-violet;
+        }
+      }
       .bg-people {
         position:absolute;
         bottom:0px;
@@ -72,9 +86,73 @@
   }
 
   &#professor {
+    @extend %flex-v-center;
+    @extend %section-margin;
+    .sub-heading-2 {
+      background-color: rgb(0, 0, 0);
+      width: rem(290px);
+      height: rem(16px);
+      line-height: rem(16px);
+      color: #fff;
+      font-size: $font-size-medium;
+      text-align:left;
+      padding: rem(5px) rem(20px);
+    }
+    .heading-2 {
+      text-align: left;
+      @extend .paper;
+      line-height: rem(48px);
+      padding: rem(16px) 0 0;
+    }
+    .interview-desc {
+      padding: rem(40px) 0 0;
+    }
     .bg-people {
+      background-position: rem(20px) 100%;
+      background-repeat: no-repeat;
       width: rem(406px);
       height: rem(346px);
     }
+    #qna {
+      > div {
+        border-bottom: 1px solid #ccc;
+        padding: rem(30px) 0 rem(25px);
+        .answer {
+          line-height: rem(28px);
+        }
+      }
+        .container-flex {
+          border: none;
+          .col {
+            @extend %flex-v-center;
+            width: 33.3%;
+            padding: rem(30px) 0;
+            .title {
+              background-color: rgb(134, 176, 223);
+              width: rem(100px);
+              height: rem(32px);
+              margin: 0 0 rem(20px);
+              border-radius: rem(20px);
+              color: #fff;
+              text-align: center;
+              .num {
+                letter-spacing: rem(-2px);
+              }
+            }
+            .text {
+              text-align: center;
+            }
+          }
+          .col:nth-child(1) {
+            background: #ebf3fd;
+          }    
+          .col:nth-child(2) {
+            background: #dfedfe;
+          }    
+          .col:nth-child(3) {
+            background: #ebf3fd;
+          }
+        }
+      }
+    }
   }
-}

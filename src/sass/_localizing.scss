@@ -3,22 +3,53 @@
 //
 
 #localizing {
-  padding:rem(150px) 0 0;
+  padding:rem(150px) 0;
   .heading-1 {
     text-align: center;
     line-height: rem(60px);
   }
   #localizeSwiper {
     .type-localizing {
-      padding: rem(120px) 0 0;
-      p.text {
-        margin: 0 0 rem(30px);
+      padding: rem(60px) 0 0;
+      .inner {
+        padding: rem(60px) 0 0;
+        p.text {
+          margin: 0 0 rem(30px);
+        }
       }
     }
     #localizing-nav {
       position:absolute;
       top: rem(180px);
       width: 100%;
+      &:after {
+        content:'';
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        background: #dfdfdf;
+      }
+      .local-button-prev, .local-button-next {
+        position: absolute;
+        border: 1px solid #dfdfdf;
+        padding: rem(15px) rem(21.5px);
+        width: rem(17px);
+        height: rem(30px);
+        margin: rem(-30px) 0 0;
+        background-color: #fff;
+        z-index: 11;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      .local-button-prev {
+          left: rem(60px);
+          background-image:url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAeCAQAAABgMj2kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhDAkOOwyWrk4VAAAAoUlEQVQ4y43TvQ3CMBCG4dcHJevQsQBLIMWDUcAQWYAhkCiyBK0lCitKbN8PVz866X6+tODUAShHF9yBnBYP3PhylgBceUsAXiAR0EgHRjKAniigJSrYEwNsxAQrcUAlLgCJQO2ScEsoTDw5MXOxuxQmHjaqExWyjda9OGjbron2NzJQe2kV9f+ioPHrBqT9bof0BDToj6jZgS1kAD4pjv0PuZdSWq49+vIAAAAASUVORK5CYII=");
+      }
+      .local-button-next {
+          right: rem(60px);
+          background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAeCAQAAABgMj2kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhDAkPASMZFMcCAAAAs0lEQVQ4y4XTsQ3CQAxA0X9OyjAGEkOwAJQMEKTsRQoGoIQFMgQSBUOENhJFCJe72I6bc/Hudw5vKIABc4SClpbCJiVbTlRAY5WEJwc+1HZJgM5HAmtIfq+D5L+ZSGa7gST5oKKUjKin5hJRTqDjSM85oiVZII1kSCcJssg0wa7subPhSsMga0CvJEAjGYByAR5Uc5BXFJASFcyJASIxwUQcMBIXgLDzAZS8uOHcIoT1s/8CGmdSCsQMRIEAAAAASUVORK5CYII=');     
+      }
     }
   }
 }
