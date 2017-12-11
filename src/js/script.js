@@ -107,4 +107,41 @@ $(function(){
     // console.log(section, type, url);
     fnSendSns(type, url);
   });
+
+  function upTween(e, hook){
+    var $e = $(e);
+    TweenMax.set($e, {opacity:0, y:30});
+    // TweenMax.killTweensOf()
+    $e.each(function(){
+      var $this = this;
+      var sectionTitTween = TweenMax.to($this, .8, {opacity:1, y:0});
+      var sectionTitScene = new ScrollMagic.Scene({
+        triggerElement: $this,
+        triggerHook: hook
+      })
+        .setTween(sectionTitTween)
+        .reverse(false)
+        .addTo(controller);
+    });
+  }
+
+  function tweenText(e, hook){
+    var $e = $(e);
+    // TweenMax.killTweensOf()
+    $e.each(function(){
+      var $this = this;
+      var textTween = new SplitText($this, {type:'lines'});
+      var tl = new TimelineMax({paused:true});
+      tl.staggerFrom(textTween.lines, 0.5, {opacity:0, cycle:{x:[100, -100]}}, 0.2);
+      var textScene = new ScrollMagic.Scene({
+        triggerElement: $this,
+        triggerHook: hook
+      })
+        .on('start', function(){
+          tl.play();
+        })
+        .reverse(false)
+        .addTo(controller);
+    });
+  }
 });

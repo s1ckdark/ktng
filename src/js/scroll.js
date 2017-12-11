@@ -16,7 +16,6 @@ var controller = new ScrollMagic.Controller();
 $(function(){
   initScrollMagic();
 });
-// window.addEventListener('load', initScrollMagic);
 
 function initScrollMagic() {
   var roofHeight = $('#roof').height();
@@ -24,7 +23,17 @@ function initScrollMagic() {
   //
   // #intro
   // 
+  TweenMax.set('#video-intro', {autoAlpha:0});
+  var introTween = new TweenMax();
+  introTween.to('#video-intro', .5, {autoAlpha:1});
 
+  var introScene = new ScrollMagic.Scene({
+    triggerElement: '#intro', 
+    triggerHook: .5
+  })
+    .setTween(introTween)
+    .reverse(false)
+    .addTo(controller);
 
   //
   // #info
@@ -46,7 +55,7 @@ function initScrollMagic() {
     }, ease:Power1.easeOut}, 0);
   });
   
-  var countUp = new ScrollMagic.Scene({
+  var infoScene = new ScrollMagic.Scene({
     triggerElement: '#info', 
     triggerHook: .5
   })

@@ -47,6 +47,8 @@ module.exports = {
     "controller": true,
     "jatracker": true,
     "lazyload": true,
-    "Swiper": true
+    "Swiper": true,
+    "upTween": true,
+    "textTween":true
   }
 };
