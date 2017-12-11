@@ -13,33 +13,53 @@
     left: 0;
     right: 0;
     .tween {
-        span {
-          position: relative;
-        &.up {
-          top: rem(-10px);
+      span {
+        position: relative;
+        &.big {
+          font-size: rem(80px); 
+          font-weight: 500;
         }
-        &.up2 {
-          top: rem(-20px);
+        &.big2 {
+          font-size: rem(60px);
+          font-weight: 500;
+        }
+        &.up {
+          top: rem(-5px);
+        }
+        &.down {
+          top: rem(5px);
         }
         &.num {
           letter-spacing: rem(-5px);
+        }
+        &.color-1 {
+          color: #e2ebec;
+        }
+        &.color-2 {
+          color: #bbc6ef;
         }
       }
     }
   }
   #bg-img {
+    background-color: #000;
     position:absolute;
-    overflow:hidden;
     @extend %full-screen;
+    overflow:hidden;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     .lazyload {
-      position:absolute;
       background-size: cover;
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      opacity:0.5;
+    }
+    .pic-img {
+      overflow: hidden;
+      position: absolute;
+
     }
   }
 }

@@ -61,6 +61,7 @@ body {
 .heading-0 {
   font-size: $heading-0;
   @extend .paper;
+  font-weight: 400;
 }
 .sub-heading-0 {
   @extend .paper;

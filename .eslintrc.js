@@ -12,10 +12,10 @@ module.exports = {
         "SwitchCase": 1
       }
     ],
-    "linebreak-style": [
+    /*"linebreak-style": [
       "error",
       "unix"
-    ],
+    ],*/
     "quotes": [
       "error",
       "single"
@@ -39,12 +39,13 @@ module.exports = {
     "Power1": true,
     "Power4": true,
     "Elastic": true,
+    "Quad": true,
+    "Circ": true,
     "SplitText": true,
+    "CountUp": true,
     "ScrollMagic": true,
     "controller": true,
     "jatracker": true,
-    "playBgVideo": true,
-    "pauseVideo": true,
     "lazyload": true,
     "Swiper": true
   }

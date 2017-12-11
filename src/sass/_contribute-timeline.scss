@@ -81,7 +81,7 @@
           }
           .text {
             padding: rem(30px) 0 0;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #efefef;
           }
         }   
         &.t2004 {
@@ -96,7 +96,7 @@
           }
           .text {
              padding-top: rem(30px);
-             border-top: 1px solid #ccc;
+             border-top: 1px solid #efefef;
           }
         }
         &.t2013 {
@@ -105,7 +105,10 @@
             height: rem(240px);
           }
           .text {
-            padding:rem(30px) 0 rem(40px);
+            padding:0 0 rem(20px);
+            &:nth-child(1) {
+              padding-top: rem(30px);
+            }
           }
         }  
       }
