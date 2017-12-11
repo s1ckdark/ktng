@@ -27,6 +27,15 @@ $(function(){
     },
   });
 
+  TweenMax.set(['#localizeSwiper .heading-1', '#localizeSwiper .inner', '#localizeSwiper img'], {opacity:0, y:30});
+  var localHeadingTween = new SplitText('#localizeSwiper .heading-1', {type:'lines'});
+  var localTween = new TimelineMax({paused:true});
+  localTween.staggerFrom(localHeadingTween.lines, 0.5, {opacity:0, cycle:{x:[100, -100]}}, 0.2);
+
+  localizing.on('slideChange', function () {
+    localTween.play();
+  });
+
   var contribute = new Swiper('.contribute', {
     speed: 400,
     spaceBetween: 100,

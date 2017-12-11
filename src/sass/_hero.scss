@@ -91,6 +91,7 @@
   font-size: $font-size-small;
   transform: translate(100%, .4em);
   transform-origin: left 80%;
+  z-index:10;
   &:before {
     content: '';
     position: absolute;
