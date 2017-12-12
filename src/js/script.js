@@ -1,23 +1,24 @@
 // web font loader
-if (typeof WebFont === 'object') {
-  WebFont.load({
-    // custom: {
-    //   families: [
-    //     'Spoqa Han Sans',
-    //     'Spoqa Han Sans JP',
-    //     'Arita Buri',
-    //   ],
-    //   urls: [
-    //     'https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.1/css/SpoqaHanSans-kr.min.css',
-    //     // 'https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.1/css/SpoqaHanSans-jp.min.css',
-    //   ],
-    // },
-    google: {
-      families: ['Merriweather:400,300'],
-      text: '1234567890.,~'
-    }
-  });
-}
+// if (typeof WebFont === 'object') {
+//   WebFont.load({
+//     custom: {
+//       families: [
+//         'Spoqa Han Sans',
+//         'Spoqa Han Sans JP',
+//         'Arita Buri',
+//       ],
+//       urls: [
+//         'https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.1/css/SpoqaHanSans-kr.min.css',
+//         // 'https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.1/css/SpoqaHanSans-jp.min.css',
+//       ],
+//     },
+//     google: {
+//       families: ['Merriweather:400,300'],
+//       text: '1234567890.,~'
+//     }
+//   });
+// }
+// if you want to use webFont Loader..
 
 $(function(){
 
@@ -107,5 +108,28 @@ $(function(){
     // console.log(section, type, url);
     fnSendSns(type, url);
   });
+
+  // 
+  // profressor 
+  //
+
+  var qna = 0, $qna = $('#qna'), qnacol = $('#qna div[class*="container"]');
+  $('#qna .btn').click(function(){
+    if(qna++ % 2 === 0) {
+      $('#qna').addClass('active');
+      $('#qna .toggle').removeClass('close');
+    } else {
+      $('#qna').removeClass('active');
+      $('#qna .toggle').addClass('close');
+    } 
+    // 활성화 영역으로 스크롤하기
+    // $qna.find('.toggle').on('transitionend', function(){
+    //   var $parent = $(this).parent();
+    //   if ($parent.hasClass('active')) {
+    //     $('html, body').stop().animate({scrollTop: $parent.offset().top - $('#roof').outerHeight()}, 500);
+    //   }
+    // });
+  });
+
 
 });

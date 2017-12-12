@@ -6,6 +6,7 @@
   @extend %flex-v-center;
   @extend %section-margin;
   @extend %has-bg;
+  padding: rem(220px) 0;
   background: url('../img/contribute/bg-dest.jpg') no-repeat 50% 50%/cover;
   .wrapper {
   	width: rem(740px);
@@ -14,7 +15,7 @@
   		line-height: rem(60px);
   		padding: 0 0 rem(80px);
   	}
-  	.p-lead {
+  	.text {
   		padding:0 0 rem(40px);
   	}
   }

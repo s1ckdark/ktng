@@ -6,6 +6,7 @@
 body {
   min-width: $max-width;
   padding-top: $header-height !important; // gnb.css 가 덮어쓰지 않도록 important 추가
+  overflow-x: hidden;
 }
 
 .viewport {

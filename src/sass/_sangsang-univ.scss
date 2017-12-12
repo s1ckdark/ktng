@@ -31,7 +31,7 @@
           left: 50%;
         }
         .icon-1 {
-          margin: rem(-26.5px) 0 0 rem(-23px);
+          margin: rem(-26.5px) 0 0 rem(-18px);
         }        
         .icon-2 {
           margin: rem(-26px) 0 0 rem(-26px);
@@ -49,8 +49,13 @@
           padding: rem(25px) 0 rem(15px);
         }
         .chart {
+          position:absolute;
           width: rem(271px);
           height: rem(81px);
+          svg {
+            position: absolute;
+            left: rem(-2px);
+          }
         }
       }
     }

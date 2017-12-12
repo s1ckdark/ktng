@@ -5,6 +5,7 @@
 .hero {
   @extend %full-screen;
   @extend %has-bg;
+  position: relative;
   #bg-hero {
     @extend %full-screen;
     @extend %flex-v-center;
@@ -76,35 +77,18 @@
     }
     .heading-2 {
         span {
-          color: $blue;
+          color: #fff;
         }
       }
     }
 
 .intro-scroll {
   position: absolute;
-  top:0;
-  left:0;
+  width: rem(32px);
+  height: rem(26px);
+  left:50%;
+  margin-left: rem(-16px);
   right: 0;
-  bottom: 0;
-  padding-left: 65px;
-  font-size: $font-size-small;
-  transform: translate(100%, .4em);
-  transform-origin: left 80%;
+  bottom: rem(30px);
   z-index:10;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: inline-block;
-    width: 60px;
-    height: 1px;
-    background-color: #fff;
-    animation: scroll 1s infinite ease-out;
-  }
-}
-
-@keyframes scroll {
-  to { width: 0; }
 }

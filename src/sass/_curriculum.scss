@@ -6,6 +6,7 @@
   @extend %flex-v-center;
   @extend %section-margin;
   @extend %has-bg;
+  padding: rem(220px);
   background: url('../img/curriculum/bg-curriculum.jpg') no-repeat 50% 50%/cover;
    .heading-1 {
 		padding: 0 0 rem(80px);

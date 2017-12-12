@@ -170,6 +170,15 @@
     .swiper-container {
       padding: 0 0 rem(30px);
       border-bottom: 1px solid #ccc;
+      position:relative;
+      .slider-label {
+        position:absolute;
+        bottom: rem(-25px);
+        text-align: right;
+        width:100%;
+        color: $text-color-light;
+        font-size: rem(16px);
+      }
       .swiper-pagination {
         position: static;
         text-align: left;
