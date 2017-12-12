@@ -118,6 +118,8 @@ function initScrollMagic() {
     })
     .addTo(controller);
 
+  textTween('#hero .tween', .5, 'twist');
+
   //
   // #intro
   // 
