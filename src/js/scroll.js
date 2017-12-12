@@ -100,18 +100,23 @@ function initScrollMagic() {
     .reverse(true)
     .addTo(controller);
 
-  var arrowTween = new TimelineMax({repeat:-1, yoyo:true});
-  arrowTween.to('.intro-scroll', .5, {y:'=+50'});
+  var arrowTween = new TimelineMax({paused:true});
+  arrowTween.staggerTo('.intro-scroll', 1.5, {opacity:0.3,ease:Quad.easInOut,y:'+30',repeat:-1,delay:-1},0.5);
 
-  // var arrowScene = new ScrollMagic.Scene({
-  //   triggerElement: '#hero', 
-  //   triggerHook: .5
-  // })
-  //   .on('enter', function(){
-  //     arrowTween.play();
-  //   })
-  //   .reverse(true)
-  //   .addTo(controller);
+  new ScrollMagic.Scene(
+    {
+      triggerElement: $('#hero')[0],
+      duration: $('#hero').height(),
+    })
+    .on('enter leave', function(event){  
+      if (event.type === 'enter') {
+        arrowTween.play();
+      } else {
+        arrowTween.pause();
+      }
+
+    })
+    .addTo(controller);
 
   //
   // #intro
