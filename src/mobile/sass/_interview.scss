@@ -108,8 +108,8 @@
     .bg-people {
       background-position: rem(20px) 100%;
       background-repeat: no-repeat;
-      width: rem(406px);
-      height: rem(346px);
+      width: 90vw;
+      height: calc(90vw * 346 / 406);
     }
     #qna {
       > div {

@@ -6,8 +6,8 @@
   @extend %section-margin;
   background: url('../img/more/bg-more.jpg') no-repeat 50% 50%/cover;
   #video-more {
-    width: rem(550px);
-    height: rem(309px);
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
   }
   .heading-3 {
   	text-align: left;
