@@ -101,6 +101,11 @@ function initScrollMagic() {
       } else if(type=='twist') {
         textTween = new SplitText($this, {type:'chars, words'});
         tl.staggerFrom(textTween.chars, 0.6, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:'0% 50% -50',  ease:Back.easeOut}, 0.01, '+=0');
+      } else if(type=='random') {
+        textTween = new SplitText($this, {type:'chars, words'});
+          for(var i = 0; i < textTween.chars.length; i++){
+            tl.from(textTween.chars[i], 2, {opacity:0}, Math.random() * 2);
+          }
       }
       var textScene = new ScrollMagic.Scene({
         triggerElement: $this,
@@ -150,8 +155,8 @@ function initScrollMagic() {
     .addTo(controller);
 
   
-  setTimeout(function(){
-    textTween('#bg-hero .tween', .5, 'twist');
+  window.setTimeout(function(){
+    textTween('#bg-hero .tween', .5, 'random');
   }, 1000);
 
   // var mySplitText = new SplitText("#quote", {type:"chars, words"}),

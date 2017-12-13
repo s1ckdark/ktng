@@ -113,12 +113,24 @@
       width: rem(406px);
       height: rem(346px);
     }
-    #qna {
+    #qna { 
       > div {
         border-bottom: 1px solid #ccc;
         padding: rem(30px) 0 rem(25px);
         .answer {
           line-height: rem(28px);
+        }
+      }
+      .togglebtn {
+        &:after {
+          content:'+더보기';
+        }
+      }
+      &.active {
+        .togglebtn {
+          &:after {
+             content:'닫기';
+          }
         }
       }
       .close {
