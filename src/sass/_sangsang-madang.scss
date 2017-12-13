@@ -4,6 +4,7 @@
 #sangsang-madang {
 	@extend %full-screen;
 	@extend %flex-v-center;
+	height:100%;
 	padding-top: rem(110px);
 	overflow:hidden;
 	.col:nth-child(1) {

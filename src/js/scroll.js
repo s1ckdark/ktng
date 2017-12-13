@@ -20,6 +20,37 @@ $(function(){
 function initScrollMagic() {
   var roofHeight = $('#roof').height();
 
+  // scroll auto play
+  var $videos = $('.video-play');
+  $videos.each(function(){
+    var $this = $(this);
+    var $videos = $this.find('video');
+    new ScrollMagic.Scene({
+      triggerElement: this,
+      duration: $this.height()
+    })
+      .on('enter leave', function(event){
+        var $video = $this;
+        var video = $video.find('video')[0];
+        var timer;
+        var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2;
+        if (event.type === 'enter') {
+          timer = setTimeout(function(){ // enter -> leave 이벤트 연속 발생시 play() 방지
+            if (!isPlaying) {
+              $video.find('.play').click(); // play
+            }
+          }, 600);
+        } else {
+          if (timer) {
+            clearTimeout(timer);
+          }
+          if (isPlaying) {
+            video.pause(); // pause
+          }
+        }
+      })
+      .addTo(controller);
+  });
   function moveTween(e, hook, direction){
     var $e = $(e), sectionTitTween;
     TweenMax.set($e, {perspective:400});
@@ -86,19 +117,19 @@ function initScrollMagic() {
   // hero
   //
 
-  TweenMax.set('#hero-sub .heading-2', {autoAlpha:0, y:+30});
+  // TweenMax.set('#hero-sub .heading-2', {autoAlpha:0, y:+30});
 
-  var heroSubScene = new ScrollMagic.Scene({
-    triggerElement: '#hero-sub', 
-    triggerHook: .6
-  })
-    .on('enter', function(){
-      TweenMax.to('#hero-sub .heading-2', .5, {autoAlpha:1,y:'=+30',onComplete:function(){
-        TweenMax.to('#hero-sub .blue', .5, {color:'#3f8ee7'});
-      }});
-    })
-    .reverse(true)
-    .addTo(controller);
+  // var heroSubScene = new ScrollMagic.Scene({
+  //   triggerElement: '#hero-sub', 
+  //   triggerHook: .7
+  // })
+  //   .on('enter', function(){
+  //     TweenMax.to('#hero-sub .heading-2', .5, {autoAlpha:1,y:'=+30',onComplete:function(){
+  //       TweenMax.to('#hero-sub .blue', .5, {color:'#3f8ee7'});
+  //     }});
+  //   })
+  //   .reverse(true)
+  //   .addTo(controller);
 
   var arrowTween = new TimelineMax({paused:true});
   arrowTween.staggerTo('.intro-scroll', 1.5, {opacity:0.3,ease:Quad.easInOut,y:'+30',repeat:-1,delay:-1},0.5);
@@ -118,8 +149,22 @@ function initScrollMagic() {
     })
     .addTo(controller);
 
-  textTween('#hero .tween', .5, 'twist');
+  
+  setTimeout(function(){
+    textTween('#bg-hero .tween', .5, 'twist');
+  }, 1000);
 
+  // var mySplitText = new SplitText("#quote", {type:"chars, words"}),
+  //   tl = new TimelineLite(),
+  //   numChars = mySplitText.chars.length;
+
+  // for(var i = 0; i < numChars; i++){
+  //   //random value used as position parameter
+  //   tl.from(mySplitText.chars[i], 2, {opacity:0}, Math.random() * 2);
+  // }
+
+  moveTween('#hero-sub .tween', .5, 'up');
+  moveTween('#hero-sub .heading-2', .5, 'up');
   //
   // #intro
   // 
@@ -321,7 +366,7 @@ function initScrollMagic() {
     .addTo(controller);
 
   moveTween('#info .heading-1', .5, 'up');
-  moveTween('#info .text',.6, 'up');
+  moveTween('#info .text',.5, 'up');
 
   //
   // contribute-timeline
@@ -331,6 +376,25 @@ function initScrollMagic() {
   TweenMax.set('.odd .card', {autoAlpha:0, x:50});
   TweenMax.set('.even .card', {autoAlpha:0, x:-50});
 
+  var chartTween = new TimelineMax({paused:true});
+  $('.bar-chart .chart-bar').each(function(){
+    var $this = $(this), data = $this.data('num');
+    TweenMax.set($this, {height:data/6});
+    chartTween.add(TweenMax.from($this, .2, {height:'0px',onComplete:function(){
+      $this.find('b').text(data);
+    }}));
+  });
+
+  var chartScene = new ScrollMagic.Scene({
+    triggerElement: '.bar-chart',
+    triggerHook: .6,
+  })
+    .on('start', function(){
+      chartTween.play();
+    })
+    .reverse(false)
+    .addTo(controller);
+  
   // $('.card').each(function(e){
   //   var $this = this, movePos;
   //   var tl = new TimelineMax({paused:true});

@@ -60,7 +60,9 @@
     .pic-img {
       overflow: hidden;
       position: absolute;
-
+      .lazyload {
+        opacity:0.4;
+      }
     }
   }
 }
@@ -77,7 +79,7 @@
     }
     .heading-2 {
         span {
-          color: #fff;
+          color:#3f8ee7;
         }
       }
     }

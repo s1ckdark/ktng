@@ -44,9 +44,9 @@ $(function(){
   var $elements = $(elements);
   $elements.each(function(i){
 
-    var $this = $(this), picRan = Math.floor(Math.random() * 19), dur = Math.floor(Math.random() * 2);
-    imgTween.add(TweenMax.staggerTo($this.find('.lazyload'), Math.random() * 0.5 + 0.5, {ease: Quad.easeInOut, scale:1.2,opacity:1},Math.random() * 0.5 + 0.5));
-    imgTween.add(TweenMax.staggerTo($this.find('.lazyload'), Math.random() * 0.5 + 0.5, {ease: Quad.easeInOut, delay:1,scale:1,opacity:.5}));
+    var $this = $(this), dur = Math.floor(Math.random() * 2);
+    imgTween.add(TweenMax.staggerTo($this.find('.lazyload'), Math.random() * 0.5+0.2, {ease: Quad.easeInOut, scale:1.2,opacity:1},Math.random() * 0.5 + 0.2));
+    imgTween.add(TweenMax.staggerTo($this.find('.lazyload'), Math.random() * 0.5+0.2, {ease: Quad.easeInOut, delay:1,scale:1,opacity:.4}));
   });
 
   $(window).resize(function(){

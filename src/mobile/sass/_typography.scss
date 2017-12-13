@@ -25,9 +25,12 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.p-lead {
+.p-lead, .text {
   //margin-bottom: .4em;
   font-size: $font-size-lead;
+  &.bold, .bold {
+    font-weight:500;
+  }
 }
 .p-small {
   font-size: $font-size-small;
@@ -40,11 +43,8 @@ body {
 //
 // Headings
 //
-.display-0,
-.display-1,
-.display-2,
-.display-3,
-.display-4,
+.heading-0,
+.sub-heading-0,
 .heading-1,
 .heading-2,
 .heading-3,
@@ -55,57 +55,31 @@ body {
   line-height: $heading-line-height;
   color: $heading-text-color;
   letter-spacing: $heading-letter-spacing;
+  text-align: center;
 }
 
-.display-0 {
-  font-size: $display-0;
+.heading-0 {
+  font-size: $heading-0;
+  @extend .paper;
+  font-weight: 400;
 }
-.display-1 {
-  font-size: $display-1;
+.sub-heading-0 {
+  @extend .paper;
+  font-size: rem(50px); 
 }
-.display-2 {
-  font-size: $display-2;
-}
-.display-3 {
-  font-size: $display-3;
-}
-.display-4 {
-  font-size: $display-4;
-}
-
 .heading-1 {
   font-size: $heading-1;
+  @extend .paper;
 }
 .heading-2 {
   font-size: $heading-2;
 }
 .heading-3 {
   font-size: $heading-3;
+  .blue {
+    color: $blue;
+  }
 }
-.heading-4 {
-  font-size: $heading-4;
-}
-.heading-5 {
-  font-size: $heading-5;
-}
-.heading-6 {
-  font-size: $heading-6;
-}
-
-
-//
-// Lists
-//
-//ol, ul {
-//  padding-left: 2em;
-//}
-//dt {
-//  font-weight: 700;
-//}
-//dd {
-//  margin-left: 2em;
-//}
-
 
 //
 // Quotes
@@ -130,17 +104,11 @@ a {
 //
 // Etc
 //
-.cn {
-  font-family: $font-family-cn;
-  font-weight: 300; // 300이 기본이며, 100을 사용하는 곳이 있음.
-  letter-spacing: normal;
-}
-.num {
-  font-family: $font-family-eng;
-}
-.buri {
-  font-family: $font-family-brand;
-  font-weight: 500;
+
+
+.paper {
+  font-family: $font-family-paper;
+  font-weight: 400;
 }
 b, strong {
   font-weight: $font-weight-b;
@@ -150,4 +118,10 @@ b, strong {
 }
 %white-muted {
   opacity: .7;
+}
+.bold {
+  font-weight:900;
+}
+.bold700 {
+  font-weight:700;
 }

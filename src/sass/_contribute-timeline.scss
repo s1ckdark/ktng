@@ -24,7 +24,6 @@
     .card {
       background: #fff;
       position: relative;
-      padding: rem(30px);
       margin: 0 0 rem(40px);
       &:before, &:after {
         content: '';
@@ -47,11 +46,14 @@
       }
       .header {
         position: relative;
-        padding: 0 0 rem(30px);
+        padding: rem(30px);
+        margin:0 auto;
         .lazyload {
           position: absolute;
-          top:0;left:0;
         }
+      }
+      .descText {
+        padding: rem(30px);
       }
     }
     .odd {
@@ -79,23 +81,88 @@
             padding-top: rem(160px);
             margin-left: rem(180px);
           }
-          .text {
-            padding: rem(30px) 0 0;
-            border-top: 1px solid #efefef;
+          .descText {
+             border-top: 1px solid #efefef;
           }
         }   
         &.t2004 {
-          .header {
-            padding:0;
-          }
-          .lazyload {
+          .bar-chart {
             position: relative;
-            width: rem(467px);
-            height: rem(191px);
-            margin-bottom: rem(30px);
+            width:rem(466px);
+            height: rem(220px);
+            margin:0 auto;
+            .x-axis {
+              position: absolute;
+              width:100%;
+              background-color:#ccc;
+              height:rem(1px);
+              left:0;right:0;
+              bottom:rem(35px);
+            }
+            .unit {
+              position: absolute;
+              top:0;
+              left:0;
+            }
+            .bar {
+              position: absolute;
+              top: rem(50px);
+              left: 50%;
+              width: rem(456px);
+              margin: 0 0 0 rem(-228px);
+              height: rem(135px);
+              .height-fix {
+                background:transparent;
+                height: 135px;
+                width: 1px;
+                margin:0;
+                display:inline-block;
+                position:relative;
+              }
+              .chart-bar {
+                transform-origin: 50% 100%;
+                width: rem(10px);
+                margin: 0 rem(11px);
+                display:inline-block;
+                position:relative;
+                &.color-2004 {
+                  background-color: #81d0ed;
+                }
+                &.color-2008 {
+                  background-color: #75b2eb;
+                }
+                &.color-2011 {
+                  background-color: #6995e9;
+                }
+                &.color-2014 {
+                  background-color: #6283e7;
+                }
+                b {
+                  position: absolute;
+                  color: #6283e7;
+                  font-weight: 200;
+                  width:rem(28px);
+                  left:50%;
+                  margin-left: rem(-14px);
+                  top: rem(-30px);
+                }
+               }
+             }
+            .year-label {
+              position:absolute;
+              bottom:0px;
+              width:100%;
+              * {
+                font-size: rem(16px);
+                color: #666;
+                display: inline;
+              }
+              .y2007, .y2013 {
+                padding:0 rem(58px);
+              }
+            }
           }
-          .text {
-             padding-top: rem(30px);
+          .descText {
              border-top: 1px solid #efefef;
           }
         }
@@ -104,10 +171,10 @@
             width: rem(470px);
             height: rem(240px);
           }
-          .text {
-            padding:0 0 rem(20px);
-            &:nth-child(1) {
-              padding-top: rem(30px);
+          .descText {
+             border-top: 1px solid #efefef;
+            .text {
+              padding: 0 0 rem(20px);
             }
           }
         }  
@@ -139,9 +206,11 @@
               }
             }
           }
-          .text {
-            border-top: 1px solid #ccc;
-            padding-top: rem(30px);
+          .descText {
+             border-top: 1px solid #efefef;
+            .text {
+              padding: 0 0 rem(20px);
+            }
           }
         }
         &.t2007 {
@@ -155,29 +224,35 @@
             text-align: right;
             display:block;
           }
+         .descText {
+           border-top: 1px solid #efefef;
+          }
         }
         &.t2004-1 {
           .lazyload {
             width: rem(470px);
             height: rem(240px);
           }
-          .text {
-            padding:rem(30px) 0 rem(40px);
+          .descText {
+             border-top: 1px solid #efefef;
+            .text {
+              padding: 0 0 rem(20px);
+            }
           }
         }
       }
     }
     .swiper-container {
-      padding: 0 0 rem(30px);
-      border-bottom: 1px solid #ccc;
+      padding:rem(30px);
       position:relative;
       .slider-label {
         position:absolute;
-        bottom: rem(-25px);
+        bottom: rem(-30px);
         text-align: right;
         width:100%;
         color: $text-color-light;
         font-size: rem(16px);
+        font-weight:200;
       }
       .swiper-pagination {
         position: static;

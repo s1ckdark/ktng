@@ -1,0 +1,94 @@
+// 
+// hero
+//
+
+.hero {
+  @extend %full-screen;
+  @extend %has-bg;
+  position: relative;
+  #bg-hero {
+    @extend %full-screen;
+    @extend %flex-v-center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .tween {
+      span {
+        position: relative;
+        &.big {
+          font-size: rem(80px); 
+          font-weight: 500;
+        }
+        &.big2 {
+          font-size: rem(60px);
+          font-weight: 500;
+        }
+        &.up {
+          top: rem(-5px);
+        }
+        &.down {
+          top: rem(5px);
+        }
+        &.num {
+          letter-spacing: rem(-5px);
+        }
+        &.color-1 {
+          color: #e2ebec;
+        }
+        &.color-2 {
+          color: #bbc6ef;
+        }
+      }
+    }
+  }
+  #bg-img {
+    background-color: #000;
+    position:absolute;
+    @extend %full-screen;
+    overflow:hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .lazyload {
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity:0.5;
+    }
+    .pic-img {
+      overflow: hidden;
+      position: absolute;
+
+    }
+  }
+}
+#hero-sub {
+  padding: rem(80px) 0;
+  text-align: center;
+  .intro-text {
+    padding: 0 0 rem(60px);
+    .tween {
+      font-weight:300;
+      color: $text-color-lighter;
+      font-size: $heading-3;
+      }
+    }
+    .heading-2 {
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+.intro-scroll {
+  position: absolute;
+  width: rem(32px);
+  height: rem(26px);
+  left:50%;
+  margin-left: rem(-16px);
+  right: 0;
+  bottom: rem(50px);
+  z-index:10;
+}

@@ -1,0 +1,63 @@
+//
+// sangsang univ
+//
+#sangsang-univ {
+  background-color: $bg-gray;
+  padding: rem(160px) 0;
+  @extend %flex-v-center;
+  .sub-title {
+    background-color: rgb(204, 204, 204);
+    width: rem(466px);
+    height: rem(30px);
+    text-align: center;
+    display:block;
+    margin:0 auto;
+  }
+  .container {
+    .col {
+		padding:rem(30px);
+    position: relative;
+      .icon {
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;;
+        width: rem(170px);
+        height: rem(170px);
+        z-index: 9;
+        position: absolute;
+        > * { 
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+        .icon-1 {
+          margin: rem(-26.5px) 0 0 rem(-18px);
+        }        
+        .icon-2 {
+          margin: rem(-26px) 0 0 rem(-26px);
+        }        
+        .icon-3 {
+          margin: rem(-24px) 0 0 rem(-23px);
+        }        
+        .icon-4 {
+          margin: rem(-26px) 0 0 rem(-26px);
+        }
+      }
+      .descText {
+        margin-left: rem(200px);
+        .bold {
+          padding: rem(25px) 0 rem(15px);
+        }
+        .chart {
+          position:absolute;
+          width: rem(271px);
+          height: rem(81px);
+          svg {
+            position: absolute;
+            left: rem(-2px);
+          }
+        }
+      }
+    }
+  }
+}

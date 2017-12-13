@@ -1,97 +1,73 @@
+//
 // Intro
 //
-//
 
-.s-intro {
-  @extend %full-screen;
-  @extend %dark;
-  padding: 0 rem(30px);
-  background-color: transparent;
+#intro {
+  @extend %flex-v-center;
+  @extend %has-bg;
+  background:url('../img/intro/bg-intro.jpg') no-repeat 50% 50%/cover;
   .wrapper {
-    position: relative;
-    height: 100%;
-    padding: 0;
-    .inner {
-      position: absolute;
-      left: 0;
-      bottom: rem(80px);
-      right: 0;
+    z-index:10;
+    .container {
+      position:relative;
+      padding: rem(185px) 0 rem(182px);
+      .title {
+        display: block;
+        width: rem(360px);
+        padding: 0 0 rem(50px);
+        .heading-1 {
+          text-align: left;
+          line-height: rem(80px);
+        }
+        .heading-0 {
+          text-align: left;
+          position: relative;
+          line-height: rem(60px);
+          &:after {
+            content:'';
+            background: #fff;
+            position: absolute;
+            bottom: rem(10px);
+            left: 100%;
+            width: rem(720px);
+            height: rem(1px);
+            z-index: 10;
+          }
+        }
+      }
+      .col:nth-child(1) {
+        width: rem(550px);
+        margin-right:rem(95px);
+        height:100%;
+        #video-intro {
+          width: rem(550px);
+          height: rem(308px);
+          font-size: rem(-1px);
+        }
+      }
+      .col:nth-child(2) {
+        padding: rem(200px) 0 0;
+        width: rem(475px);
+        height:100%;
+        .text {
+          padding: 0 rem(55px) 0 rem(55px);
+          z-index:11;
+          &.bold {
+            padding-top: rem(30px);
+          }
+        }
+
+        &:after {
+          content:'';
+          position: absolute;
+          width: rem(475px);
+          height: 100%;
+          right: 0;
+          top:0;
+          background: rgba(0,0,0, 0.5);
+          z-index: -1;
+        }
+      }
     }
-  }
-}
-
-.intro-header,
-.intro-text {
-  overflow: hidden;
-  opacity: 0;
-}
-
-.intro-header {
-  border-bottom: 1px solid rgba(255,255,255, .4);
-  .sub-heading {
-    margin-bottom: rem(14px);
-    line-height: $heading-line-height;
-    text-transform: uppercase;
-    @extend %white-muted;
-  }
-  .heading {
-    font-weight: $font-weight-n;
-    margin-bottom: rem(15px);
-    line-height: 1.1666;
-  }
-}
-
-.intro-text {
-  padding-top: rem(10px);
-  font-size: $font-size-medium;
-}
-
-.intro-scroll {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-left: 75px;
-  font-size: $font-size-smaller;
-  transform: translate(100%, .4em) rotate(-90deg);
-  transform-origin: left 80%;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: inline-block;
-    width: 70px;
-    height: 1px;
-    background-color: #fff;
-    animation: scroll .8s infinite ease-out;
-  }
-}
-@keyframes scroll {
-  to { width: 0; }
-}
-
-// intro ~ sales 방판 센션 사이에 바탕에 깔리는 부문
-.s-intro-bg {
-  @extend %full-screen;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  &.fixed {
-    position: fixed;
-    top: $header-height;
-  }
-  > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: center center no-repeat;
-    background-size: cover;
-  }
-  .bg-sales {
-    opacity: 0;
   }
 }

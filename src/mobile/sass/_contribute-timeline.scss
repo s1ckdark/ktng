@@ -1,0 +1,258 @@
+//
+// contribute timeline
+//
+
+#contribute-timeline {
+  @extend %section-margin;
+  background: $bg-gray;
+  .heading-1 {
+    line-height: rem(60px);
+    padding: 0 0 rem(60px);
+  }
+  .timeline {
+     position:relative;
+    .line-wrapper {
+      b {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        background-color: #ccc;
+      }
+    }
+    .card {
+      background: #fff;
+      position: relative;
+      margin: 0 0 rem(80px);
+      z-index:11;
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+      &:before {
+        top: rem(-0px);
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        left: 50%;
+        bottom: 100%;
+        margin: rem(-14px) 0 0 rem(-14px);
+      }
+      &:after {
+        top: rem(-14px);
+        width: rem(20px);
+        height: rem(20px);
+        border-radius: 100%;
+        z-index:11;
+        bottom:: 100%;
+        left: 50%;
+        margin: rem(-20px) 0 0 rem(-10px);
+      }
+      .header {
+        position: relative;
+        padding: rem(30px);
+        margin:0 auto;
+        .lazyload {
+          position: absolute;
+        }
+      }
+      .descText {
+        padding: rem(30px);
+      }
+    }
+      .odd.card {
+        &:before {
+          border-bottom: rem(14px) solid #fff;
+        }
+        &:after {
+          background-color: #1ab7ca;
+        }  
+        &.t1953 {
+          .header {
+            height: rem(221px);
+          }
+          .lazyload {
+            width: rem(166px);
+            height: rem(221px);
+            margin: 0 0 rem(30px);
+          }
+          .desc {
+            padding-top: rem(160px);
+            margin-left: rem(180px);
+          }
+          .descText {
+             border-top: 1px solid #efefef;
+          }
+        }   
+        &.t2004 {
+          .bar-chart {
+            position: relative;
+            width:rem(466px);
+            height: rem(220px);
+            margin:0 auto;
+            .x-axis {
+              position: absolute;
+              width:100%;
+              background-color:#ccc;
+              height:rem(1px);
+              left:0;right:0;
+              bottom:rem(35px);
+            }
+            .unit {
+              position: absolute;
+              top:0;
+              left:0;
+            }
+            .bar {
+              position: absolute;
+              top: rem(50px);
+              left: 50%;
+              width: rem(456px);
+              margin: 0 0 0 rem(-228px);
+              height: rem(135px);
+              .height-fix {
+                background:transparent;
+                height: 135px;
+                width: 1px;
+                margin:0;
+                display:inline-block;
+                position:relative;
+              }
+              .chart-bar {
+                transform-origin: 50% 100%;
+                width: rem(10px);
+                margin: 0 rem(11px);
+                display:inline-block;
+                position:relative;
+                &.color-2004 {
+                  background-color: #81d0ed;
+                }
+                &.color-2008 {
+                  background-color: #75b2eb;
+                }
+                &.color-2011 {
+                  background-color: #6995e9;
+                }
+                &.color-2014 {
+                  background-color: #6283e7;
+                }
+                b {
+                  position: absolute;
+                  color: #6283e7;
+                  font-weight: 200;
+                  width:rem(28px);
+                  left:50%;
+                  margin-left: rem(-14px);
+                  top: rem(-30px);
+                }
+               }
+             }
+            .year-label {
+              position:absolute;
+              bottom:0px;
+              width:100%;
+              * {
+                font-size: rem(16px);
+                color: #666;
+                display: inline;
+              }
+              .y2007, .y2013 {
+                padding:0 rem(58px);
+              }
+            }
+          }
+          .descText {
+             border-top: 1px solid #efefef;
+          }
+        }
+        &.t2013 {
+          .lazyload {
+            width: rem(470px);
+            height: rem(240px);
+          }
+          .descText {
+             border-top: 1px solid #efefef;
+            .text {
+              padding: 0 0 rem(20px);
+            }
+          }
+        }  
+      }
+  
+      .even.card {
+        &:after {
+          background-color: #3f8ee7;
+          }
+        &.t1630 {
+          .header {
+            margin: 0 0 rem(30px);
+            .lazyload {
+              width: rem(222px);
+              height: rem(251px);
+            }
+            .desc {
+              margin-left: rem(240px);
+              .quote {
+                display:block;
+                padding: rem(50px) 0 rem(30px);
+              }
+            }
+          }
+          .descText {
+             border-top: 1px solid #efefef;
+            .text {
+              padding: 0 0 rem(20px);
+            }
+          }
+        }
+        &.t2007 {
+          .lazyload {
+            width: rem(470px);
+            height: rem(240px);
+            position: relative;
+          }
+          label { 
+            width:100%;
+            text-align: right;
+            display:block;
+          }
+         .descText {
+           border-top: 1px solid #efefef;
+          }
+        }
+        &.t2004-1 {
+          .lazyload {
+            width: rem(470px);
+            height: rem(240px);
+          }
+          .descText {
+             border-top: 1px solid #efefef;
+            .text {
+              padding: 0 0 rem(20px);
+            }
+          }
+        }
+      }
+    .swiper-container {
+      padding:rem(30px);
+      position:relative;
+      .slider-label {
+        position:absolute;
+        bottom: rem(-25px);
+        text-align: right;
+        width:100%;
+        color: $text-color-light;
+        font-size: rem(16px);
+        font-weight:200;
+      }
+      .swiper-pagination {
+        position: static;
+        text-align: left;
+      } 
+    }  
+  }
+}

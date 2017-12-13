@@ -52,22 +52,3 @@
     width: 100%;
   }
 }
-
-// Background video
-//
-.has-background-video {
-  overflow: hidden;
-  position: relative;
-}
-video.background-video {
-  z-index: -100;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  background-color: #000;
-}

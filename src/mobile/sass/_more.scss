@@ -1,0 +1,27 @@
+//
+// more
+//
+
+#more {
+  @extend %section-margin;
+  background: url('../img/more/bg-more.jpg') no-repeat 50% 50%/cover;
+  #video-more {
+    width: rem(550px);
+    height: rem(309px);
+  }
+  .heading-3 {
+  	text-align: left;
+  	padding: rem(25px) 0 rem(35px);
+  }
+  .text {
+  	color: $text-color-light;
+  }
+  .btn {
+  	margin:0 0 rem(5px);
+  	height: rem(60px);
+  	border-radius:0;
+    display:block;
+    width:rem(320px);
+  }
+} 
+

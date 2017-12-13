@@ -20,6 +20,7 @@ body {
   padding-right: $wrapper-horizontal-margin;
 }
 
+
 .section {
   background-color: #fff;
 }
@@ -42,12 +43,10 @@ body {
   justify-content: center;
 }
 
-%dark {
-  background: $brand-primary center center no-repeat;
-  background-size: cover;
-  &, * {
+%has-bg {
+  p, .heading-0, .heading-1, .heading-2, .heading-3 {
     color: #ffffff;
-  }
+  } 
 }
 
 // Section
@@ -60,4 +59,4 @@ body {
 %section-margin-lg {
   padding-top:    $vertical-margin-lg;
   padding-bottom: $vertical-margin-lg;
-}
+} 

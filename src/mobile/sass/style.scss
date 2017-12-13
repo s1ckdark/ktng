@@ -11,48 +11,29 @@
 
 @import "typography";
 @import "buttons";
-//@import "grid";
+@import "grid";
 @import "slider";
-@import "tab";
 @import "video";
 @import "utilities";
 
 // 프로젝트 메인 컨텐츠 스타일
 @import 'layout';
 
-// nav
-@import 'nav';
-
-// intro
+// hero
+@import 'hero';
 @import 'intro';
-
-// sales
-@import 'sales-door2door';
-@import 'sales-interview';
-@import 'sales-channels';
-@import 'sales-counselor';
-@import 'sales-history';
-@import 'sales-articles';
-
-// senses
-@import 'senses';
-@import 'sense-top';
-@import 'sense-body';
-@import 'sense-more';
-
-@import 'sense-vision';
-@import 'sense-smell';
-@import 'sense-taste';
-@import 'sense-touch';
-@import 'sense-hearing';
+@import 'interview';
+@import 'localizing';
+@import 'curriculum';
+@import 'sangsang-madang';
+@import 'sangsang-univ';
+@import 'info';
+@import 'contribute-timeline';
+@import 'contribute-destination';
 
 // outro
-@import 'outro';
+@import 'more';
 
 // scroll load animation
 @import 'animation';
 
-// tips.html
-@import 'intro-tips';
-@import 'nav-tips';
-@import 'senses-tips';

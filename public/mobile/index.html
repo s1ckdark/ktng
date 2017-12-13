@@ -34,11 +34,11 @@
       location.replace(location.pathname.replace('mobile/', ''));
     }
   </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/style.css?v=1513093620972">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css?v=1513155813071">
   <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="../js/common.js?v=1513093620972"></script>
+  <script src="../js/common.js?v=1513155813071"></script>
   <!-- Begin GA -->
   <script>
     (function(i, s, o, g, r, a, m) {
@@ -75,19 +75,20 @@
   <!-- Dable 스크립트 종료 / 문의 support@dable.io -->
   <!-- Begin JA Tracker Script -->
   <script type="text/javascript">
-    (function(jaW, jaD, jaS, jaG, jaR, jaA, jaM) {
-      jaW['JaTrackerObject'] = jaR;
-      jaW[jaR] = jaW[jaR] || function() {
-        (jaW[jaR].q = jaW[jaR].q || []).push(arguments);
-      }, jaW[jaR].l = 1 * new Date();
-      jaA = jaD.createElement(jaS),
-        jaM = jaD.getElementsByTagName(jaS)[0];
-      jaA.async = 1;
-      jaA.src = jaG;
-      jaM.parentNode.insertBefore(jaA, jaM);
-    })(window, document, 'script', 'http://jtracker.joins.com/jatracker.min.js?v2', 'jatracker');
-    jatracker('require', 'heightChecker', true);
-    jatracker('require', 'sectionTimer', true);
+    //   (function (jaW, jaD, jaS, jaG, jaR, jaA, jaM) {
+    //     jaW['JaTrackerObject'] = jaR;
+    //     jaW[jaR] = jaW[jaR] || function () {
+    //       (jaW[jaR].q = jaW[jaR].q || []).push(arguments);
+    //     }, jaW[jaR].l = 1 * new Date();
+    //     jaA = jaD.createElement(jaS),
+    //       jaM = jaD.getElementsByTagName(jaS)[0];
+    //     jaA.async = 1;
+    //     jaA.src = jaG;
+    //     jaM.parentNode.insertBefore(jaA, jaM);
+    //   })(window, document, 'script', 'http://jtracker.joins.com/jatracker.min.js?v2', 'jatracker');
+    //   jatracker('require', 'heightChecker', true);
+    //   jatracker('require', 'sectionTimer', true);
+    //
   </script>
   <!-- End JA Tracker Script -->
   <!-- Facebook Pixel Code -->
@@ -182,1418 +183,744 @@
       <!-- //SNS공유모달 -->
     </div>
     <!-- //상단공통 -->
-    <nav id="nav" class="nav">
-      <a href="#nav" class="nav-menu" aria-label="메뉴 보기">
-    <span class="icon-menu"></span>
-    <span class="icon-close"></span>
-  </a>
-      <div class="inner">
-        <a href="#sales">
-      <span class="normal num">1</span>
-      <span class="sub"><span class="cn">訪販</span> 방문판매</span>
-    </a>
-        <a href="#vision">
-      <span class="normal num">2</span>
-      <span class="sub"><span class="cn">視</span> 색을 만나다</span>
-    </a>
-        <a href="#smell">
-      <span class="normal num">3</span>
-      <span class="sub"><span class="cn">嗅</span> 향기를 좇다</span>
-    </a>
-        <a href="#taste">
-      <span class="normal num">4</span>
-      <span class="sub"><span class="cn">味</span> 감성을 마시다</span>
-    </a>
-        <a href="#touch">
-      <span class="normal num">5</span>
-      <span class="sub"><span class="cn">觸</span> 지친 하루를 만지다</span>
-    </a>
-        <a href="#hearing">
-      <span class="normal num">6</span>
-      <span class="sub"><span class="cn">聽</span> 마음을 듣는다</span>
-    </a>
-      </div>
-    </nav>
-    <div class="ja_section_wrap" ja-section-title="Intro">
-      <div id="intro" class="section s-intro">
-        <div class="wrapper">
-          <div class="inner">
-            <header class="intro-header">
-              <div class="tween">
-                <p class="sub-heading buri">A More Beautiful World<br>Asian Beauty Creator</p>
-                <h2 class="heading heading-2">더 아름다운 세상을<br>만드는 사람들</h2>
-              </div>
-            </header>
-            <div class="intro-text">
-              <p class="tween">
-                아름다움은 사람들에게 행복감을 준다.<br> 행복은 세상을 변화시키는 힘이다.<br> 여기 아름다움으로 세상의 변화를<br> 꿈꾸는 사람들이 있다.
-              </p>
-            </div>
-          </div>
-          <div class="intro-scroll">Scroll down</div>
-        </div>
-      </div>
-      <div id="intro-bg" class="section s-intro-bg">
-        <div class="bg-intro" style="background-image:url('./img/intro/bg-intro.jpg');"></div>
-        <div class="bg-sales lazyload" data-src="./img/sales/bg-door2door.jpg"></div>
-      </div>
-    </div>
-    <div class="ja_section_wrap" ja-section-title="방문판매">
-      <div id="sales" class="section s-door2door">
-        <header class="door-header">
-          <h2 class="heading"><span class="cn">訪<br>販</span> <span class="ko">방<br>문<br>판<br>매</span></h2>
-        </header>
-        <div class="door-content">
+    <section id="hero" class="ja_section_wrap" ja-section-title="인트로">
+      <div class="hero">
+        <div id="bg-img"></div>
+        <div id="bg-hero" class="section">
           <div class="wrapper">
-            <h3 class="heading heading-4">방판 “아모레퍼시픽의 초심”</h3>
+            <div class="inner">
+              <header class="hero-main">
+                <div class="tween">
+                  <h2 class="heading-0">
+                    <span class="big">눈</span>&nbsp;<span class="color-1">맞</span><span class="color-1 up">추</span><span class="color-1">고,</span>&nbsp;<span class="big">귀</span>&nbsp;<span class="color-2"><span class="down color-2">기</span>울<span class="up color-2">이</span>다</span>
+                  </h2>
+                  <p class="sub-heading-0"><span class="color-1">한</span><span class="big2 up">류</span>&nbsp;<span class="num">3.0</span>&nbsp;<span class="big down">꽃</span>&nbsp;<span class="color-2">피<span class="up color-2">우</span><span class="color-2">다</span></p>
+                </div>
+              </header>
+            </div>
+          </div>
+        </div>
+        <div class="intro-scroll">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="26px">
+<path opacity="0.5" fill="rgb(255, 255, 255)"
+d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556,1.757 L16.000,17.313 ZM16.000,22.970 L25.899,13.071 L27.314,14.484 L16.000,25.798 L4.686,14.484 L6.100,13.071 L16.000,22.970 Z"/>
+</svg>
+        </div>
+      </div>
+      <div id="hero-sub">
+        <div class="wrapper">
+          <div class="intro-text">
+            <p class="tween">
+              <span class="bold">낯선</span> 나라에서 <span class="bold">낯선</span> 청춘에게<br><span class="bold">낯선</span> 제안을 했습니다.<br> 그리고 <span class="bold">2년이 지났습니다.</span><br> 어떤 일이 벌어졌을까요?
+            </p>
+          </div>
+          <h2 class="heading-2">KT&amp;G의&nbsp;<br><span class="bold blue">글로벌&nbsp;사회공헌</span>&nbsp;이야기
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="intro" class="ja_section_wrap" ja-section-title="아직은 낯선 나라 인도네시아">
+      <div class="wrapper">
+        <div class="title">
+          <h2 class="heading-1">아직은 낯선 나라</h2>
+          <h2 class="heading-0">인도네시아</h2>
+        </div>
+        <div id="video-intro" class="intro-video video-play" style="background:url('./img/video/intro.jpg">
+          <a href="javascript:void(0)" class="play"></a>
+          <video></video>
+        </div>
+        <p class="text">
+          ‘적도의 나라’ 인도네시아는 세계에서 가장 많은 1만7000여 개의 섬으로 이뤄져 있다. 인구가 2억 6000만 명에 이른다. 이 가운데 85% 이상이 이슬 람 신자로 세계 1위다. 그런가 하면 세계 최대의 불 교 유적인 보로부두르사원이 온전히 보존돼 있는 ‘공존의 나라’다. 인구의 3분의 2가 39세 이하인 ‘젊은 나라’이기도 하다. 하지만 우리에게는 아직 낯선 땅이다. </p>
+        <p class='text bold'>
+          하지만 우리에게는 아직 낯선 땅이다.
+        </p>
+      </div>
+    </section>
+    <section id="interview-fighter" class="ja_section_wrap" ja-section-title="수줍음 많던 여대생 NO, 이젠 무에타이 청춘 YES!">
+      <div id="fighter" class="interview section has-bg">
+        <div class="heading-1">
+          <span>수줍음 많던 여대생 <i>NO</i>,</span><br> 무에타이 청춘 <i>YES!</i>
+        </div>
+        <div id="video-fighter" class="interview-video video-play" style="background:url('./img/video/fighter.jpg">
+          <a href="javascript:void(0)" class="play"></a>
+          <video></video>
+        </div>
+        <div class="wrapper">
+          <div class="interview-desc">
             <p class="text">
-              방문판매(이하 방판)의 시작은 1964년 태평양(태평양에서 2006년 현재 사명으로 변경)의 방판 브랜드 ‘아모레’다. 자신을 가꾸는데 익숙하지 않았던 시절, 각종 샘플과 함께 마사지 서비스로 여심을 파고 든 방판 사원은 아모레 아줌마로 불렸다. 아모레퍼시픽 창업자 서성환 선대회장은 1995년 창립 50주년 기념 언론인터뷰에서 “아모레퍼시픽 카운셀러가 태평양 발전의 밑거름이 됐다”고 했다. 지금도 3만 4000명의 카운셀러(96년 변경된 방판사원
-              명칭)가 전국을 누빈다. 지난 4월 서경배 아모레퍼시픽 회장은 “고객 한 사람 한 사람을 대함에 성심성의를 다하는 ‘진심’은 아모레퍼시픽과 아모레퍼시픽 카운셀러가 견지해 온 최고의 가치”라고 했다.
-              <br>
-              <br>
-              <strong class="strong colored">방판은 아름다움과 건강함으로 세상을 변화시킨다는 꿈을 가진 아모레퍼시픽의 초심이기도 하다.</strong>
+              수도 자카르타는 꽉 막힌 차도 사이로 거친 경적음 을 내고 달리는 ‘오토바이 부대’가 인상적인 도시 다. 여대생 구스티아니(25)는 매주 수요일 오후 이 런 교통체증을 뚫고 1시간30분 넘게 걸려 도심의 ‘상상유니브’를 찾는다. 태국 무술인 무에타이를 배우기 위해서다. <span class="bold">이슬람 신자인 그는 히잡을 두 르고 2시간씩 구슬땀을 쏟는다.</span> 구스티는 “소극적 인 성격을 고쳐보려고 무에타이
+              수련을 시작했다. 이제 무에타이는 일상 속 오아시스 같은 존재”라 며 환하게 웃는다.
             </p>
           </div>
         </div>
       </div>
-      <div id="interview" class="section s-interview lazyload" data-src="./img/sales/bg-interview.gif">
-        <div class="inner">
-          <header class="interview-header">
-            <p class="sub-heading"><span>interview</span></p>
-            <h2 class="heading heading-4"><span class="buri">“</span>내 가방은 매직박스<span class="buri">”</span></h2>
-          </header>
-          <div class="interview-body">
-            <p class="who">이정숙 카운셀러</p>
-            <button id="popup-open" class="btn btn-lg btn-white">Play Movie</button>
-          </div>
-        </div>
-      </div>
-      <div id="interview-popup" class="section s-interview-popup">
-        <div class="outer">
+    </section>
+    <section id="localizing" class="ja_section_wrap" ja-section-title="&#34;한국 문화만을 고집하지 않았다&#34;사회공헌도 현지 맞춤형">
+      <div class="content" id="content-1">
+        <div class="wrapper">
+          <h2 class="heading-1">“한국 문화만을 고집하지 않았다”<br>사회공헌도 현지 소통형</h2>
+          <div class="btn btn-circle"></div>
+          <div class="lazyload" data-src="./img/localizing/slide-1.png"></div>
           <div class="inner">
-            <video id="video-interview"></video>
-            <a href="javascript:void(0)" id="popup-close" class="popup-close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 30 30">
-          <path fill="#FFF" fill-rule="evenodd" d="M29.405 1.492l-.896-.898L15 14.102 1.492.594l-.897.898L14.102 15 .595 28.508l.897.898L15 15.896l13.509 13.51.896-.898L15.898 15 29.405 1.492z"/>
-        </svg>
-      </a>
-          </div>
-        </div>
-      </div>
-      <div id="channels" class="section s-channels">
-        <div class="inner">
-          <header class="channels-header">
-            <h2 class="heading heading-4">화장품 판매 채널<br>어떻게 변했나?</h2>
-          </header>
-          <div class="channels-body">
-            <ol id="channels-history-active" class="channels-history-active">
-              <li>
-                <div class="years"><span class="num">1930~60</span>년대</div>
-                <div class="text">보따리, 도매상, 소매상 유통,<br>지정판매소 등</div>
-              </li>
-              <li>
-                <div class="years"><span class="num">1964</span>년</div>
-                <div class="text"><br class="br">방문판매제도 등장</div>
-              </li>
-              <li>
-                <div class="years"><span class="num">1980~90</span>년대</div>
-                <div class="text">전문점 판매/백화점 및<br>면세점 입점</div>
-              </li>
-              <li>
-                <div class="years"><span class="num">2000</span>년대</div>
-                <div class="text"><br class="br">브랜드숍 전성시대</div>
-              </li>
-              <li>
-                <div class="years"><span class="num">2010</span>년대</div>
-                <div class="text">드럭스토어 및<br>플래그십스토어</div>
-              </li>
-            </ol>
-            <div class="channels-nav"></div>
-            <ol id="channels-history" class="channels-history">
-              <li>방문판매제도 등장</li>
-              <li>전문점 판매/백화점 및 면세점 입점</li>
-              <li>브랜드숍 전성시대</li>
-              <li>드럭스토어 및 플래그십스토어</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="section s-counselor lazyload" data-src="./img/sales/bg-counselor.jpg">
-        <header class="counselor-header">
-          <p class="sub-heading">아모레퍼시픽 키운</p>
-          <h2 class="heading heading-4">카운셀러의 힘</h2>
-        </header>
-        <div class="counselor-body">
-          <p class="date">(2017년 6월 기준)</p>
-          <ul class="counselor-stats">
-            <li class="item">
-              <div class="number"><span class="num">3</span>만 <span class="num">4710</span>명</div>
-              <div class="name">전국 카운셀러 수</div>
-            </li>
-            <li class="item">
-              <div class="number">약 <span class="num">1</span>조 <span class="num">6000</span>억원</div>
-              <div class="name">카운셀러 매출(2016년)</div>
-            </li>
-            <li class="item">
-              <div class="number">약 <span class="num">250</span>만명</div>
-              <div class="name">고객 수</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="history" class="section s-history">
-        <div id="history-slider" class="history-slider owl-carousel">
-          <div class="item">
-            <div class="year num">1964</div>
-            <div class="sales"><span class="num">2</span>억 <span class="num">8,800</span>만원</div>
-            <div class="text">방판 도입 첫 해</div>
-          </div>
-          <div class="item">
-            <div class="year num">1968</div>
-            <div class="sales"><span class="num">14</span>억 <span class="num">2,800</span>만원</div>
-            <div class="text">출범 <span class="num">5</span>년 만에 매출 <span class="num">10</span>억 원 돌파</div>
-          </div>
-          <div class="item">
-            <div class="year num">1996</div>
-            <div class="sales"><span class="num">1,332</span>억원</div>
-            <div class="text">‘카운셀러’ 명칭 도입</div>
-          </div>
-          <div class="item">
-            <div class="year num">2002</div>
-            <div class="sales">그룹 매출 <span class="num">1</span>조원 돌파</div>
-          </div>
-          <div class="item">
-            <div class="year num">2015</div>
-            <div class="sales">뷰티Q 론칭</div>
-            <div class="text">모바일 뷰티앱으로 <br>세일즈 역량 및 전문성 강화</div>
-          </div>
-          <div class="item">
-            <div class="year num">2016</div>
-            <div class="sales"><span class="small">카운셀러 매출</span> 약 <span class="num">1</span>조 <span class="num">6</span>천억원</div>
-            <div class="text">아모레퍼시픽 국내 화장품 <br>전경로에서 방판 매출비중은 <span class="num">17.6%</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="section s-articles" style="background-image: url('./img/sales/bg-articles.jpg');">
-        <div class="article">
-          <p class="heading">고객과 소통 위한 모바일 앱 '뷰티Q'</p>
-          <a href="http://news.joins.com/article/21609406" target="_blank" class="link"><span>기사 더보기</span></a>
-        </div>
-      </div>
-    </div>
-    <div class="ja_section_wrap" ja-section-title="오감">
-      <div id="senses" class="section s-5senses lazyload ja_section_wrap" data-src="./img/senses/bg-senses.gif" ja-section-title="오감">
-        <div class="inner animation-init">
-          <h2 class="heading heading-3"><span class="cn">五感</span> <span class="ko">오감</span></h2>
-          <p class="p-lead">아름다움을 위한 혁신</p>
-        </div>
-      </div>
-    </div>
-    <div id="vision" class="hash-section ja_section_wrap" ja-section-title="시각">
-      <div class="section s-sense-top">
-        <header class="sense-top-header">
-          <h2 class="heading"><span class="cn">視</span> <span class="ko">볼 시</span></h2>
-          <p class="sub-heading"><span>색<br>을</span> <span>만<br>나<br>다</span></p>
-        </header>
-        <div class="sense-top-video animation-init">
-          <div class="video-play">
-            <video id="video-vision"></video>
-            <a href="javascript:void(0)" class="play" aria-label="play movie">
-              <div class="poster lazyload" data-src="../img/senses/poster-vision.jpg"></div>
-            </a>
-          </div>
-        </div>
-        <div class="sense-top-footer animation-init layout-left">
-          <div class="sense-top-summary">
-            <p class="num">01</p>
-            <p class="text animation-init">
-              “수분,<br> 자외선 관리는 기본.<br> 피부에 어울리는<br> 색상 찾기가 포인트”
+            <p class="text">
+              구스티에게 무에타이를 가르치는 강사는 에기 로 트젠이다. 경력 7년, 43승 11패의 기록을 가진 현 역 프로 선수다. 대학생의 자기계발을 지원하기 위해 일류 강사를 섭외했다. 이 강좌는 한국 기업 인 KT&amp;G가 운영한다.</p>
+            <p class="text">
+              국내 기업들은 중국·동남아·아프리카 등에서 다 양한 사회공헌 프로젝트를 전개하고 있다. 대부분 은 집짓기, 우물파기 같은 인프라 개선 활동이다. <span class="bold">그런데 KT&amp;G는 왜 자카르타 한복판에서 태국 전 통의 격투기 클래스를 열었을까.</span> 이 회사는 2014년부터 글로벌 사회공헌에 본격 나섰다. 전체 판 매량의 50% 이상을 해외에서 올리는 만큼 현지에 서 사회적 책임을 다하자는
+              뜻에서다. 내부 논의 를 통해 <span class="bold">현지인의 ‘생활 속으로’ 스며드는 프로그 램을 만든다, 청춘의 고민을 공유한다는 데 초점 을 맞췄다.</span> 굳이 한국 문화와 접목을 고집하지 않 았다.
+            </p>
+            <p class="text">
+              그런데 <span class="bold">KT&amp;G는 왜 자카르타 한복판에서 태국 전통의 격투기인 무에타이 클래스를 열었을까.</span><br> KT&amp;G는 2014년부터 본격적으로 글로벌 사회공헌에 나섰다. 전체 판매량의 50% 이상을 해외에서 올리는 <br> 만큼 현지에서 사회적 책임을 다하자는 뜻에서다. 내부 논의를 통해 <span class="bold">현지인의 ‘생활 속으로’ 스며드는</span><br>              <span class="bold">프로그램을 만든다, 청춘의 고민을 공유하고 해결한다는 데 초점을 맞췄다.</span><br> 굳이 한국 문화와 접목을 고집하지 않은 것이다.
             </p>
           </div>
-          <div class="sense-top-quote-wrapper">
-            <blockquote class="sense-top-quote animation-init">
-              <div class="inner">
-                <p class="text">
-                  레드와 버건디<br>믹스 메이크업,<br>
-                  <strong class="colored">올 가을</strong><br>
-                  <strong class="colored">컬러 트렌드</strong>
-                </p>
-                <p class="from"><b class="name">이진수</b> 헤라 수석 아티스트</p>
-              </div>
-            </blockquote>
-            <nav class="section-sns">
-              <a href="javascript:void(0)" class="share" aria-label="공유하기"></a>
-              <div class="section-sns-list">
-                <a href="javascript:void(0)" class="kakaotalk" aria-label="kakaotalk 공유하기"></a>
-                <a href="javascript:void(0)" class="facebook" aria-label="facebook 공유하기"></a>
-                <a href="javascript:void(0)" class="twitter" aria-label="twitter 공유하기"></a>
-                <a href="javascript:void(0)" class="kakaostory" aria-label="kakaostory 공유하기"></a>
-              </div>
-            </nav>
+        </div>
+      </div>
+      <div class="content" id="content-2">
+        <div class="wrapper">
+          <h2 class="heading-1">인도네시아 최초의<br>대학생 맞춤형 강좌를 열다</h2>
+          <div class="btn btn-circle"></div>
+          <div class="lazyload" data-src="./img/localizing/slide-2.png"></div>
+          <div class="inner">
+            <p class="text">
+              2015년 여름 KT&amp;G는 자카르타 도심에 있는 대 형 홀을 임대해 ‘상상유니브’를 오픈했다. 한편 으론 수십 명의 대학생을 인터뷰해 ‘지금 당장 배우고 싶은 게 무엇인지’ 물었다. <span class="bold">그리고 이들 의 목소리를 반영하는 소통형·맞춤형 커리큘럼 을 만들었다. 인도네시아에서 대학생 대상으로 열린 최초의 교양·역량 개발 프로그램이다.</span> 연 5~6%씩 성장하면서 동남아의 경제 대국으로
+              떠올랐지만 대학생들의 교외 활동을 지원하는 시스템은 턱없이 부족하다. KT&amp;G의 상상유니 브는 이런 현실에서 시작한 것이다.
+            </p>
           </div>
         </div>
       </div>
-      <div class="section s-sense-body vision lazyload" data-src="./img/senses/bg-vision.jpg">
-        <div class="inner">
-          <div class="sense-slider-header">
-            <h3 class="heading"><span class="num"></span> 색조 화장품, 비중 늘어난다</h3>
-            <h3 class="heading"><span class="num"></span> 올해 유행 컬러는 그리너리, 내년엔</h3>
-            <h3 class="heading"><span class="num"></span> 꿀팁! 색조 화장품, 이렇게 고르면 실패 확률 줄인다</h3>
+      <div class="content" id="content-3">
+        <div class="wrapper">
+          <h2 class="heading-1">불과 2년 만에<br>수강생 2000명으로 </h2>
+          <div class="btn btn-circle"></div>
+          <div class="lazyload" data-src="./img/localizing/slide-3.png"></div>
+          <div class="inner">
+            <p class="text">
+              2015년 9월 136명의 학생들이 호기심 반, 기대 반으로 상상유니브의 문을 두드렸다. 지난해엔 402명으로 늘었다. 올해는 여기서 한 걸음 더 들 어갔다.
+            </p>
+            <p class="quote">“더욱 다양한 커리큘럼을 직접 제안해 달라. 그리고 마음껏 배워라.”</p>
+            <p class="text">
+              클래스는 댄스·보컬·무에타이·메이크업·캘리 그라피·사진·요리 등 12개로 늘어났다. 트리삭 티대·나시오날대 등에도 강의실이 생겼다. 상상유니브의 운영 취지에 공감한 대학들이 전 용 공간을 제공한 것이다. 상상유니브 수강생은 올해 2000명을 넘을 것으로 예상된다
+            </p>
           </div>
-          <div class="sense-slider">
-            <div class="box padding">
-              <h4 class="box-heading">색조 vs 기초 비중</h4>
-              <div class="graph-color-cosmetic"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249" height="284" viewBox="0 0 249 284">
-  <defs>
-    <clipPath id="cosmetics-a">
-      <rect x="1.55" y="31.48" width="242.5" height="200.92" style="fill: none"/>
-    </clipPath>
+        </div>
+      </div>
+    </section>
+    <section id="interview-dancer" class="ja_section_wrap" ja-section-title="스물한 살 학생, 열여덟 살 선생님">
+      <div id="dancer" class="interview section has-bg">
+        <div class="heading-1">
+          <span>스물한 살</span> 학생,<br>
+          <span>열여덟 살</span> 선생님
+        </div>
+        <div id="video-dancer" class="interview-video video-play" style="background:url('./img/video/dancer.jpg">
+          <a href="javascript:void(0)" class="play"></a>
+          <video></video>
+        </div>
+        <div class="wrapper">
+          <div class="interview-desc">
+            <p class="text">
+              올해 21살인 무띠아라는 댄스 클래스에 등록했다. K팝 리듬에 맞춰 ‘칼군무’를 연습할 때가 가장 신 난다. <span class="bold">마지막 버스가 끊기는 밤 10시가 넘도록 연 습을 한 적도 여러 번이다.</span> 그는 자신보다 나이가 어린 ‘선생님’ 나디아(18)와 함께 댄스 공연을 하는 게 꿈이다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="interview-barista" class="ja_section_wrap" ja-section-title="시골 청년 프란스의 인생 전환점">
+      <div id="barista" class="interview section has-bg">
+        <div class="heading-1">
+          <span>시골 청년 프란스의</span><br> 인생 전환점
+        </div>
+        <div id="video-dancer" class="interview-video video-play" style="background:url('./img/video/baristar.jpg">
+          <a href="javascript:void(0)" class="play"></a>
+          <video></video>
+        </div>
+        <div class="wrapper">
+          <div class="interview-desc">
+            <p class="text">
+              아예 인생 항로를 바꾼 청춘도 있다. 프란스스커스(26)는 지금 상상유니브에서 근무하 고 있다. 2015년 바리스타 클래스를 마치면서 커 피 전문가가 되겠다는 꿈을 싹틔웠고, 그의 열정을 높이 산 회사 측이 스태프로 발탁했다. 프란스는 <span class="bold">“상상유니브는 나의 인생이 긍정적으로 바뀌는 전환점이었다”</span>고 말한다. 상상유니브 자카르타 사무국의 박세원씨는 “프란스는 보기 드문 성실파 청년이다.
+              그의 꿈이 실현될 것이라고 믿는다”며 엄지손가락을 치켜세운다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sangsang-univ" class="ja_section_wrap" ja-section-title="상상유니브 자카르타는">
+      <div class="wrapper">
+        <div class="heading-1">상상유니브 자카르타는</div>
+        <div class="sub-title">SangSangUniv. Jakarta</div>
+        <div class="iconbox">
+          <div class="icon">
+            <div class="icon-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="52" viewBox="0 0 36 52">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="36" height="52" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA0CAMAAADVCGoxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB9VBMVEU/juf///8/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/jucAAABo+fsVAAAApXRSTlMAAAcdLTg+PSwbBRBuyv78wGMMhvPsdkbj2qeFdIetOQF+5HsgKoj7l3MGhPmMziPZW7gKEcdQxA/Q7her6BgIg4EJHqQxUm9dphT0X8ih90WA50xX4QLwcAPmVJiUxg7RkGta6i5qL+n9FWjM+Bl4XsKemk0EZ3VWZWaZJWnyKPGc2KWyRNMc1ENti7q00lUm1d7DJDb6uarBrJOJoNZLIa6jfDrCuqIwAAAAAWJLR0Smt7AblQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+EMCwkzK1Q7r3gAAALSSURBVDjLfZT7QwxRFMdP2wM916gQMVGkiLRoIynyymuUtVuirdCWCrVRSrEleUTkTULf/9OZmZ2ZO7vTnh9253zvZ+6cc889h0g0V3JKatqa1LXr0k0piU0gMjKzshG1HPd6yQGSNuTCZnn5rlho4yZtZXPBlq35hduiznYbJBepH9qxs9h4p2RXHgu7MwVILmUld0+ZmINUvpfFQgvax27FfoqxlAMsFxlQJTsHqyjOPId44bAOJXNaRxwYomovUHNUg44BtcfNhboT9Q2mc7IGOKVCjbznaevtQuCM5Z3lxRKGzgFuSz3fBFywXPkicCmJqi8DVyxVAa7WCWE1A00StQDXfFb9rgN+MfZAK9BGN4B2+0YNIqSv3wRaTOUWb9QRDAY7A6bUxedD3cBtU+k0rsAdU7oL9FAI6E0E9fLlIlYyrDD7FEW5x3dJslJhgPqBAVukEl+SQcsdAPqpFmi0QYO2jdSYasltO+G4jeg+8ICCwEMR6rRvRENAkIaB7rAgjgCPxBPnIxomF1f0saiOjgUEt41rxyV4wlfXR6uYXAEM8VUZ50aZWA3qA7LHk/TQnk7qWnhihL+Vrv2qNjkFPNOur4dje66XZgKIBMqmgTG9JNwvPR69W2a4fi8GoqkhwgxGVW/2JRCaMfouk+XWOTW1iF7fiPq5Ob5veGW1OZcCoSLZoFRGLlc7f1AcGF18Wnit7vUGeKvu085CU6V9qkzOs9jMD1wmhf/eset9TzHzqSoLWJANyPcB+Kh1tX3SLeYAnwwoDfg8S/EQfQG++v3feHj4/d+BaXKCftjH4U9HKGiHlNUg76+oLSWAlPjnGKiej9p4LuBB6AjxAAmV+jUr5ZL8doTC82LcHWFHiJaXLGZpmZwhcv3REmT2rznT46BoUmKaDpCiJcip/UsAaQkKqTlCAa8etteXAKJiLcGFYkoEkW9xZWVRbGgV+g93X15pkry8VwAAAABJRU5ErkJggg=="/>
+</svg>
+            </div>
+            <div class="bold">콘셉트</div>
+          </div>
+          <div class="descText">
+            <p class="text">
+              인도네시아 대학생의자기계발 활동 지원<br> 현지 조사 통해 수요 맞춘 커리큘럼 개발
+            </p>
+          </div>
+        </div>
+        <div class="iconbox">
+          <div class="icon">
+            <div class="icon-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="52" height="52" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEU/juf///8/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/juc/jucAAAAPwrXKAAAASHRSTlMAABU8PzkLAee1ENC4oMpAcCg0HAoEDQeCOMTl90avOm9s8xQ+Hkws0x/9gBvOYPBp3BemeZUM30E7qVvvMZ1QTu5nNdS0MwI/ZfbPAAAAAWJLR0RJhwXkfAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+EMBwoqCsvCF98AAAGuSURBVEjH3ZZpU8IwEEBXLSCJJUFAEURuD8SjogLihQfk//8i07QU0iah4DDj+L40yeR1O7s5ChCwvWPpSCSDWVucuZPaZXrSGgkZHIYN0p6tImOWCKigm5GyhGR5hxD3BfuE5OJINmM2AOEdPoYZo39LyiOUBygghPjYAUKHG8veWlIR4yLPNcbuvKMSf+IyY8d4TjoZkaRElJQLMbE0ewqsiFShtAKQo5R60gmVyagkCa9OEvZGpWpNfFk9u4JUnWWg0Ywv1YK8tWZSm3ic8kHqt88kiYringclseCioyrFpXC65YVVjhaklrJ+V65zfcNbtyrJ0h1Z3bTbcO40Ug/J3LuTRBj28Oitcp8FyY5uhb4I0x+Ifj2QhkaJBWE42YY/4OQlyd8/TxiPZpIfxqXZEoUY5kGSwgfJPEwYg/Q8AFgq+ftnROlL6EzgpOreRfD6BsZESNL7LHmddnxJVyfj5/H+2LZ7EUl/DINmGa0rhYsblhxvv5HfJ8IofQTSZ3xp+8t3vgvxJXFPIXFvrSKp196/k5zoD9TY1uHozz0jFkxWlyYwnVgrMpn+AGpe9DlIZXNiAAAAAElFTkSuQmCC"/>
+</svg>
+            </div>
+            <div class="bold">수강 대상 및 강의 공간</div>
+          </div>
+          <div class="descText">
+            <p class="text">
+              인도네시아 대학생<br> 자카르타 트리삭티대학 등 3곳
+            </p>
+          </div>
+        </div>
+        <div class="iconbox">
+          <div class="icon">
+            <div class="icon-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="44" viewBox="0 0 46 44">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Vector_Smart_Object1" data-name="Vector Smart Object1" width="46" height="44" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAsCAMAAAAtr3oOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA4VBMVEUAAAAat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oAAADvk4YAAAAASXRSTlMARfDfIR6pd2ywgHAWdpDdyMEXK+rAv/6kIKFtZKImvagODKZYQOTgFBAZC6Cy+EaX8T0KCARup48G9ojtfVAqfGhD6OlyAXR4wiyXtAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAsJNApXEynhAAABDklEQVRIx92Ua0/CMBiFX0CBTrnJEKoCKuNSB+INFW8oKnD+/x9iGjOKa5fORLP4fGlO8rTpe5qUSCaRTG3IeTOVTJCeNJCRcxZIh+gMsOS8BbBvynYu71MAinmJElBYpdwOUdmGMXaZKuY2sEtVoGZ2mRpQJW8P9+fYA/bluQ6Auh+4p67rjebhkawft5qNED2U/6A7bSOcLz0CP9A7XSM6cSzyL/Qe58JbTngAV6X3P3+BgaLs06FOd5WPc6Y9va6wzy8U+qUQV97iigCj2Pd+zZhDNLxhAW6FrpnxnarIe50+elDpjwr9ybLaRJNnK8DLOO5F/pY+5UZMP/TXKL/SG71H0TM0mxufby9mS3yA4QjpktG/AAAAAElFTkSuQmCC"/>
+</svg>
+            </div>
+            <div class="bold">커리큘럼</div>
+          </div>
+          <div class="descText">
+            <p class="text">
+              바리스타, 요리, 댄스, 메이크업, 사진,<br> 캘리그라피, 무에타이, 피규어 등 12개
+            </p>
+          </div>
+        </div>
+        <div class="iconbox">
+          <div class="icon">
+            <div class="icon-4"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="52" height="52" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABIFBMVEUAAAAat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oat8oAAAAD8ighAAAAXnRSTlMADCs7B5P8BbuA9bQJ880ZRydIaODfXO8CL2Fg0fl0GkD9+jK1+w4uC4GgnVA8kW0DH2OlYgjyn9wwpuUxSSTkAUpk5mZ8yiO3fpeymLDJFxgUHSgE7jO2P7jGOj41GJrtXwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAcKKgVbfQpOAAACOUlEQVRIx7WVaVsTMRDHw01LAZFruVsKxQZaqhVU0Jb7VhFLueT//T+Gk82x3bA+O7xwXmwmk/ntZjPzfyIEz7q6e3q6u5jJ2nr7+kHW39fLZwYGYWxwgA1lKD07NJSlIcNlcsPAyKgQoyPAcI4JvaEvjClnjJy3TGgcmNDeJDDOhKaA6UA5wTQwxYRmaFezypkjZ4Z7EvPAwuLS0uICMM9lRL5g61TIsyExt6yZ5Vk+I0RxZRVYXSm+hiErra2VXon8D3tXltbWN3SoUpVysyZEbVPKaiUJKiOywnsV+RD69VqtHjofEyDZASFPga1t7dc/6XF7KxH6rHdnoC807uxqYHeHHl8TIak9A30jmQeNpmKajT0q1z4DOgAOhVBUsyEEffKIAR0DJzScnp2d0nACnDOgC+AyWr4ErhjQ91jaVewV/4R+xDZ0rjebBjVjv34UHksa5B3yPhVgLxX6SUOHjIo0zaVCqiGuo+Vrmv5KhcKGiJYDugluUqED788Pgd+i5enHh6ghbmXVvPymKm9Vx7Y9/fjQRbhyp0N34aQi7j39+FAmXDA7DHsdbQXF9ONDJP8HexaqZg+y3FJQLOlFR3ScuqsZA3K5jmZArpNczRiQ61lXMw5k1XFsdcGBrA6diDmQTXYi5kB2W07EHMgegBMxBzJHHYmYA5miRiLmQCY7EnFCw8YvANeoUeMmSSN+1Sh7tIFHPfdF+PJSI3vK6kD2Sc+D9r21Pyqn5c21lZ5V4Nnc738BqvcwDlO3IOIAAAAASUVORK5CYII="/>
+</svg>
+            </div>
+            <div class="bold">수강 인원</div>
+          </div>
+          <div class="descText">
+            <div class="lazyload chart" data-src="./img/sangsang-univ/chart.png"><svg id="그래프" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="81" viewBox="0 0 272 81">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2, .cls-6 {
+        fill: #607ee7;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-3, .cls-8 {
+        fill: #60a3e7;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #8fd2eb;
+      }
+
+      .cls-5, .cls-7, .cls-8 {
+        font-size: 16px;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8 {
+        font-family: "NotoSansKR";
+      }
+
+      .cls-5 {
+        font-weight: 300;
+      }
+
+      .cls-6 {
+        font-size: 18px;
+      }
+
+      .cls-6, .cls-7, .cls-8 {
+        font-weight: 700;
+      }
+    </style>
+    <filter id="filter" x="1016.91" y="6068.06" width="151.43" height="45.94" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="1016.91" y="6068.06" width="151.43" height="45.94" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUxLjQzIiBoZWlnaHQ9IjQ1Ljk0IiB2aWV3Qm94PSIwIDAgMTUxLjQzIDQ1Ljk0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjE1MS40MyIgeTE9IjIyLjk3IiB4Mj0iMCIgeTI9IjIyLjk3IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzYwN2VlNyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuOTkiIHN0b3AtY29sb3I9IiM4MWQwZWQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODFkMGVkIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIxNTEuNDMiIGhlaWdodD0iNDUuOTQiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
   </defs>
-  <path d="M2.25,34.43H30.81V210.94H2.25Zm-.7,177.21h30V33.73h-30Z" style="fill: #062c5e"/>
-  <path d="M76.59,210.94H48V34.43H76.59Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
-  <path d="M120.93,210.94H92.37V34.43h28.55Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
-  <path d="M166.46,210.94H137.9V34.43h28.55Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
-  <path d="M211.59,210.94H183V34.43h28.55Zm.7-177.21h-30V211.64h30Z" style="fill: #062c5e"/>
-  <g style="clip-path: url(#cosmetics-a)">
-    <line x1="1.55" y1="74.97" x2="31.51" y2="74.97" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
-  </g>
-  <line x1="47.34" y1="80.06" x2="77.29" y2="80.06" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
-  <line x1="91.67" y1="80.06" x2="121.62" y2="80.06" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
-  <line x1="137.2" y1="82.05" x2="167.16" y2="82.05" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
-  <line x1="182.34" y1="85.65" x2="212.29" y2="85.65" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
-  <g style="clip-path: url(#a)">
-    <line x1="1.55" y1="33.73" x2="31.51" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
-    <line x1="47.34" y1="33.73" x2="77.29" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
-    <line x1="91.67" y1="33.73" x2="121.62" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
-    <line x1="137.2" y1="33.73" x2="167.16" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
-    <line x1="182.34" y1="33.73" x2="212.29" y2="33.73" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
-  </g>
-  <text transform="translate(5.33 88.04) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.025035511363636364em">7<tspan x="6.28" y="0" style="letter-spacing: -0.024014559659090908em">6</tspan><tspan x="12.57" y="0" style="letter-spacing: -0.024991122159090908em">.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">8</tspan></text>
-  <text transform="translate(5.33 47.46) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.025035511363636364em">2</tspan><tspan x="6.28" y="0" style="letter-spacing: -0.024014559659090908em">3.</tspan><tspan x="15.88" y="0">2</tspan></text>
-  <text transform="translate(51.07 92.65) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.025035511363636364em">74<tspan x="12.56" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">1</tspan></text>
-  <text transform="translate(51.26 47.46) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700;letter-spacing: -0.025035511363636364em">25<tspan x="12.56" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.87" y="0" style="letter-spacing: -0.00004438920454545455em">9</tspan></text>
-  <text transform="translate(95.8 92.65) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.025035511363636364em">73.</tspan><tspan x="15.34" y="0">5</tspan></text>
-  <text transform="translate(95.8 47.28) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700;letter-spacing: -0.025035511363636364em">26<tspan x="12.56" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.87" y="0" style="letter-spacing: -0.00004438920454545455em">5</tspan></text>
-  <text transform="translate(141.13 95.05) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">7<tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">2.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">9</tspan></text>
-  <text transform="translate(141.13 47.28) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.024014559659090908em">2</tspan><tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">7</tspan><tspan x="12.57" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.88" y="0">1</tspan></text>
-  <text transform="translate(186.61 98.64) scale(1 1.03)" style="font-size: 11px;fill: #004f8c;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">7<tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">1.</tspan><tspan x="15.36" y="0" style="letter-spacing: -0.00004438920454545455em">2</tspan></text>
-  <g style="clip-path: url(#a)">
-    <text transform="translate(2.64 227.13) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">20</tspan><tspan x="13.73" y="0" style="letter-spacing: -0.0250244140625em">1</tspan><tspan x="20.58" y="0">2</tspan></text>
-    <text transform="translate(48.38 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024983723958333332em">20</tspan><tspan x="13.7" y="0" style="letter-spacing: -0.023966471354166668em">1</tspan><tspan x="20.57" y="0">3</tspan></text>
-    <text transform="translate(92.91 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024983723958333332em">201</tspan><tspan x="20.56" y="0">4</tspan></text>
-    <text transform="translate(138.14 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">2</tspan><tspan x="6.86" y="0" style="letter-spacing: -0.024983723958333332em">0</tspan><tspan x="13.72" y="0" style="letter-spacing: -0.024007161458333332em">1</tspan><tspan x="20.58" y="0">5</tspan></text>
-    <text transform="translate(183.43 226.95) scale(1 1.03)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">2</tspan><tspan x="6.86" y="0" style="letter-spacing: -0.024983723958333332em">0</tspan><tspan x="13.72" y="0" style="letter-spacing: -0.024007161458333332em">1</tspan><tspan x="20.58" y="0">6</tspan></text>
-  </g>
-  <text transform="translate(186.62 47.27) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.024014559659090908em">2</tspan><tspan x="6.29" y="0" style="letter-spacing: -0.025035511363636364em">8</tspan><tspan x="12.57" y="0" style="letter-spacing: -0.024014559659090908em">.</tspan><tspan x="15.88" y="0">8</tspan></text>
-  <text transform="translate(219.84 40.86) scale(1 1.03)" style="font-size: 11px;fill: #999;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024014559659090908em">100</tspan><tspan x="18.88" y="0">%</tspan></text>
-  <text transform="translate(219.84 212.04) scale(1 1.03)" style="font-size: 11px;fill: #999;font-family: 'Spoqa Han Sans'">0</text>
-  <text transform="translate(62.32 11.04) scale(0.97 1)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans';letter-spacing: -0.025001343152819943em">기초</text>
-  <text transform="translate(1.55 11.04) scale(0.97 1)" style="font-size: 12px;fill: #444344;font-family: 'Spoqa Han Sans';letter-spacing: -0.025001343152819943em">색조</text>
-  <line x1="28.67" y1="6.95" x2="49.96" y2="6.95" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;stroke-width: 4px"/>
-  <line x1="88.74" y1="6.95" x2="110.02" y2="6.95" style="fill: none;stroke: #004f8c;stroke-miterlimit: 10;stroke-width: 4px"/>
-  <text transform="translate(0.16 259.47) scale(0.97 1)" style="font-size: 12px;fill: #999;font-family: 'Spoqa Han Sans';letter-spacing: -0.025001343152819943em">자료: 칸타월드채널 (국내 소비자 기준)<tspan x="0" y="17.46">메리츠종금증권 리서치센터</tspan></text>
+  <path class="cls-1" d="M1017.11,6113.99l-0.22-1.98,73-8,0.22,1.98Zm74.24-9.06-0.7-1.87,77-35,0.7,1.87Z" transform="translate(-1001 -6058)"/>
+  <circle class="cls-2" cx="168" cy="11" r="6"/>
+  <circle id="Ellipse_5_copy" data-name="Ellipse 5 copy" class="cls-3" cx="90" cy="47" r="6"/>
+  <circle id="Ellipse_5_copy_2" data-name="Ellipse 5 copy 2" class="cls-4" cx="16" cy="55" r="6"/>
+  <text id="_2000명_이상_" data-name="2000명 이상 " class="cls-6" x="181.75" y="16.255">2000명 이상 </text>
+  <text id="_136명" data-name="136명" class="cls-7" x="-1.25" y="39.048">136명</text>
+  <text id="_402명" data-name="402명" class="cls-8" x="67.75" y="31.257">402명</text>
 </svg>
-              </div>
-            </div>
-            <div class="box padding">
-              <h4 class="box-heading">COLOR OF THE YEAR</h4>
-              <div class="color-slider owl-carousel owl-carousel-normal">
-                <div class="item item1" data-dot="01"><img class="owl-lazy" data-src="./img/senses/color@2x.png" alt=""></div>
-                <div class="item item2" data-dot="02"><img class="owl-lazy" data-src="./img/senses/color2@2x.png" alt=""></div>
-              </div>
-            </div>
-            <div class="box padding">
-              <h4 class="box-heading">색조 화장품 고르기</h4>
-              <div class="tab tab-color-cosmetics">
-                <div class="tab-nav">
-                  <a class="active" href="javascript:void(0)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40">
-  <g>
-    <path d="M4.56,26.54a9.06,9.06,0,1,1,9.06,9.06A9.06,9.06,0,0,1,4.56,26.54Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle cx="13.56" cy="26.46" r="12.93" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M13.56,13.54A12.92,12.92,0,0,1,24.76,20,12.93,12.93,0,1,0,2.37,20,12.92,12.92,0,0,1,13.56,13.54Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <g>
-      <g>
-        <polygon points="35.29 12.5 38.85 12.5 38.8 14.01 35.35 14.01 35.29 12.5" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-        <path d="M37.74,36.34c0,.3-.32.48-.6.48s-.6-.18-.6-.48c0,0-1.19-22.33-1.19-22.33H38.8s-1.06,22.32-1.06,22.33Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-        <path d="M38.83,12.5H35.29L30.76,5.17a9.94,9.94,0,0,1,6.3-2,9.94,9.94,0,0,1,6.31,2Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      </g>
-      <line x1="36.41" y1="12.5" x2="35.75" y2="10.71" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <line x1="37.71" y1="12.5" x2="38.38" y2="10.71" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    </g>
-  </g>
-</svg>
-</span><span class="name">블러셔</span></a>
-                  <a href="javascript:void(0)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37">
-  <g>
-    <path d="M37.44,36H.56V18.5H37.44Zm0-17.54H.56V1H37.44Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M28.53,20.47h6.38v13H28.53Zm-13.48,0H26.58v6.64H15.06Zm0,6.64H26.58v6.32H15.06ZM2.82,20.47H15.06v6.64H2.82Zm0,6.64H15.06v6.32H2.82Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <g>
-      <path d="M32.38,31.14a.73.73,0,1,1-1.45,0V29.69a.73.73,0,1,1,1.45,0Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M32,29a1.3,1.3,0,0,0-.73,0V23.85a1.81,1.81,0,0,0,.73,0Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <circle cx="31.66" cy="22.83" r="1.09" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    </g>
-    <rect x="2.82" y="3.03" width="32.09" height="13.02" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span><span class="name">섀도우</span></a>
-                  <a href="javascript:void(0)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="40" viewBox="0 0 19 40">
-  <g>
-    <path d="M4.49,38.65V9.11h0L2.63.71.78,9.11h0V38.65ZM1.77,4.94H3.5l1,4.16H.78Zm.32.9" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M10.39,39.29,18,10.66h0l.17-8.6L14.45,9.8h0L6.79,38.42ZM16.39,6l1.68.4v4.27l-3.6-.87Zm.1,1" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span><span class="name">브로우 펜슬</span></a>
-                  <a href="javascript:void(0)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="39" viewBox="0 0 13 39">
-  <g>
-    <g>
-      <path d="M3,2l1.41,5.5H1.61L3,2ZM.84,19.92a.51.51,0,0,1,.52-.46H4.64a.51.51,0,0,1,.52.46v16.3H.84ZM3.67,38.34H2.32A1.48,1.48,0,0,1,.84,36.87v-.65H5.15v.65a1.48,1.48,0,0,1-1.48,1.48Zm0,0M1.61,7.49v12m2.83-12v12" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M11.67,23.82h-3a.49.49,0,0,0-.49.5V36.43a1.68,1.68,0,0,0,1.66,1.71h.63a1.68,1.68,0,0,0,1.66-1.71V24.32a.49.49,0,0,0-.49-.5Zm.49,14.53" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    </g>
-    <line x1="3.03" y1="1.99" x2="2.99" y2="0.66" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span><span class="name">아이라이너</span></a>
-                  <a href="javascript:void(0)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="39" viewBox="0 0 29 39">
-  <g>
-    <path d="M18.41,17.22h8.06v2H18.41ZM28,36.72a1.64,1.64,0,0,1-1.64,1.64H18.51a1.64,1.64,0,0,1-1.64-1.64V19.25H28Zm0,0" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M4.71,4.93C6,2.82,6.9.86,7.51.56c.54.12.9,1.81.9,2.93v8.05H4.71ZM3.45,11.55H9.66V23.07H3.45Zm8.67,25.18a1.64,1.64,0,0,1-1.64,1.64H2.62A1.64,1.64,0,0,1,1,36.72V23.07H12.13Zm0,2.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span><span class="name">립스틱</span></a>
-                </div>
-                <div class="tab-content">
-                  <p class="item active">테스터 제품이 판매 매장 조명에 오래 노출되어 있으면 변색 될 수 있으므로 꼭 피부에 발색테스트를 해본다.</p>
-                  <p class="item">손등에 발색 후 살짝 불었을 때 표면의 가루가 너무 날리는 제품은 피한다.</p>
-                  <p class="item">손등에 발색해 보고 색이 너무 진하게 표현되는 제품은 피한다.</p>
-                  <p class="item">손등에 발색 후 10초 정도 말린 후 문지르면 번짐 정도를 알 수 있다.</p>
-                  <p class="item">손등에 발색하기 보다 내용물을 길게 빼서 입술에 가까이 대보고 컬러를 확인하는 것이 정확하다.</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section s-sense-more">
+    </section>
+    <section id="interview-professor" class="ja_section_wrap" ja-section-title="인터뷰-리마리소노와티 트리식티대 교수">
+      <div id="professor" class="interview section has-bg">
         <div class="wrapper">
-          <div class="box">
-            <p class="heading">
-              당신의 ‘인생 쿠션’고를 땐 균일성 지속성<br> 피부효능 이 세 가지만 기억하세요.
+          <div class="sub-heading-2">INTERVIEW</div>
+          <div class="bg-people lazyload" data-src='./img/interview/bg-people-professor.png'></div>
+          <div class="heading-2">
+            “타 대학 학생도 수강할 만큼 대성공<br> ‘한류 3.0’ 만드는 자양분 될 것”
+          </div>
+          <div class="interview-desc">
+            <p class="text">
+              인도네시아 최대 규모의 사립대학인 트리삭티대 의 리마 리소노와티(45·미디어학부) 부총장은 2015년부터 ‘상상유니브 자카르타’를 가까이에 서 지켜봐왔다. 대학 캠퍼스 안에 전용 공간을 제공한 ‘든든한 후 견인’이기도 하다. <span class="bold">그는  “이런 소프트웨어적인 사회공헌이 한국 기업과 국가 이미지에 대한 호 감도를 높이고, 나아가서는 ‘한류 3.0’의 토대가 될 수 있다”</span>고 진단한다.
             </p>
-            <div class="link">
-              <a href="http://news.joins.com/article/21578721" target="_blank" class="btn btn-sm">기사 더읽기</a>
+          </div>
+          <div id="qna">
+            <div class="qna">
+              <div class="question bold">
+                Q. 인도네시아 대학에서 상상유니브를 개설한 게<br> 어떤 의미인가.</div>
+              <div class="answer">
+                “학생들은 더 현대화된 교육에 대한 갈증이 많았 다. 안타깝게도 인도네시아에는 이들의 교양 활 동을 지원하는 프로그램이 없었다. 사실 딱히 여가활동이라는 게 존재하지 않았다. 마침 한국의 KT&amp;G로부터 흥미로운 제안이 왔 고, 우리에게 도움이 될 것 같아 받아들였다.”
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="smell" class="hash-section ja_section_wrap" ja-section-title="후각">
-      <div class="section s-sense-top">
-        <header class="sense-top-header animation-init">
-          <h2 class="heading"><span class="cn">嗅</span> <span class="ko">맡을 후</span></h2>
-          <p class="sub-heading"><span>향<br>기<br>를<br></span> <span>좇<br>다</span></p>
-        </header>
-        <div class="sense-top-video animation-init">
-          <div class="video-play">
-            <video id="video-smell"></video>
-            <a href="javascript:void(0)" class="play" aria-label="play movie">
-              <div class="poster lazyload" data-src="../img/senses/poster-smell.jpg"></div>
-            </a>
-          </div>
-        </div>
-        <div class="sense-top-footer animation-init layout-right">
-          <div class="sense-top-summary">
-            <p class="num">02</p>
-            <p class="text animation-init">
-              “향기는<br> 사람을 만든다.<br> 향에 따라<br> 같은 사람도<br> 달라 보일 수 있다.”
-            </p>
-          </div>
-          <div class="sense-top-quote-wrapper">
-            <blockquote class="sense-top-quote animation-init">
-              <div class="inner">
+            <div class="qna">
+              <div class="question bold">Q. 수업을 듣는 학생들의 반응은.</div>
+              <div class="answer">
+                “기대 이상의 호응이었다. 트리삭티대 재학생뿐 만 아니라 다른 대학 학생까지 참여했다. 소셜네 트워크서비스(SNS)를 통해 빠르게 전파되면서 예상보다 이른 시간에 자리를 잡은 듯하다.”
+              </div>
+            </div>
+            <div class="qna">
+              <div class="question bold">Q. 인도네시아 대학생들의 가장 큰 고민은.</div>
+              <div class="answer">
+                “새로운 일을 시도하고 도전하는 것이다. 세상은 빠르게 변하는데 우리 학생들은 새로운 경험을 쌓을 기회가 부족하다는 게 큰 문제였다. 상상유 니브가 지난 5월 500여 명의 대학생이 참여하는 토크콘서트를 열었는데, 이런 행사를 계기로 학 생들의 세계관이 크게 성장한다고 생각한다.”
+              </div>
+            </div>
+            <div class="qna">
+              <div class="question bold">Q. KT&amp;G를 비롯한 한국 기업에 대한 인식 변화가 생겼나.</div>
+              <div class="answer">
+                “(웃으면서) 사실 KT&amp;G보다는 상상유니브라는 이름이 여기선 더 유명하다. 자연스럽게 KT&amp;G 나 한국에 대한 이미지도 긍정적으로 인식되고 있다.”
+              </div>
+            </div>
+            <div class="qna">
+              <div class="question bold">Q. 두 나라의 관계 발전에도 도움이 될까. </div>
+              <div class="answer">
+                “물론이다. 두 나라가 서로의 문화를 이해하고 교류하는데 탄탄한 가교 역할을 할 것이다. 인도 네시아에서도 ‘한류’ 바람이 거세다. 2000년대 초반 ‘겨울연가’ ‘대장금’ 같은 드라마가 인기를 끌면서 한류 열풍이 시작됐다. 최근엔 K팝 스타 가 주축이 된 ‘한류 2.0’이 대세다. 드라마와 K팝 ·영화·게임 등 다양한 문화 콘텐트가 어우러져 시너지가 발현되는 것을 ‘한류 3.0’이라고 한다 면, 현지에서 한국에 대한 긍정적인 이미지를 확 대재생산하는
+                게 무엇보다 중요하다. 상상유니 브 같은 소프트웨어가 한국 브랜드를 살찌우는 자양분 역할을 할 것이다.”
+              </div>
+            </div>
+            <div class="qna han-1">
+              <div class="title">한류 <span class="num">1.0</span></div>
+              <div class="descText">
                 <p class="text">
-                  잘 고른<br>향수 하나,<br>
-                  <strong class="colored">열 옷</strong><br>
-                  <strong class="colored">안 부럽죠.</strong>
+                  1990년대 후반 현지에서<br> 자생적으로 한국 문화에 호감
                 </p>
-                <p class="from"><b class="name">전병배</b> 향료 마스터</p>
               </div>
-            </blockquote>
-            <nav class="section-sns">
-              <a href="javascript:void(0)" class="share" aria-label="공유하기"></a>
-              <div class="section-sns-list">
-                <a href="javascript:void(0)" class="kakaotalk" aria-label="kakaotalk 공유하기"></a>
-                <a href="javascript:void(0)" class="facebook" aria-label="facebook 공유하기"></a>
-                <a href="javascript:void(0)" class="twitter" aria-label="twitter 공유하기"></a>
-                <a href="javascript:void(0)" class="kakaostory" aria-label="kakaostory 공유하기"></a>
+            </div>
+            <div class="qna han-2">
+              <div class="title">한류 <span class="num">2.0</span></div>
+              <div class="descText">
+                <p class="text">
+                  2005년 이후 국내에서 체계적 스타 육성과<br> 기획·마케팅으로 수출 상품화
+                </p>
               </div>
-            </nav>
+            </div>
+            <div class="qna han-3">
+              <div class="title">한류 <span class="num">3.0</span></div>
+              <div class="descText">
+                <p class="text">
+                  2015년 이후 현지 문화와 눈높이를<br> 맞추면서 맞춤형으로 업그레이드
+                </p>
+              </div>
+            </div>
           </div>
+          <button class="btn btn-more btn-circle">+더보기</button>
         </div>
       </div>
-      <div class="section s-sense-body smell lazyload" data-src="./img/senses/bg-smell.jpg">
+    </section>
+    <section id="curriculum" class="ja_section_wrap" ja-section-title="맞춤형 커리큘럼으로 상상에 날개를 달다">
+      <div class="wrapper">
+        <h2 class="heading-1">
+          한국에선 2007년부터<br> ‘상상 인재’ 키워
+        </h2>
         <div class="inner">
-          <div class="sense-slider-header">
-            <h3 class="heading"><span class="num"></span> 여성인구 경제활동 활발해지면서 커지는 향수 시장</h3>
-            <h3 class="heading"><span class="num"></span> 꿀팁! 알아두면 유용한 TPO 향수 사용법 <small>(Time Place Occasion)</small></h3>
-            <h3 class="heading"><span class="num"></span> Q&amp;A 올바른 향수 사용법</h3>
-          </div>
-          <div class="sense-slider">
-            <div class="box padding">
-              <h4 class="box-heading">국내 향수 시장</h4>
-              <div class="graph-perfume"><svg xmlns="http://www.w3.org/2000/svg" width="245" height="262" viewBox="0 0 245 262">
-  <polyline points="23.71 60.4 23.71 198.02 225.15 198.02 225.15 60.4" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="37.09" y="113.93" width="14.22" height="84.08" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="63.97" y="108.57" width="14.22" height="89.44" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="90.85" y="102.29" width="14.22" height="95.72" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="117.74" y="96.86" width="14.22" height="101.16" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="143.57" y="91.56" width="14.22" height="106.46" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="170.24" y="86.27" width="14.22" height="111.75" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <rect x="197.09" y="79.63" width="14.22" height="118.38" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <text transform="translate(0.58 69.9)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">500</text>
-  <text transform="translate(0.58 95)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">400</text>
-  <text transform="translate(3.56 120.1)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">30</text>
-  <text transform="translate(0.58 145.2)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">200</text>
-  <text transform="translate(0.58 170.3)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">100</text>
-  <text transform="translate(6.54 198.4)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">0</text>
-  <g>
-    <text transform="translate(232.68 69.9)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">80</text>
-    <text transform="translate(232.68 102.53)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">60</text>
-    <text transform="translate(232.68 135.16)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">40</text>
-    <text transform="translate(232.68 167.79)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">20</text>
-  </g>
-  <text transform="translate(232.68 197.92)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans'">0</text>
-  <g>
-    <path d="M46.3,165.91a1.78,1.78,0,1,1-1.78-1.78,1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <path d="M74.64,85.38a1.78,1.78,0,1,1-1.78-1.78,1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <path d="M99.74,70.29A1.78,1.78,0,1,1,98,68.51a1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <path d="M126,110.35a1.78,1.78,0,1,1-1.78-1.78,1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <path d="M151.94,104.5a1.78,1.78,0,1,1-1.78-1.78,1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <path d="M178.94,113.93a1.78,1.78,0,1,1-1.78-1.78,1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <path d="M206,109.52a1.78,1.78,0,1,1-1.78-1.78,1.78,1.78,0,0,1,1.78,1.78" style="fill: #062c5e"/>
-    <text transform="translate(5.72 52.9)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">(M USD)</text>
-    <text transform="translate(220.27 53.16)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">(%)</text>
-    <text transform="translate(32.97 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2010</text>
-    <text transform="translate(60.61 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2011</text>
-    <text transform="translate(88.25 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2012</text>
-    <text transform="translate(114.63 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2013</text>
-    <text transform="translate(140.6 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2014</text>
-    <text transform="translate(166.98 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2015</text>
-    <text transform="translate(193.78 212.6) scale(0.95 1)" style="font-size: 9px;fill: #062c5e;font-family: 'Spoqa Han Sans'">2016</text>
-    <line x1="45.48" y1="164.42" x2="72.66" y2="85.01" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="97.5" y1="70.14" x2="124.43" y2="110.72" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="124.43" y1="110.72" x2="150.68" y2="104.59" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="150.68" y1="104.59" x2="177.06" y2="113.94" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="177.06" y1="113.94" x2="204.2" y2="109.3" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="72.66" y1="85.01" x2="97.5" y2="70.14" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  </g>
-  <text transform="translate(30.79 9) scale(0.97 1)" style="font-size: 10px;fill: #444;font-family: 'Spoqa Han Sans';letter-spacing: -0.04701594866724932em">향수</text>
-  <text transform="translate(29.7 26.24) scale(0.97 1)" style="font-size: 10px;fill: #444;font-family: 'Spoqa Han Sans';letter-spacing: -0.024967784302950387em">성장률</text>
-  <rect x="3.33" y="3.2" width="21.85" height="5.8" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <circle cx="13.87" cy="23.37" r="2.47" style="fill: #062c5e"/>
-  <line x1="3.04" y1="23.37" x2="24.7" y2="23.37" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  <text transform="translate(0.4 255.76) scale(0.97 1)" style="font-size: 11px;fill: #999;font-family: 'Spoqa Han Sans';letter-spacing: -0.02498608913015196em"><tspan xml:space="preserve">자료:  Euromonitor</tspan><tspan x="88.89" y="0">, 케이프투자증권</tspan></text>
-</svg>
-              </div>
-            </div>
-            <div class="box padding">
-              <div class="tab tab-perfume-tpo">
-                <div class="tab-nav">
-                  <a class="active" href="javascript:void(0)">계절별</a>
-                  <a href="javascript:void(0)">장소별</a>
-                  <a href="javascript:void(0)">연령별</a>
-                </div>
-                <div class="tab-content">
-                  <div class="item item1 active">
-                    <div class="tab inner-tab">
-                      <div class="tab-nav">
-                        <a class="active" href="javascript:void(0)" data-name="봄"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="38" viewBox="0 0 26 38">
-  <g>
-    <path d="M13.73,32.32A12,12,0,0,0,24.52,20.37c0-2.73-1.89-6.76-5.62-12-2.7-3.77-5.36-6.76-5.47-6.89l-.91-1-.91,1c-.11.13-2.77,3.11-5.47,6.89C2.39,13.62.5,17.64.5,20.37A12,12,0,0,0,11.28,32.32Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="9.29 16.94 12.44 20.41 15.88 17.23" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="7.54 22.77 12.44 27.56 17.48 22.91" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="12.44" y1="20.4" x2="12.44" y2="37.44" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 봄</a>
-                        <a href="javascript:void(0)" data-name="여름"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-  <g>
-    <circle cx="18.67" cy="18.67" r="8.88" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="18.67" y1="0.5" x2="18.67" y2="7.16" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="32.22" y1="6.08" x2="27.51" y2="10.79" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="36.85" y1="18.79" x2="30.19" y2="18.79" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="27.51" y1="26.56" x2="32.22" y2="31.26" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="18.67" y1="30.19" x2="18.67" y2="36.85" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="0.5" y1="18.67" x2="7.16" y2="18.67" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="5.13" y1="6.08" x2="9.84" y2="10.79" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="9.84" y1="27.84" x2="5.13" y2="32.54" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 여름</a>
-                        <a href="javascript:void(0)" data-name="가을"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
-  <g>
-    <line x1="16.87" y1="6.26" x2="16.87" y2="33.65" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M16.87.5a8.42,8.42,0,0,0,1,2.52,6.29,6.29,0,0,0,4.75,3.11c-.43,1-2.45,6-1.63,7.39a.78.78,0,0,0,.63.4h.25c1.9,0,4.11-2,4.56-2.37a4.78,4.78,0,0,0,2.16.45,9.25,9.25,0,0,0,4.64-1.44c-.58,1.25-2.08,4.82-1.61,7.3l-.11,0c-2.44,1.09-3.77,2-4.07,2.89a1.05,1.05,0,0,0-.07.4.7.7,0,0,0,.29.55l3.61,2.58c-.69,0-1.95-.13-3.24-.14H27.5a9.46,9.46,0,0,0-3.85.48.7.7,0,0,0-.35.71,45.61,45.61,0,0,0,2.24,6,13.59,13.59,0,0,0-5.08-1.14,8.2,8.2,0,0,0-1.15.08l-.06-.08-.28-.4-.82-1.23L18,28.38a.7.7,0,0,0-.59-.32H16.31a.7.7,0,0,0-.59.32l-.13.19,0,0-.82,1.23-.27.4-.06.08a8.34,8.34,0,0,0-1.15-.08A13.65,13.65,0,0,0,8.2,31.39a45.58,45.58,0,0,0,2.24-6,.7.7,0,0,0-.35-.71,9.44,9.44,0,0,0-3.85-.48H5.7c-1.3,0-2.56.1-3.24.14l3.61-2.58a.7.7,0,0,0,.29-.54,1,1,0,0,0-.07-.4C6,20,4.65,19,2.22,17.91l-.11,0c.47-2.49-1-6-1.61-7.3A9.25,9.25,0,0,0,5.14,12a4.8,4.8,0,0,0,2.16-.44c.45.41,2.66,2.37,4.56,2.37h.25a.78.78,0,0,0,.63-.4c.83-1.4-1.19-6.36-1.62-7.39A6.29,6.29,0,0,0,15.86,3a8.41,8.41,0,0,0,1-2.52m16.8,9.81h0m-7.14,1.18h0" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="14.09 8.22 16.89 10.73 19.66 8.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="28.06 16.03 16.89 24.63 5.68 16.03" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 가을</a>
-                        <a href="javascript:void(0)" data-name="겨울"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="33" viewBox="0 0 29 33">
-  <g>
-    <g>
-      <line x1="14.06" y1="0.5" x2="14.06" y2="31.81" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <line x1="0.5" y1="8.29" x2="27.59" y2="23.96" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <line x1="27.59" y1="8.33" x2="0.5" y2="23.99" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    </g>
-    <line x1="14.17" y1="7.14" x2="8.87" y2="4.02" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="19.17" y1="4.02" x2="14.17" y2="7.14" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="21.93" y1="11.77" x2="22.27" y2="5.62" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <g>
-      <line x1="27.01" y1="14.76" x2="21.93" y2="11.77" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <polyline points="5.54 5.58 5.54 11.21 0.84 14.12" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <polyline points="27.07 17.52 21.93 20.68 21.92 26.45" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    </g>
-    <polyline points="19.17 28.04 14.06 25.22 8.87 28.04" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="6.05 26.45 6.05 20.78 0.94 17.52" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 겨울</a>
-                      </div>
-                      <div class="tab-content">
-                        <div class="item active">화사하고 밝은 느낌의 향 <br>추천 향수: 장미, 자스민, 수선화 등 꽃 향을 주원료로한 플로랄(Floral) 계열의 향수</div>
-                        <div class="item">땀이 많이 나는 여름엔 강한 향은 피하고 양도 적게 <br>추천 향수: 싱그러운 풀잎의 향취를 느낄 수 있는 그린(Green) 계열이나 깨끗한 물의 느낌이 연상되는 워터리(Watery) 계열.</div>
-                        <div class="item">우아한 향기로 <br>추천 향수: 초가을엔 내추럴 시프레(Natural Chypre) 계열. 지적인 느낌을 주는 플로랄 알데하이딕(Floral Aldedhydic) 계열.</div>
-                        <div class="item">건조하고 추운 겨울엔 진한 향수로 <br>추천 향수: 따스한 느낌의 동양적인 오리엔탈(Oriental) 계열의 향수.</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item2">
-                    <div class="tab inner-tab">
-                      <div class="tab-nav">
-                        <a class="active" href="javascript:void(0)" data-name="사무실"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="33" viewBox="0 0 38 33">
-  <g>
-    <path d="M25.48,17.77l-.9-15.06A2.35,2.35,0,0,0,22.23.5H14.83a2.35,2.35,0,0,0-2.35,2.21l-.9,15.06" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="14.67" y1="7.09" x2="22.22" y2="7.09" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M11.94,11.75H10s-1,0-1.19,1.4L8,17.77" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M25.1,11.75H27s1,0,1.19,1.4l.85,4.62" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="0.5" y1="17.78" x2="36.56" y2="17.78" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="3.43 17.78 3.43 21.25 5.83 21.25 33.64 21.25 33.64 17.78" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="27.07 32.01 31.27 32.01 31.27 21.25" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="5.65 21.25 5.65 32.01 9.96 32.01" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 사무실</a>
-                        <a href="javascript:void(0)" data-name="파티"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" viewBox="0 0 32 34">
-  <g>
-    <path d="M6.78,23.19c2.46,0,5.21-3.69,6.48-8.86.21-.83.52-2.3.78-3.76a28.27,28.27,0,0,0,.45-3.47.4.4,0,0,0-.33-.41L6.78,4.89a.39.39,0,0,0-.45.2c-.16.35-.65,1.82-1.14,3.33s-1,3.22-1.12,3.64C2.76,17.36,3.58,22,5.83,23l.78.21h.16" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="13.98" y1="10.87" x2="5.07" y2="8.79" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M6.52,11.4S5,18.08,6.37,20" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="6.33" y1="23.19" x2="3.91" y2="32.39" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="0.5" y1="31.57" x2="7.23" y2="33.21" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M24.38,23.19h.16l.78-.21c2.26-1,3.08-5.62,1.76-10.91C27,11.64,26.48,10,26,8.42s-1-3-1.14-3.33a.39.39,0,0,0-.45-.2L17,6.69a.4.4,0,0,0-.33.41,28.16,28.16,0,0,0,.45,3.47c.26,1.45.57,2.93.78,3.76,1.27,5.17,4,8.86,6.48,8.86" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="17.17" y1="10.87" x2="26.09" y2="8.79" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M24.64,11.4s1.5,6.68.14,8.58" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="24.83" y1="23.19" x2="27.24" y2="32.39" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="30.66" y1="31.57" x2="23.93" y2="33.21" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="15.02" y1="0.5" x2="14.98" y2="3.41" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="18.22" y1="2.39" x2="16.13" y2="4.4" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="11.82" y1="2.39" x2="13.91" y2="4.4" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 파티</a>
-                        <a href="javascript:void(0)" data-name="업무회의"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
-  <g>
-    <circle cx="6.69" cy="4.66" r="4.16" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M.5,17.35H13v-3s.55-5.54-6.31-5.54c0,0-6.19,0-6.19,5.36Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle cx="28.01" cy="21.51" r="4.16" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M21.82,34.21h12.5v-3s.55-5.54-6.31-5.54c0,0-6.19,0-6.19,5.36Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M10.09,7a12.69,12.69,0,0,1,20,10.38q0,.24,0,.48" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M22.1,29.2A12.69,12.69,0,0,1,4.7,17.42" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 업무회의</a>
-                        <a href="javascript:void(0)" data-name="운동전후"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31">
-  <g>
-    <path d="M5.09,4.4a9.44,9.44,0,0,1,8.62,7.51l.91,4.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M.81,8.46s-2.31,7.83,5.71,10c0,0,2,6.76,10.9,10.82,1.13.51,1.85,1.16,3.21,1.16,0,0,4.29-.63,7.26-11l1.36-5.64" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M24.92,14s-3.77,2.65-5,5.3" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M18.51,22.78s3.4-4.62-.21-8.75a5.37,5.37,0,0,0-4.49-1.66" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle cx="26.85" cy="7.38" r="6.88" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle cx="26.77" cy="7.39" r="4.98" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle cx="26.77" cy="7.46" r="1.87" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle cx="26.82" cy="7.51" r="0.51" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 운동전후</a>
-                      </div>
-                      <div class="tab-content">
-                        <div class="item active">실내공간이라는 점과 여러 사람이 공간을 같이 사용한다는 점을 고려해 자극적이거나 강한 향은 피하고 가볍고 무난한 플로랄(Floral) 계열 향수로.</div>
-                        <div class="item">낮에 열리는 파티엔 평상시 선호하는 향수로. 그러나 밤에 열리는 파티에선 화려한 오리엔탈(Oriental) 향으로 연출. 관능적인 느낌의 머스크(Musk) 계열 향수도 추천.</div>
-                        <div class="item">모르는 사람과의 첫 만남에선 깔끔한 느낌을 줄 수 있는 후레쉬 플로랄(Fresh Floral) 계열로. 밝고 귀여운 이미지를 주려면 푸루티 프로랄(Fruity Floral) 계열의 향수를 추천.</div>
-                        <div class="item">땀과 열이 많이 나기 때문에 열기를 식힐 시원한 향이 필수. 상큼한 시트러스(Citrus) 계열이나 그린(Green) 계열의 향수, 깨끗한 워터리(Watery) 계열의 향수로.</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item3">
-                    <div class="tab inner-tab">
-                      <div class="tab-nav">
-                        <a class="active" href="javascript:void(0)" data-name="10대"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <text transform="translate(7.04 29.82)" style="font-size: 15px;fill: #062c5e;font-family: 'Spoqa Han Sans'">10대</text>
-  <g style="opacity: 0.5">
-    <path d="M42.12,12.34h1.47V8.73H47V7.32H43.59V3.72H42.12V7.32H38.73v1.4h3.39Z" style="fill: #062c5e"/>
-    <path d="M46.75,15a24.12,24.12,0,1,1-10-11.21" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;fill-rule: evenodd"/>
-  </g>
-</svg>
-</a>
-                        <a href="javascript:void(0)" data-name="20대"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <g style="opacity: 0.5">
-    <path d="M42.12,12.34h1.47V8.73H47V7.32H43.59V3.72H42.12V7.32H38.73v1.4h3.39Z" style="fill: #062c5e"/>
-    <path d="M46.75,15a24.12,24.12,0,1,1-10-11.21" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;fill-rule: evenodd"/>
-  </g>
-  <text transform="translate(7.7 29.82)" style="font-size: 15px;fill: #062c5e;font-family: 'Spoqa Han Sans'">20대</text>
-</svg>
-</a>
-                        <a href="javascript:void(0)" data-name="30대"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <g style="opacity: 0.5">
-    <path d="M42.12,12.34h1.47V8.73H47V7.32H43.59V3.72H42.12V7.32H38.73v1.4h3.39Z" style="fill: #062c5e"/>
-    <path d="M46.75,15a24.12,24.12,0,1,1-10-11.21" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;fill-rule: evenodd"/>
-  </g>
-  <text transform="translate(7.65 29.52)" style="font-size: 15px;fill: #062c5e;font-family: 'Spoqa Han Sans'">30대</text>
-</svg>
-</a>
-                        <a href="javascript:void(0)" data-name="40대"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <g style="opacity: 0.5">
-    <path d="M42.12,12.34h1.47V8.73H47V7.32H43.59V3.72H42.12V7.32H38.73v1.4h3.39Z" style="fill: #062c5e"/>
-    <path d="M46.75,15a24.12,24.12,0,1,1-10-11.21" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10;fill-rule: evenodd"/>
-  </g>
-  <text transform="translate(7.77 29.52)" style="font-size: 15px;fill: #062c5e;font-family: 'Spoqa Han Sans'">40대</text>
-</svg>
-</a>
-                      </div>
-                      <div class="tab-content">
-                        <div class="item active">향수를 처음 접하는 시기로 가급적 가벼운 느낌의 향수로. 달콤한 플로랄 <br>시트러스(Floral Citrus) 계열이나 마린(Marine) 계열의 향수.</div>
-                        <div class="item">은은하고 부드러운 느낌의 플로랄 부케(Floral Bouquet) 계열이나 <br>산뜻하면서도 우아한 느낌의 그린 플로랄(Green Floral) 계열 향수.</div>
-                        <div class="item">따스함을 느낄 수 있는 후루티 플로랄(Fruity Floral) 계열이나 <br>시프레(Chypre) 계열의 향수.</div>
-                        <div class="item">중년의 중후함을 느끼게 하는 플로리엔탈 (Floriental) 계열이나 <br>오리엔탈(Oriental) 계열의 향수.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="box padding-lg">
-              <div class="perfume-slider owl-carousel owl-carousel-normal">
-                <div class="item item1" data-dot="01">
-                  <p class="question">Q. 향수를 신체 어느 부분에 뿌리는 것이 가장 좋을까?</p>
-                  <p class="answer">A. 향기는 아래에서 위로 올라오는 성질을 가지고 있기 때문에 복사뼈 부위, 무릎이나 스커트 끝단과 같이 일반적으로 움직임이 많은 부분에 사용하는 것이 효과적이다. 또 손목 안쪽과 같이 맥박이 뛰는 부위에 향수를 사용하면 맥박이 뛰면서 향을 조금씩 발산함으로 향수를 사용하는데 적절한 부위이다. 그리고 햇빛에 의한 알러지나 가려움을 막기 위해 귀 뒷면에 사용해도 좋다.</p>
-                </div>
-                <div class="item item2" data-dot="02">
-                  <p class="question">Q. 피부상태에 따라 향수를 선택하는 방법은.</p>
-                  <p class="answer">A. 보통 지성피부인 사람은 신선하고 깔끔한 느낌을 갖는 오데코롱의 사용을 권하고, 건성피부인 사람은 지성피부인 사람보다 향기 지속시간이 짧은 편이므로 소량씩 자주 사용하거나, 향수를 사용하기 전에 바디로션을 발라 향의 지속을 좋게 한다. 피부가 민감한 사람의 경우에는 직접 피부에 사용하는 것을 피하고 스커트나 스카프 같은 섬유에 뿌리는 것을 권한다.</p>
-                </div>
-                <div class="item item3" data-dot="03">
-                  <p class="question">Q. 향수를 다른 용도로 사용한다면.</p>
-                  <p class="answer">
-                    A. 1.편지지의 모서리나 메모지, 손수건, 모자 등에도 몇 방울의 향수가 큰 효과를 낸다. <br> 2. 샴푸할 때나 목욕할 때 마지막 헹구는 물에 향수 몇 방울을 떨어뜨려도 상쾌한 향기 속에서 생활할 수 있다.<br> 3. 옷장이나 서랍에 향수를 뿌리거나 향수를 묻힌 거즈를 넣어두면 옷에 적당한 향기가 베이는 것은 물론이고 향수자체가 방충제, 방부제의 역할도 함으로 일석이조의 효과를 볼 수 있다.<br> 4.
-                    오래돼서 향이 변한 향수는 향수병을 열어 신발장, 욕실 등에 놓아 두면 방향제 대용으로 사용할 수 있다.
-                  </p>
-                </div>
-                <div class="item item4" data-dot="04">
-                  <p class="question">Q. 향수 사용이 거북한 사람은.</p>
-                  <p class="answer">A. 속옷이나 블라우스를 다림질 할 때 다림판 위에 향수를 몇 방울 떨어뜨려 자신의 옷에 자연스런 향기가 배게 하는 것이 향수 사용이 거북스러운 사람에게 추천할 만한 활용 방법이다.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="text">
+            인도네시아 사회공헌 프로그램을 기획하면서 KT&amp;G는 나름 기대감이 있었다. 국내에서 쌓아 온 ‘내공’이 든든했기 때문이다. KT&amp;G는 2007년부터 국내에서 ‘상상마당’을 운영하고 있다. 일반인에겐 ‘문화허브’로 유명하지만 상상마당 은, ‘인재 육성 프로젝트’로도 눈길을 끈다. 그림책 워크숍, 피규어 디자인, 문화예술 비평 분야 등에서 5~7개월간 집중 교육을 한다. 수강 생들은 수료에 즈음해 작품전·전시회 등을 열고 , 이를 바탕으로
+            창업을 준비하기도 한다. 자카르타의 프란스가 바리스타 클래스를 마치 고 ‘인도네시아의 커피 왕’을 꿈꾸는 것과 비슷 하다.
+          </p>
         </div>
       </div>
-      <div class="section s-sense-more">
+    </section>
+    <section id="sangsang-madang" class="ja_section_wrap" ja-section-title="상상에서 끝난다면 상상마당이 아니다">
+      <div class="wrapper">
+        <h2 class="heading-1">
+          “상상에서 끝난다면<br>
+          <span>상상마당이 아니다”</span>
+        </h2>
+        <div id="artist-1" class="lazyload" data-src="./img/sangsang-madang/artist-1.png"></div>
+        <p class="text">
+          우세계씨는 이전에 다니던 직장을 그만두고 독 립 출판가로 새로운 인생을 살고 있다. 상상마당 에서 출판 전문가를 양성하는 ‘어바웃 북스’ 프로 추어 과정을 수료한 게 계기가 됐다. 프로추어 (proteur)는 전문가(professional)와 아마추어 (amateur)의 경계에 있다는 뜻으로, 전문가 수 준의 인재를 양성하는 커리큘럼을 가리킨다. 우씨는 『공포의 미하악』, 『일상의 살인』 등을 펴 내면서 기획·디자인 전문가로 인정받고 있다. 그는
+          “상상에서만 끝난다면 상상마당이 아니다” 고 말한다.
+        </p>
+        <div id="artist-2" class="lazyload" data-src="./img/sangsang-madang/artist-2.png"></div>
+        <p class="text">
+          여성 뮤지션인 사비나 앤 드론즈는 대중음악 창 작 지원 프로그램인 ‘써라운드’에 선발돼 2016 년 2집 앨범 제작을 지원받았다. 그는 “녹음실까 지 제공돼 오롯이 음악에만 집중할 수 있었다”고 말한다.
+        </p>
+        <p class="text bold">
+          ‘부산행’으로 유명한 영화감독 연상호, 록밴드 장기하와 얼굴들 등을 데뷔 초창기부터 지원한 곳이 KT&amp;G 상상마당이다.
+        </p>
+      </div>
+    </section>
+    <section id="info" class="ja_section_wrap" ja-section-title="숫자로 보는 상상마당">
+      <div class="wrapper">
+        <h2 class="heading-1">숫자로 보는 상상마당</h2>
+        <div id="infoSwiper" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="number"><span class="info-num" data-count="1">0</span>위</div>
+              <div class="number"><span class="info-num" data-count="939">0</span>명</div>
+              <div class="number"><span class="info-num" data-count="3000">0</span>건</div>
+              <div class="number"><span class="info-num" data-count="9077639">0</span>명</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon icon-1"></div>
+              <div class="number"><span class="info-num" data-count="1">0</span>위</div>
+              <div class="descText">
+                <p class="text">
+                  포털 사이트 문화예술분야 검색<br> 순위(20~30대 대상). 온라인<br> 노출은 연 3000만 건이 넘는다.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon icon-2"></div>
+              <div class="number"><span class="info-num" data-count="939">0</span>명</div>
+              <div class="descText">
+                <p class="text">
+                  지난해 상상마당 무대에 오른 뮤지션<br> 숫자. 지금까지 함께 한 아티스트는<br> 2만4000여 명이다.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon icon-3"></div>
+              <div class="number"><span class="info-num" data-count="3000">0</span>건</div>
+              <div class="descText">
+                <p class="text">
+                  인재 육성 아카데미부터 영화·공연<br> ·전시 등 지난해 운영된 프로그램.<br> 누적 3만여 건에 이른다.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon icon-4"></div>
+              <div class="number"><span class="info-num" data-count="9077639">0</span>명</div>
+              <div class="descText">
+                <p class="text">
+                  2011~16년 상상마당 홍대·춘천<br> ·논산을 다녀간 방문객 수. 최근엔<br> 한해 180만여 명이 찾는다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contribute-timeline" class="ja_section_wrap" ja-section-title="진화하는 사회공헌 &#34;후원자에서 기획가로&#34;">
+      <div class="contribute-timeline">
         <div class="wrapper">
-          <div class="box">
-            <p class="heading">
-              가죽향·곰팡이향까지 솔솔~ 독특한 <br>개성미 철철~
-            </p>
-            <div class="link">
-              <a href="http://news.joins.com/article/19378228" target="_blank" class="btn btn-sm">기사 더읽기</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="taste" class="hash-section ja_section_wrap" ja-section-title="미각">
-      <div class="section s-sense-top">
-        <header class="sense-top-header animation-init">
-          <h2 class="heading"><span class="cn">味</span> <span class="ko">맛 미</span></h2>
-          <p class="sub-heading"><span>감<br>성<br>을</span> <span>마<br>시<br>다</span></p>
-        </header>
-        <div class="sense-top-video animation-init">
-          <div class="video-play">
-            <video id="video-taste"></video>
-            <a href="javascript:void(0)" class="play" aria-label="play movie">
-              <div class="poster lazyload" data-src="../img/senses/poster-taste.jpg"></div>
-            </a>
-          </div>
-        </div>
-        <div class="sense-top-footer animation-init layout-left">
-          <div class="sense-top-summary">
-            <p class="num">03</p>
-            <p class="text animation-init">
-              “차는<br> 아름다움을
-              <br> 마시는 것”
-            </p>
-          </div>
-          <div class="sense-top-quote-wrapper">
-            <blockquote class="sense-top-quote">
-              <div class="inner">
+          <h2 class="heading-1">
+            진화하는 사회공헌<br> “후원자에서 기획가로”
+          </h2>
+          <div class="timeline">
+            <div class="card t1883 odd">
+              <div class="descText">
                 <p class="text">
-                  차,<br>문화 체험과<br>
-                  <strong class="colored">건강의</strong><br>
-                  <strong class="colored">매개체</strong>
+                  1883년 설립된 국영 연초 제작소인 ‘순화국(順和局)’은 KT&amp;G의 창립 기원이다. 130여 년 만에 세계 5위로 성장한 KT&amp;G는, 국민 기업으로서 회사의 성과를 사회에 환원한다 는 의미에서 적극적으로 사회공헌 활동을 펼치고 있다. 2002년 민영화 이후엔 ‘함께하 는 기업’을 경영이념 중 하나로 선포했다. 2003월 7월엔 KT&amp;G장학재단을, 2008년 6월엔 KT&amp;G복지재단을 잇달아 설립했다.
                 </p>
-                <p class="from"><b class="name">박유진</b> 오설록 티 소믈리에</p>
-              </div>
-            </blockquote>
-            <nav class="section-sns">
-              <a href="javascript:void(0)" class="share" aria-label="공유하기"></a>
-              <div class="section-sns-list">
-                <a href="javascript:void(0)" class="kakaotalk" aria-label="kakaotalk 공유하기"></a>
-                <a href="javascript:void(0)" class="facebook" aria-label="facebook 공유하기"></a>
-                <a href="javascript:void(0)" class="twitter" aria-label="twitter 공유하기"></a>
-                <a href="javascript:void(0)" class="kakaostory" aria-label="kakaostory 공유하기"></a>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="section s-sense-body taste lazyload" data-src="./img/senses/bg-taste.jpg">
-        <div class="inner">
-          <div class="sense-slider-header">
-            <h3 class="heading"><span class="num"></span> 대한민국, 차(<span class="cn">茶</span>)에 빠지다</h3>
-            <h3 class="heading"><span class="num"></span> 차, 알고 마시면 더 좋다</h3>
-            <h3 class="heading"><span class="num"></span> 티 소믈리에가 꼽은 계절별 추천차</h3>
-          </div>
-          <div class="sense-slider">
-            <div class="box padding">
-              <h4 class="box-heading">늘어나는 국내 차 (<span class="cn">茶</span>) 수입•생산량</h4>
-              <div class="graph-tea"><svg xmlns="http://www.w3.org/2000/svg" width="249" height="300" viewBox="0 0 249 300">
-  <line y1="110.14" x2="248.55" y2="110.14" style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.5px"/>
-  <g>
-    <line x1="181.01" y1="30.47" x2="224.37" y2="23.46" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="129.37" y1="52.79" x2="174.64" y2="33.03" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="122.99" y1="54.81" x2="76.45" y2="62.35" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="26.08" y1="73.83" x2="70.07" y2="64.27" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <path d="M227.56,19.64a3.19,3.19,0,1,1-3.19,3.19,3.19,3.19,0,0,1,3.19-3.19" style="fill: #062c5e;fill-rule: evenodd"/>
-    <circle cx="177.83" cy="31.75" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <circle cx="126.18" cy="54.07" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <circle cx="73.26" cy="62.99" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <circle cx="22.89" cy="74.47" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <text transform="translate(12.69 92.06) scale(1 1.03)" style="font-size: 12px;fill: #062c5e;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">58</tspan><tspan x="13.73" y="0">5</tspan></text>
-    <text transform="translate(63.91 79.66) scale(1 1.03)" style="font-size: 12px;fill: #062c5e;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">65</tspan><tspan x="13.73" y="0">2</tspan></text>
-    <text transform="translate(117.05 71.05) scale(1 1.03)" style="font-size: 12px;fill: #062c5e;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">70</tspan><tspan x="13.73" y="0">0</tspan></text>
-    <text transform="translate(168.48 50.61) scale(1 1.03)" style="font-size: 12px;fill: #062c5e;font-family: 'Spoqa Han Sans'"><tspan style="letter-spacing: -0.024007161458333332em">81</tspan><tspan x="13.73" y="0">8</tspan></text>
-    <text transform="translate(215.86 40.82) scale(1 1.03)" style="font-size: 14px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.024972098214285716em">8</tspan><tspan x="7.99" y="0" style="letter-spacing: -0.023995535714285716em">9</tspan><tspan x="16" y="0">1</tspan></text>
-    <text transform="translate(11.12 11)" style="font-size: 12.5px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700">수입량</text>
-  </g>
-  <g>
-    <line x1="24.47" y1="187.39" x2="69.73" y2="184.84" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="76.11" y1="184.2" x2="120.74" y2="178.46" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="127.12" y1="177.82" x2="172.39" y2="179.1" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <line x1="178.76" y1="179.1" x2="224.03" y2="175.27" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <path d="M226.58,172.09a3.19,3.19,0,1,1-3.19,3.19,3.19,3.19,0,0,1,3.19-3.19" style="fill: #062c5e;fill-rule: evenodd"/>
-    <circle cx="175.58" cy="179.1" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <circle cx="123.93" cy="178.46" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <circle cx="72.92" cy="184.84" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <circle cx="21.28" cy="187.39" r="3.19" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <text transform="translate(9.93 164.81) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">23만<tspan x="-1.36" y="13.58">180</tspan><tspan x="17.51" y="13.58" style="letter-spacing: -0.00004438920454545455em">0</tspan></text>
-    <text transform="translate(61.78 162.31) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">30만<tspan x="-1.36" y="13.58">310</tspan><tspan x="17.51" y="13.58" style="letter-spacing: -0.00004438920454545455em">0</tspan></text>
-    <text transform="translate(112.58 156.91) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">45만<tspan x="1.78" y="13.58">20</tspan><tspan x="14.37" y="13.58" style="letter-spacing: -0.00004438920454545455em">0</tspan></text>
-    <text transform="translate(164.86 156.91) scale(1 1.03)" style="font-size: 11px;fill: #062c5e;font-family: 'Spoqa Han Sans';letter-spacing: -0.024014559659090908em">43만<tspan x="-1.36" y="13.58">170</tspan><tspan x="17.51" y="13.58" style="letter-spacing: -0.00004438920454545455em">0</tspan></text>
-    <text transform="translate(212.14 148.65) scale(1 1.03)" style="font-size: 14px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.023995535714285716em">46만</tspan><tspan x="-1.74" y="16.97" style="letter-spacing: -0.023995535714285716em">390</tspan><tspan x="22.29" y="16.97">0</tspan></text>
-    <text transform="translate(9.52 212.93) scale(1 1.03)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.0240234375em">20</tspan><tspan x="11.44" y="0" style="letter-spacing: -0.025em">1</tspan><tspan x="17.15" y="0">0</tspan></text>
-    <text transform="translate(60.52 212.93) scale(1 1.03)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.0240234375em">20</tspan><tspan x="11.44" y="0" style="letter-spacing: -0.025em">1</tspan><tspan x="17.15" y="0">1</tspan></text>
-    <text transform="translate(112.38 212.93) scale(1 1.03)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.0240234375em">201</tspan><tspan x="17.16" y="0">2</tspan></text>
-    <text transform="translate(161.87 212.93) scale(1 1.03)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.0240234375em">201</tspan><tspan x="17.16" y="0">3</tspan></text>
-    <text transform="translate(213.13 212.93) scale(1 1.03)" style="font-size: 10px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700"><tspan style="letter-spacing: -0.0240234375em">201</tspan><tspan x="17.16" y="0">4</tspan></text>
-    <text transform="translate(9.01 130.52)" style="font-size: 12.5px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700">생산량</text>
-  </g>
-  <text transform="translate(55.37 252.28)" style="font-size: 14px;fill: #444;font-family: 'Spoqa Han Sans'">녹차,홍차,기타 차류 총합</text>
-  <text transform="translate(40.51 292.89)" style="font-size: 12px;fill: #777;font-family: 'Spoqa Han Sans'">자료: 한국농수산식품유통공사(aT)</text>
-</svg>
               </div>
             </div>
-            <div class="box padding-lg box-tea1">
-              <div class="icon-tea"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="52" viewBox="0 0 55 52">
-  <g>
-    <path d="M1.47,22.16a.2.2,0,0,1,.2-.2c49.67,0,47.28-.1,47.28.2,0,9.86-5,19.67-13.66,24.27H15.13C6.83,42,1.47,32.51,1.47,22.16Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <path d="M42.19,40.87c.36-.35.64-.82,1-1.2,3.9,3.71,9.91.65,9.91-5a6.47,6.47,0,0,0-4.72-6.39c.09-.51.17-1,.23-1.54a8,8,0,0,1,5.93,7.93C54.51,41.69,47,45.59,42.19,40.87Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <g>
-      <path d="M20.62,15.63s2-11.39-9.73-9.77C10.9,5.86,9.25,17.29,20.62,15.63Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      <line x1="22.78" y1="20.06" x2="20.62" y2="15.63" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      <path d="M10.9,5.86s7.18,3.66,9.73,9.77" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      <path d="M18.56,7.62S20.62-.5,30.36.6c0,0,3.58,5.38-2,11.51a10.5,10.5,0,0,1-7.7,3.52" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      <path d="M30.36.6s-8.1,5.88-9.74,11.51" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    </g>
-    <path d="M34.84,20.06a1.2,1.2,0,0,0,0-1.43,2.08,2.08,0,0,1,0-2.94,3.68,3.68,0,0,0,0-5.2" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <path d="M42.15,14.56a1.2,1.2,0,0,0,0-1.43,2.08,2.08,0,0,1,0-2.94,3.68,3.68,0,0,0,0-5.2" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    <path d="M25.37,50.84c-11.77,0-19.31-2.6-23.15-4.41h46.2c-3.94,1.83-11.53,4.41-23,4.41Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-  </g>
-</svg>
+            <div class="card t2007 even">
+              <div class="header">
+                <div class="lazyload" data-src="./img/contribute/t2007.png"></div>
+                <label>홍대 상상마당</label>
               </div>
-              <dl class="tea-list">
-                <dt>녹차</dt>
-                <dd>항산화, 항암효과</dd>
-                <dt>홍차</dt>
-                <dd>비타민이 풍부해 피부미용에 탁월</dd>
-                <dt>후발효차</dt>
-                <dd>혈액순환을 돕고 수족냉증 완화</dd>
-              </dl>
-              <p class="p-small">출처: 파워푸드 슈퍼푸드</p>
-            </div>
-            <div class="box padding box-tea2">
-              <div class="tab tab-tea">
-                <div class="tab-nav">
-                  <a class="active" href="javascript:void(0)" data-name="봄"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="44" viewBox="0 0 38 44">
-  <g>
-    <path d="M.5,24.54a.13.13,0,0,1,.13-.13c32.32,0,30.76-.06,30.76.13,0,6.41-3.26,12.8-8.89,15.79H9.39C4,37.45.5,31.27.5,24.54Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M16,43.2C8.39,43.2,3.49,41.51,1,40.33H31c-2.56,1.19-7.5,2.87-15,2.87Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M31,28.18h5.7s.39,6.17-8.28,6.55A15.76,15.76,0,0,0,31,28.18Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <g>
-      <path d="M16.76,13.79h-.13a2.89,2.89,0,0,1-.91-.19l-.14-.06a2.92,2.92,0,0,1-.36-.19L15,13.22a2.91,2.91,0,0,1-.87-1l-.06-.12h0L14,11.93a2.89,2.89,0,0,1-.19-1q0-.13,0-.27A2.89,2.89,0,0,1,14,9.84l.06-.14a2.91,2.91,0,0,1,1.48-1.48l.14-.06a2.89,2.89,0,0,1,1-.19h.13a2.89,2.89,0,0,1,.91.19l.14.06A2.93,2.93,0,0,1,19.42,9.7h0l.06.14a2.89,2.89,0,0,1,.19,1s0,.09,0,.13a2.89,2.89,0,0,1-.07.53l0,.11v0q0,.13-.08.25h0l-.06.14a2.91,2.91,0,0,1-1.48,1.48l-.14.06A2.89,2.89,0,0,1,16.76,13.79Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M19.63,9.89s7.74-2.1,7.79,1.1c0,0,.3,2.56-7.75.85" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M17.93,8.2S22,1.44,24.31,3.67c0,0,2.22,1.73-4.68,6.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M15.6,13.54s-1.89,7.66,1.31,7.71c0,0,2.8.35,1.09-7.71" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M18,13.54s4.08,6.75,6.38,4.52c0,0,2.22-1.73-4.68-6.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M17.93,8.2S20,.55,16.76.5c0,0-2.75-.39-1,7.66" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M14,10s-7.74-2.1-7.79,1.1c0,0-.3,2.56,7.75.85" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M15.58,8.22s-4-6.7-6.26-4.47c0,0-2.22,1.73,4.68,6.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M18,13.62s1.89,7.66-1.31,7.71c0,0-2.8.35-1.09-7.71" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-      <path d="M15.66,13.62s-4.08,6.75-6.38,4.52c0,0-2.22-1.73,4.68-6.22" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    </g>
-  </g>
-</svg>
-</span> 봄</a>
-                  <a href="javascript:void(0)" data-name="여름"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="44" viewBox="0 0 38 44">
-  <path d="M.5,24.15A.13.13,0,0,1,.63,24c32.18,0,30.64-.06,30.64.13,0,6.39-3.25,12.74-8.85,15.73H9.35C4,37,.5,30.86.5,24.15Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M16,42.74c-7.62,0-12.51-1.68-15-2.86H30.92c-2.55,1.19-7.47,2.86-14.93,2.86Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M30.92,27.78h5.67s.39,6.14-8.25,6.53A15.7,15.7,0,0,0,30.92,27.78Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M16.94,18.85A6.94,6.94,0,0,0,23.16,12c0-1.58-1.09-3.9-3.24-6.9-1.56-2.18-3.09-3.9-3.16-4L16.23.5l-.53.59c-.06.07-1.6,1.8-3.16,4-2.15,3-3.24,5.33-3.24,6.9a6.94,6.94,0,0,0,6.22,6.89Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <g>
-    <polyline points="14.38 9.98 16.19 11.98 18.18 10.15" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <polyline points="13.37 13.35 16.19 16.11 19.1 13.43" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <line x1="16.19" y1="11.98" x2="16.19" y2="21.81" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 여름</a>
-                  <a href="javascript:void(0)" data-name="가을"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="39" height="40" viewBox="0 0 39 40">
-  <path d="M.5,19.41a.13.13,0,0,1,.13-.13c33.2,0,31.61-.07,31.61.13,0,6.59-3.35,13.15-9.13,16.23H9.63C4.08,32.68.5,26.33.5,19.41Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M16.48,38.59C8.61,38.59,3.57,36.85,1,35.64H31.88c-2.63,1.23-7.71,2.95-15.41,2.95Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M31.88,23.16h5.85s.4,6.34-8.51,6.73A16.19,16.19,0,0,0,31.88,23.16Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <g>
-    <path d="M24.05,3.31a1.37,1.37,0,0,0-.76-.47,1.28,1.28,0,0,1-.47-.23,1.78,1.78,0,0,1-.31-.54,1.64,1.64,0,0,0-.58-.81C19.17-.42,15.82.69,12,4.55c-3.59,3.59-4.51,8.52-2.05,11a5,5,0,0,0,3.65,1.38,10.86,10.86,0,0,0,7.33-3.43c4-4,5-7.37,3.17-10.16Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M11.62,13h0c3-.33,3.92-2.66,4.78-4.92s1.76-4.58,5-4.58h.25" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  </g>
-</svg>
-</span> 가을</a>
-                  <a href="javascript:void(0)" data-name="겨울"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="41" viewBox="0 0 38 41">
-  <path d="M.5,21.31a.13.13,0,0,1,.13-.13c32.38,0,30.82-.06,30.82.13,0,6.43-3.27,12.82-8.91,15.82H9.41C4,34.26.5,28.06.5,21.31Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M16.08,40C8.41,40,3.49,38.32,1,37.14H31.11c-2.57,1.19-7.52,2.88-15,2.88Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <path d="M31.11,25h5.71s.39,6.18-8.3,6.57A15.79,15.79,0,0,0,31.11,25Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-  <g>
-    <path d="M18.18,4.58S18.88.15,25,.52C25,.52,23.79,6.19,18.18,4.58Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M18.17,4.54a4.71,4.71,0,0,1,1-2.09,8,8,0,1,0,5.13,7.48A7.7,7.7,0,0,0,22.12,4.5,5.46,5.46,0,0,1,18.17,4.54Z" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <path d="M17.27,5.35s4-3.57,5.82-3.46" style="fill: none;stroke: #999;stroke-linecap: round;stroke-linejoin: round"/>
-    <circle class="fill" cx="15.09" cy="4.1" r="0.48" style="fill: #999"/>
-    <circle class="fill" cx="20.93" cy="6.79" r="0.48" style="fill: #999"/>
-    <circle class="fill" cx="22.71" cy="8.57" r="0.48" style="fill: #999"/>
-    <circle class="fill" cx="22.71" cy="10.64" r="0.48" style="fill: #999"/>
-    <circle class="fill" cx="20.58" cy="9.93" r="0.48" style="fill: #999"/>
-    <circle class="fill" cx="20.58" cy="12.26" r="0.48" style="fill: #999"/>
-    <circle class="fill" cx="12.55" cy="5.23" r="0.48" style="fill: #999"/>
-  </g>
-</svg>
-</span> 겨울</a>
-                </div>
-                <div class="tab-content">
-                  <div class="item active">봄을 만끽할 수 있는 꽃차 <br><span class="colored">추천 차_</span>제주난꽃향 그린티<br>(1년에 10일만 피는 꽃으로 만든 차)</div>
-                  <div class="item">청량감을 느낄 수 있는 차<br><span class="colored">추천 차_</span>웨딩그린티(녹차 베이스로 청도포향 첨가)</div>
-                  <div class="item">초콜릿, 캬라멜과 같은 묵직한 향이 있는 차<br><span class="colored">추천 차_</span>바닐라에스프레소<br>(커피향, 바닐라향이 가미된 홍차)</div>
-                  <div class="item">귤껍질을 발효차와 블랜딩하거나 열대과일 들어간 차<br><span class="colored">추천 차_</span>삼다연 영귤 또는 제주아일랜드 드림그린티<br>(동백꽃, 유채꽃, 영귤 들어간 차)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section s-sense-more taste">
-        <div class="wrapper">
-          <div class="box">
-            <p class="heading">
-              티나게 큰 차음료 시장, <br>커피 업계도 뛰어들었다.
-            </p>
-            <div class="link">
-              <a href="http://news.joins.com/article/20681008" target="_blank" class="btn btn-sm">기사 더읽기</a>
-            </div>
-            <p class="heading">
-              아무리 비싸도 입에 쓰면 무의미 … <br>오래된 차 미용팩으로 쓰면 유용
-            </p>
-            <div class="link">
-              <a href="http://news.joins.com/article/21800113" target="_blank" class="btn btn-sm">기사 더읽기</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="touch" class="hash-section ja_section_wrap" ja-section-title="촉각">
-      <div class="section s-sense-top">
-        <header class="sense-top-header animation-init">
-          <h2 class="heading"><span class="cn">觸</span> <span class="ko">닿을 촉</span></h2>
-          <p class="sub-heading"><span>지<br>친</span> <span>하<br>루<br>를<br></span> <span>만<br>지<br>다</span></p>
-        </header>
-        <div class="sense-top-video animation-init">
-          <div class="video-play">
-            <video id="video-touch"></video>
-            <a href="javascript:void(0)" class="play" aria-label="play movie">
-              <div class="poster lazyload" data-src="../img/senses/poster-touch.jpg"></div>
-            </a>
-          </div>
-        </div>
-        <div class="sense-top-footer animation-init layout-right">
-          <div class="sense-top-summary">
-            <p class="num">04</p>
-            <p class="text animation-init">
-              “고객 피부 개선되고<br> 아름다워지는 모습에<br> 나도 힐링”
-            </p>
-          </div>
-          <div class="sense-top-quote-wrapper">
-            <blockquote class="sense-top-quote animation-init">
-              <div class="inner">
+              <div class="descText">
                 <p class="text">
-                  흐트러진<br> 몸의 균형을<br> 찾아주는
-                  <br>
-                  <strong class="colored">시간을</strong><br>
-                  <strong class="colored">가지세요</strong>
+                  KT&amp;G 사회공헌의 키워드는 ‘상상’이다. 서울 홍익대 앞에 ‘상상 마당’(2007년)을 세 워 젊은 문화예술인들을 적극 지원하면서 유 명 해졌다. ‘더 좋은 내일을 응원합니다’라는 슬로건을 내걸고 대학생들의 ‘자기성장’을 지원하기 시작한 것도 이즈음이다. 꿈과 열 정만 가져오면 이를 실현하는 지렛대가 되겠 다는 게 기획 의도였다.
                 </p>
-                <p class="from"><b class="name">권정현</b> 설화수 스파 에스테티션</p>
-              </div>
-            </blockquote>
-            <nav class="section-sns">
-              <a href="javascript:void(0)" class="share" aria-label="공유하기"></a>
-              <div class="section-sns-list">
-                <a href="javascript:void(0)" class="kakaotalk" aria-label="kakaotalk 공유하기"></a>
-                <a href="javascript:void(0)" class="facebook" aria-label="facebook 공유하기"></a>
-                <a href="javascript:void(0)" class="twitter" aria-label="twitter 공유하기"></a>
-                <a href="javascript:void(0)" class="kakaostory" aria-label="kakaostory 공유하기"></a>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="section s-sense-body touch lazyload" data-src="./img/senses/bg-touch.jpg">
-        <div class="inner">
-          <div class="sense-slider-header">
-            <h3 class="heading"><span class="num"></span> 꿀팁! 가을∙겨울 건조한 피부 관리법</h3>
-            <h3 class="heading"><span class="num"></span> 꿀팁! 집에서 할 수 있는 눈, 발 피로 풀기</h3>
-          </div>
-          <div class="sense-slider">
-            <div class="box padding">
-              <h4 class="box-heading">레이어링(LAYERING) 보습 케어</h4>
-              <div class="tab layering-tab">
-                <div class="tab-nav">
-                  <a class="active" href="javascript:void(0)" data-name="1"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="96" viewBox="0 0 53 96">
-  <rect x="16.38" y="0.5" width="20" height="20" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <text transform="translate(22.2 15.29)" style="font-size: 14px;fill: #999;font-family: 'Spoqa Han Sans';font-weight: 700">1</text>
-  <g>
-    <path d="M7,76.56s-.14-1.75-1.43-2.05C5.57,74.51,5,74.87,7,76.56Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M17.69,95l-.9-9c-.47-.56-6-5.18-6.82-5.68-.63-.37-1.41-1.79-2.37-3s-2.08-2.08-2-2.56c.35-1.31,2.21-.41,2.42-.29A12.48,12.48,0,0,1,11,77c-.29-.69-.59-1.53-.62-1.62l-.2-.51,0-.06L6.37,65.88A1.35,1.35,0,0,1,6.31,65a2.42,2.42,0,0,0,.11.36l.17.44c.25.54.68.54,1.11.33s.71-.53.46-1.07c0,0-.18-.44-.2-.48a2.8,2.8,0,0,0-.16-.25,1.34,1.34,0,0,1,.65.69l3.71,8,.23-.1L8.53,63.06a1.31,1.31,0,0,1,0-1,2.25,2.25,0,0,0,.13.46l.17.44c.25.54.68.53,1.11.33s.71-.52.46-1.07c0,0-.18-.44-.2-.48a2.41,2.41,0,0,0-.26-.37,1.3,1.3,0,0,1,.78.75L15,71.9l.2,0L12,63.67a1.45,1.45,0,0,1,.06-1.22,2.21,2.21,0,0,0,.1.51l.14.45c.22.56.64.58,1.09.41s.74-.48.53-1c0,0-.15-.45-.17-.49a2.54,2.54,0,0,0-.21-.35,1.47,1.47,0,0,1,.78.82l3.54,8.49.15,0-1.54-4.7a1.3,1.3,0,0,1,0-1,1.83,1.83,0,0,0,.07.37l.1.38c.17.46.51.49.88.36s.62-.37.46-.84c0,0-.11-.38-.12-.41a2.15,2.15,0,0,0-.16-.28,1.32,1.32,0,0,1,.64.72l1.74,5.06,0,.1h0a56,56,0,0,1,2.54,6.11c.71,2.33,1.51,17.6,1.51,17.6" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M17.75,65.06a.65.65,0,0,0-1.24.42" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M16.51,65.48a1.87,1.87,0,0,0,.07.37l.11.38c.16.46.51.49.88.36s.62-.37.46-.84c0,0-.11-.38-.12-.41a2,2,0,0,0-.15-.28" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M13.55,61.94a.84.84,0,0,0-1-.41.83.83,0,0,0-.47.93" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M12.06,62.45a2.18,2.18,0,0,0,.1.51l.14.45c.22.56.64.58,1.09.41s.74-.48.53-1c0,0-.15-.45-.17-.49a2.51,2.51,0,0,0-.21-.35" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M9.93,61.42a.82.82,0,0,0-1-.31.85.85,0,0,0-.4,1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M8.51,62.1a2.22,2.22,0,0,0,.13.46l.17.44c.25.54.68.54,1.11.33s.71-.53.46-1.07c0,0-.18-.44-.2-.48a2.41,2.41,0,0,0-.26-.37" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M7.8,64.29c-.28-.38-.66-.64-1.11-.43A.89.89,0,0,0,6.31,65" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M6.31,65a2.3,2.3,0,0,0,.11.36l.17.44c.26.54.68.54,1.11.33s.71-.53.46-1.07c0,0-.18-.44-.2-.48a2.53,2.53,0,0,0-.16-.25" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M46.25,76.56c2-1.68,1.43-2.05,1.43-2.05C46.4,74.8,46.25,76.56,46.25,76.56Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M35.56,95,36.27,87c.47-.56,6.16-6.14,7-6.64.63-.37,1.41-1.79,2.37-3s2.08-2.08,2-2.56c-.35-1.31-2.21-.41-2.42-.29A12.48,12.48,0,0,0,42.29,77c.29-.69.59-1.53.62-1.62l.2-.51,0-.06,3.75-8.91a1.34,1.34,0,0,0,.06-.91,2.35,2.35,0,0,1-.11.36l-.17.44c-.26.54-.68.54-1.11.33s-.71-.53-.46-1.07c0,0,.18-.44.2-.48a2.8,2.8,0,0,1,.16-.25,1.34,1.34,0,0,0-.65.69l-3.71,8-.23-.1,3.85-9.84a1.31,1.31,0,0,0,0-1,2.21,2.21,0,0,1-.13.46l-.17.44c-.25.54-.68.53-1.11.33s-.71-.52-.46-1.07c0,0,.18-.44.2-.48a2.41,2.41,0,0,1,.26-.37,1.3,1.3,0,0,0-.78.75L38.29,71.9l-.2,0,3.15-8.18a1.45,1.45,0,0,0-.06-1.22,2.24,2.24,0,0,1-.1.51l-.14.45c-.22.56-.64.58-1.09.41s-.74-.48-.53-1c0,0,.15-.45.17-.49a2.49,2.49,0,0,1,.21-.35,1.47,1.47,0,0,0-.78.82l-3.54,8.49-.15,0,1.54-4.7a1.3,1.3,0,0,0,0-1,1.83,1.83,0,0,1-.07.37l-.1.38c-.17.46-.51.49-.88.36s-.62-.37-.46-.84c0,0,.11-.38.12-.41a2.08,2.08,0,0,1,.15-.28,1.32,1.32,0,0,0-.64.72l-1.74,5.06,0,.1h0a56,56,0,0,0-2.54,6.11c-.71,2.33-1.28,8.22-1.51,10.45v7.15" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M35.5,65.06a.65.65,0,0,1,1.24.42" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M36.74,65.48a1.87,1.87,0,0,1-.07.37l-.1.38c-.16.46-.51.49-.88.36s-.62-.37-.46-.84c0,0,.11-.38.12-.41a2,2,0,0,1,.16-.28" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M39.7,61.94a.84.84,0,0,1,1-.41.83.83,0,0,1,.47.93" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M41.19,62.45a2.18,2.18,0,0,1-.11.51l-.14.45c-.22.56-.64.58-1.09.41s-.74-.48-.53-1c0,0,.15-.45.17-.49a2.5,2.5,0,0,1,.21-.35" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M43.32,61.42a.82.82,0,0,1,1-.31.85.85,0,0,1,.4,1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M44.74,62.1a2.22,2.22,0,0,1-.13.46l-.17.44c-.25.54-.68.54-1.11.33s-.71-.53-.46-1.07c0,0,.18-.44.2-.48a2.41,2.41,0,0,1,.26-.37" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M45.45,64.29c.28-.38.66-.64,1.11-.43a.89.89,0,0,1,.38,1.1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M46.94,65a2.31,2.31,0,0,1-.11.36l-.17.44c-.26.54-.68.54-1.11.33s-.71-.53-.46-1.07c0,0,.18-.44.2-.48a2.65,2.65,0,0,1,.16-.25" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M7.84,64.29V57.14c0-6.68,8.58-10.3,15.85-13.46,1.83.39,21.22,3.2,21.22,11.7V65" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M29,86.13a18.22,18.22,0,0,1-2.23.14h-.86a18.14,18.14,0,0,1-1.86-.1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M15.46,60.77a6.67,6.67,0,0,0,4,1,6.67,6.67,0,0,0,4-1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M29.31,60.77a6.67,6.67,0,0,0,4,1,6.67,6.67,0,0,0,4-1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="23.44" y1="73.9" x2="29.9" y2="73.9" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M13,83.1C2.32,82.14.71,75.87.59,75.59a1,1,0,0,1,0-.78A61.74,61.74,0,0,0,4.49,54.59,20.34,20.34,0,0,1,11.3,39.81a23.22,23.22,0,0,1,15.08-5.43,23.25,23.25,0,0,1,15.08,5.43,20.34,20.34,0,0,1,6.81,14.78,61.7,61.7,0,0,0,3.91,20.22,1,1,0,0,1,0,.78c-.12.28-1.66,6.26-11.7,7.44" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  </g>
-</svg>
-</span></a>
-                  <a href="javascript:void(0)" data-name="2"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="89" height="94" viewBox="0 0 89 94">
-  <rect x="34.16" y="0.5" width="20" height="20" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <text transform="translate(39.98 15.29)" style="font-size: 14px;fill: #999;font-family: 'Spoqa Han Sans';font-weight: 700">2</text>
-  <text transform="translate(10.73 51.71)" style="font-size: 7.5px;fill: #999;font-family: 'Spoqa Han Sans';font-weight: 700"> </text>
-  <g>
-    <path d="M11.6,80.41S10.74,79,9.51,79.24C9.51,79.24,9.2,79.78,11.6,80.41Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M29.26,93.08l-4.08-7.76c-.64-.28-8.49-2.84-9.43-2.91-.7-.06-2-1-3.32-1.64s-2.67-.92-2.76-1.39c-.25-1.28,1.73-1.28,2-1.27a12,12,0,0,1,3.56,1C14.66,78.63,14,78,14,78l-.38-.35-.05,0-7-6.11a1.29,1.29,0,0,1-.43-.76,2.25,2.25,0,0,0,.25.26l.33.31c.45.36.81.18,1.1-.18A.7.7,0,0,0,7.77,70l-.37-.33-.25-.15a1.29,1.29,0,0,1,.85.32l6.55,5.35.15-.18L7.27,68.13a1.26,1.26,0,0,1-.42-.81,2.17,2.17,0,0,0,.31.34l.33.31c.45.36.81.18,1.1-.18a.7.7,0,0,0-.05-1.11l-.37-.33a2.3,2.3,0,0,0-.38-.21,1.25,1.25,0,0,1,1,.31l7.75,6.61.15-.12L10.52,67.2a1.39,1.39,0,0,1-.46-1.08,2.12,2.12,0,0,0,.3.4l.31.33c.42.39.8.23,1.11-.11a.7.7,0,0,0,0-1.11l-.35-.36a2.37,2.37,0,0,0-.33-.21,1.41,1.41,0,0,1,1,.38l6.61,5.84.12-.09-3.3-3.41a1.24,1.24,0,0,1-.41-.9,1.78,1.78,0,0,0,.22.29l.25.28c.34.33.65.21.91-.06a.58.58,0,0,0,0-.91l-.28-.3A2,2,0,0,0,16,66a1.26,1.26,0,0,1,.86.35L20.52,70l.08.07h0a53.48,53.48,0,0,1,4.75,4.2C26.95,76,29.9,80.8,31,82.63l4.88,9.91" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M16,66a.63.63,0,0,0-.89.88" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M15.16,66.88a1.77,1.77,0,0,0,.22.29l.25.28a.58.58,0,0,0,.91-.06c.26-.27.38-.58,0-.91l-.28-.3L16,66" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M11.12,65.06a.81.81,0,0,0-1,.07.8.8,0,0,0,0,1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M10.05,66.13a2.12,2.12,0,0,0,.3.4l.31.33c.42.39.8.23,1.11-.11a.7.7,0,0,0,0-1.11l-.35-.36a2.35,2.35,0,0,0-.33-.21" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M7.78,66.13a.79.79,0,0,0-1,.15.81.81,0,0,0,.07,1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M6.85,67.31a2.17,2.17,0,0,0,.31.34l.33.31c.45.36.81.18,1.1-.18S9,67,8.53,66.67l-.37-.33a2.32,2.32,0,0,0-.38-.21" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M7.15,69.5c-.4-.21-.84-.27-1.14.09a.85.85,0,0,0,.13,1.11" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M6.15,70.7a2.3,2.3,0,0,0,.25.26l.33.31c.45.36.81.18,1.1-.18A.7.7,0,0,0,7.77,70l-.37-.33-.25-.15" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M77.66,78.95c2.31-.89,1.95-1.39,1.95-1.39C78.36,77.41,77.66,78.95,77.66,78.95Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M61.92,92.53l3.63-7.41c.6-.35,7.28-3.55,8.21-3.73.69-.14,1.85-1.16,3.12-2s2.55-1.21,2.59-1.68c.11-1.3-1.86-1.08-2.09-1A12,12,0,0,0,73.95,78c.48-.53,1-1.19,1.08-1.26l.34-.39,0,0,6.26-6.84a1.29,1.29,0,0,0,.35-.8,2.26,2.26,0,0,1-.22.29l-.3.34a.84.84,0,0,1-1.18-1.17l.34-.37.23-.17a1.29,1.29,0,0,0-.81.41l-5.93,6L74,73.91l6.65-7.64a1.26,1.26,0,0,0,.33-.85,2.15,2.15,0,0,1-.27.37l-.3.34A.84.84,0,0,1,79.21,65l.34-.37a2.38,2.38,0,0,1,.35-.25,1.25,1.25,0,0,0-.95.42l-7,7.42-.16-.1,5.49-6.37a1.39,1.39,0,0,0,.34-1.12,2.14,2.14,0,0,1-.26.43l-.27.36a.84.84,0,0,1-1.26-1.09l.31-.39a2.35,2.35,0,0,1,.3-.25,1.41,1.41,0,0,0-1,.48l-5.94,6.52-.13-.08,2.91-3.75a1.25,1.25,0,0,0,.31-.93,1.72,1.72,0,0,1-.18.31l-.22.3a.58.58,0,0,1-.91,0c-.29-.24-.44-.54-.14-.9l.24-.33a1.94,1.94,0,0,1,.23-.2,1.26,1.26,0,0,0-.81.45l-3.2,4-.07.08h0a53.57,53.57,0,0,0-4.26,4.69c-1.4,1.88-3.81,7-4.73,8.95l-3.74,9.26" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M71.67,65.11a.63.63,0,0,1,1,.78" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M72.65,65.89a1.75,1.75,0,0,1-.18.31l-.21.3a.58.58,0,0,1-.91,0c-.29-.24-.44-.54-.14-.9l.24-.33a2,2,0,0,1,.23-.2" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M76.46,63.64a.8.8,0,0,1,1,0,.79.79,0,0,1,.13,1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M77.64,64.58a2.14,2.14,0,0,1-.26.43l-.27.36a.84.84,0,0,1-1.25-1.09l.31-.39a2.39,2.39,0,0,1,.3-.25" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M79.9,64.34a.79.79,0,0,1,1,0,.81.81,0,0,1,0,1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M81,65.41a2.15,2.15,0,0,1-.27.37l-.3.34A.84.84,0,0,1,79.21,65l.34-.37a2.35,2.35,0,0,1,.35-.25" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M80.89,67.62c.38-.25.8-.36,1.14,0a.85.85,0,0,1,0,1.12" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M82,68.71a2.26,2.26,0,0,1-.22.29l-.3.34a.84.84,0,0,1-1.18-1.17l.34-.37.23-.17" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M32.93,60.06a6.4,6.4,0,0,0,3.83,1,6.4,6.4,0,0,0,3.83-1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M46.21,60.06a6.4,6.4,0,0,0,3.83,1,6.4,6.4,0,0,0,3.83-1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="40.58" y1="72.64" x2="46.77" y2="72.64" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M59.73,80.88c-.85.21-4.63.39-5.67.51" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M20.09,69.37a63.18,63.18,0,0,0,2.33-15.23A19.49,19.49,0,0,1,28.95,40a22.66,22.66,0,0,1,28.9,0,19.49,19.49,0,0,1,6.53,14.17A62.34,62.34,0,0,0,67,70.24" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M61.16,67.39A17.36,17.36,0,0,1,43.81,84.75H43A17.35,17.35,0,0,1,25.63,67.39V56.83c0-6.41,8.22-9.87,15.19-12.9,1.76.37,20.34,3.06,20.34,11.21Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M5.35,63.4S1.51,65.5,3.61,69.26" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M3.83,61.77S-1.12,63.54,1,68.45" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M83.44,63.2S86.9,65.1,85,68.49" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M84.81,61.73s4.46,1.6,2.5,6" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="29.95" y1="80.88" x2="34.03" y2="82.26" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M71.06,63.76s-.47-2.3-3-.94a3.2,3.2,0,0,0,1-4.46,3.14,3.14,0,0,0,4.35,0s-1.49,3.24.61,3" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  </g>
-</svg>
-</span></a>
-                  <a href="javascript:void(0)" data-name="3"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="89" viewBox="0 0 53 89">
-  <rect x="16.57" y="0.5" width="20" height="20" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <text transform="translate(22.39 15.29)" style="font-size: 14px;fill: #999;font-family: 'Spoqa Han Sans';font-weight: 700">3</text>
-  <path d="M44.65,69.82a18,18,0,0,1-18,18H25.8a18,18,0,0,1-18-18v-11c0-6.64,8.53-10.24,15.76-13.38,1.82.39,21.09,3.18,21.09,11.63Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M31.28,50H21.17A11,11,0,0,0,10.23,60.94v8.42a16,16,0,0,0,16,16c8.82,0,16-7.18,16-14.83V62.12C42.22,54.91,37.31,50,31.28,50Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M25.36,62c0-2.2-2.31-3.56-6-3.56s-6,1.37-6,3.56,1.58,5,6,5S25.36,64.32,25.36,62Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M33.11,58.46c-3.72,0-6,1.37-6,3.56s1.58,5,6,5,6-2.69,6-5S36.83,58.46,33.11,58.46Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M26.16,71.84c-4.85.07-7.73,1.35-7.7,3.43,0,2.26,2.78,4.74,7.81,4.67S34,77.31,34,75.05C33.93,73,31,71.77,26.16,71.84Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M15.37,62.46a6.64,6.64,0,0,0,4,1,6.64,6.64,0,0,0,4-1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M29.14,62.46a6.64,6.64,0,0,0,4,1,6.64,6.64,0,0,0,4-1" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <line x1="23.31" y1="75.52" x2="29.73" y2="75.52" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M23.58,68.08a2.24,2.24,0,0,0,1.35,2.18,2.95,2.95,0,0,0,2.57,0,2.24,2.24,0,0,0,1.35-2.18" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M15.81,84.79C2.58,84.79.72,77.51.59,77.2a1,1,0,0,1,0-.77,61.34,61.34,0,0,0,3.89-20.1,20.22,20.22,0,0,1,6.77-14.7,23.08,23.08,0,0,1,15-5.4,23.12,23.12,0,0,1,15,5.4A20.22,20.22,0,0,1,48,56.33a61.34,61.34,0,0,0,3.89,20.1,1,1,0,0,1,0,.77c-.14.31-2,7.59-15.23,7.59" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-</svg>
-</span></a>
-                </div>
-                <div class="tab-content">
-                  <div class="item active">에센스를 손바닥에 덜고 향을 흡인해 마음을 안정 시킨 후 손바닥을 이용해 피부에 지긋이 여러 번 눌러 흡수 시킨다.</div>
-                  <div class="item">이후 스킨, 로션, 에센스, 아이크림, 영양크림을 순차적으로 사용하며 흡수가 잘 될 수 있도록 가볍게 두드려 마무리한다.</div>
-                  <div class="item">일주일에 1~2번 각질 관리와 3번 이상은 수면 마스크나 시트 마스크를 이용해 피부 건조함을 예방한다.</div>
-                </div>
               </div>
             </div>
-            <div class="box padding">
-              <div class="tab massage-tab">
-                <div class="tab-nav">
-                  <a class="active" href="javascript:void(0)" data-name="눈"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="51" height="52" viewBox="0 0 51 52">
-  <g style="opacity: 0.5">
-    <path d="M25.5.5a25,25,0,1,1-25,25A25,25,0,0,1,25.5.5Z" style="fill: none;stroke: #999;stroke-miterlimit: 10;fill-rule: evenodd"/>
-  </g>
-  <g>
-    <path d="M11.58,25.86C12.17,27,17,35.39,26,35.39S39.74,27,40.33,25.86c-.59-1.11-5.41-9.54-14.37-9.54s-13.78,8.43-14.37,9.54Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M26,32.13a6.27,6.27,0,1,1,6.27-6.27A6.28,6.28,0,0,1,26,32.13Zm0-11.57" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path class="fill" d="M27.6,25.86A1.64,1.64,0,1,1,26,24.21a1.64,1.64,0,0,1,1.64,1.64Zm0,0" style="fill: #999"/>
-    <line x1="11.86" y1="18.91" x2="14.54" y2="21.59" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="17.66" y1="14.51" x2="19.53" y2="17.81" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="25.88" y1="12.59" x2="25.88" y2="16" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="34.11" y1="14.51" x2="32.23" y2="17.81" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="39.37" y1="18.91" x2="37.22" y2="21.06" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  </g>
-</svg>
-</span></a>
-                  <a href="javascript:void(0)" data-name="발"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="51" height="52" viewBox="0 0 51 52">
-  <g style="opacity: 0.5">
-    <path d="M25.5.5a25,25,0,1,1-25,25A25,25,0,0,1,25.5.5Z" style="fill: none;stroke: #999;stroke-miterlimit: 10;fill-rule: evenodd"/>
-  </g>
-  <path d="M38.79,11.57v7.65a15.42,15.42,0,0,0,1.57,7.53l.18.42c1.25,2.81,1.48,5.05.66,6.49a3.86,3.86,0,0,1-2.57,1.72H10.57c-3.4-.1-4.28-2.08-4.26-3.23,0-.66.28-1.08.46-1.08a40.52,40.52,0,0,0,6.14-.61c4.38-.86,12.94-5.39,15.34-9.64.73-1.27,1-4.23.86-9v-.32" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <path d="M36.75,25.11c.34.81,1,3.2,0,4.48-.72.92-2.23,1.22-4.5.88" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-</svg>
-</span></a>
-                </div>
-                <div class="tab-content">
-                  <div class="item active">
-                    <strong>1. 아이크림 바르고 눈꺼풀 눌러주기</strong> 아이 크림을 양쪽 눈가에 올려놓고 손가락 끝을 이용해 눈 아래쪽에서 눈꼬리 쪽으로 가볍게 톡톡 두드려주며 흡수시킨 후 눈꺼풀을 4~5회 정도 지그시 눌렀다 떼었다를 반복한다.
-                    <br>
-                    <strong>2. 눈 주위 따뜻한 온기 전달 후 지압하기</strong> 손바닥을 비벼 열기를 만든 후 눈 앞머리 부분, 눈꼬리, 관자놀이 부분을 두 번째 손가락으로 꼭꼭 누른다.
+            <div class="card t2004 odd">
+              <div class="header">
+                <div class="bar-chart">
+                  <div class="unit">(단위:억)</div>
+                  <div class="x-axis"></div>
+                  <div class="bar">
+                    <div class="height-fix"><b></b></div>
+                    <div class="chart-bar color-2004" data-num="440"><b></b></div>
+                    <div class="chart-bar color-2004" data-num="437"><b></b></div>
+                    <div class="chart-bar color-2004" data-num="623"><b></b></div>
+                    <div class="chart-bar color-2004" data-num="507"><b></b></div>
+                    <div class="chart-bar color-2008" data-num="530"><b></b></div>
+                    <div class="chart-bar color-2008" data-num="626"><b></b></div>
+                    <div class="chart-bar color-2008" data-num="595"><b></b></div>
+                    <div class="chart-bar color-2011" data-num="504"><b></b></div>
+                    <div class="chart-bar color-2011" data-num="552"><b></b></div>
+                    <div class="chart-bar color-2011" data-num="527"><b></b></div>
+                    <div class="chart-bar color-2014" data-num="584"><b></b></div>
+                    <div class="chart-bar color-2014" data-num="808"><b></b></div>
+                    <div class="chart-bar color-2014" data-num="728"><b></b></div>
                   </div>
-                  <div class="item">
-                    <strong>1. 족욕법</strong> 따뜻한 물에 발을 1~2분 정도 담근 후 찬물에 1~2분 정도 담근다. 이렇게 2~3회 정도 반복하면 하루 종일 지친 발의 피로가 말끔히 풀린다.
-                    <br>
-                    <strong>2. 발 근육 풀기</strong> 발 전체에 바디 크림을 충분히 바른 후 주무른다. 그 후 다리를 뻗어 앉은 후 양쪽 발목을 같은 방향, 다른 방향으로 돌리고 발가락 끝까지 힘을 주어 뻗었다 접었다를 반복한다.
+                  <div class="year-label">
+                    <div class="y2004">2004년</div>
+                    <div class="y2007">2007년</div>
+                    <div class="y2010">2010년</div>
+                    <div class="y2013">2013년</div>
+                    <div class="y2016">2016년</div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section s-sense-more">
-        <div class="wrapper">
-          <div class="box">
-            <p class="heading">
-              [J가 가봤습니다] 강남 명품거리 <br>설화수 매장 문 여니 온통 황금빛
-            </p>
-            <div class="link">
-              <a href="http://news.joins.com/article/19813347" target="_blank" class="btn btn-sm">기사 더읽기</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="hearing" class="hash-section ja_section_wrap" ja-section-title="청각">
-      <div class="section s-sense-top">
-        <header class="sense-top-header animation-init">
-          <h2 class="heading"><span class="cn">聽</span> <span class="ko">들을 청</span></h2>
-          <p class="sub-heading"><span>마<br>음<br>을<br></span> <span>듣<br>는<br>다</span></p>
-        </header>
-        <div class="sense-top-video animation-init">
-          <div class="video-play">
-            <video id="video-hearing"></video>
-            <a href="javascript:void(0)" class="play" aria-label="play movie">
-              <div class="poster lazyload" data-src="../img/senses/poster-hearing.jpg"></div>
-            </a>
-          </div>
-        </div>
-        <div class="sense-top-footer animation-init layout-left">
-          <div class="sense-top-summary">
-            <p class="num">05</p>
-            <p class="text animation-init">
-              “매일 아침 지하철로<br> 출근하면서
-              <br> 눈을 감고 사람들의<br> 목소리를 듣는<br> 연습을 해요.”
-            </p>
-          </div>
-          <div class="sense-top-quote-wrapper">
-            <blockquote class="sense-top-quote animation-init">
-              <div class="inner">
+              <div class="descText">
                 <p class="text">
-                  전화는<br> 얼굴 없는 만남,<br>
-                  <strong class="colored">가장 중요한 건</strong><br>
-                  <strong class="colored">경청</strong>
+                  2004년 이후 지난해까지 KT&amp;G는 <span class="bold">매출의 2% 이상을 꾸준히 사회 공헌 활동에 지원하 고 있다. 이는 대기업 평균인 0.2% (전국경 제 인연합회 집계)보다 10배가량 높은 비율 이다.</span> 무대를 세계로 넓힌 것은 2014년, 자 카르타에 상상유니브를 시범 개설한 것은 2015년이다. 이와 더불어 현지인을 적극 채 용해 지역경제를 살리고, 문화예술을 지원 하고
+                  있다.
                 </p>
-                <p class="from"><b class="name">백민애</b> 아모레퍼시픽 고객상담원</p>
-              </div>
-            </blockquote>
-            <nav class="section-sns">
-              <a href="javascript:void(0)" class="share" aria-label="공유하기"></a>
-              <div class="section-sns-list">
-                <a href="javascript:void(0)" class="kakaotalk" aria-label="kakaotalk 공유하기"></a>
-                <a href="javascript:void(0)" class="facebook" aria-label="facebook 공유하기"></a>
-                <a href="javascript:void(0)" class="twitter" aria-label="twitter 공유하기"></a>
-                <a href="javascript:void(0)" class="kakaostory" aria-label="kakaostory 공유하기"></a>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="section s-sense-body hearing lazyload" data-src="./img/senses/bg-hearing.jpg">
-        <div class="inner">
-          <div class="sense-slider-header">
-            <h3 class="heading"><span class="num"></span> 콜센터 근무자 93% “근무 중 언어폭력 경험 있다”</h3>
-            <h3 class="heading"><span class="num"></span> 꿀팁! 아름다운 전화 예절</h3>
-          </div>
-          <div class="sense-slider">
-            <div class="box padding">
-              <div class="graph-hearing"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="339" viewBox="0 0 248 339">
-  <defs>
-    <clipPath id="hearing-a">
-      <path d="M81.5,247a44.73,44.73,0,1,0,87.93-11.59c-1.29,0-2.76.14-4.35.26a40.47,40.47,0,1,1-38.85-29.15c1.08,0,2.15.06,3.22.14l-.21-4.29c-1-.07-2-.11-3-.11A44.78,44.78,0,0,0,81.5,247Z" style="fill: none"/>
-    </clipPath>
-    <clipPath id="hearing-b">
-      <path d="M82.22,84.86A44.73,44.73,0,1,0,154.3,49.5l-2.7,3.3A40.44,40.44,0,1,1,127,44.38c1.08,0,2.15.06,3.22.14L130,40.24c-1-.07-2-.11-3-.11A44.78,44.78,0,0,0,82.22,84.86Z" style="fill: none"/>
-    </clipPath>
-  </defs>
-  <g>
-    <g>
-      <path d="M164.83,235.71c1.6-.13,3.07-.22,4.35-.26a44.82,44.82,0,0,0-40.19-33l.21,4.29A40.55,40.55,0,0,1,164.83,235.71Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      <path d="M81.25,247a44.73,44.73,0,1,0,87.93-11.59c-1.29,0-2.76.14-4.35.26A40.47,40.47,0,1,1,126,206.57c1.08,0,2.15.06,3.22.14l-.21-4.29c-1-.07-2-.11-3-.11A44.78,44.78,0,0,0,81.25,247Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    </g>
-    <g style="clip-path: url(#hearing-a)">
-      <g>
-        <line x1="96.76" y1="195.68" x2="182.06" y2="222.98" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="96.76" y1="199.4" x2="182.06" y2="226.7" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="96.76" y1="203.3" x2="182.06" y2="230.6" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="96.76" y1="207.02" x2="182.06" y2="234.32" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="89.34" y1="208.78" x2="174.64" y2="236.07" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="89.34" y1="212.5" x2="174.64" y2="239.79" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="89.34" y1="216.4" x2="174.64" y2="243.69" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="89.34" y1="220.12" x2="174.64" y2="247.41" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="86.19" y1="223.05" x2="171.49" y2="250.35" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="83.17" y1="226.21" x2="172.21" y2="254.07" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="82.29" y1="229.6" x2="170.96" y2="257.98" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="81.15" y1="232.96" x2="168.97" y2="261.06" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="79.85" y1="236.7" x2="168.97" y2="265.22" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="79.77" y1="240.58" x2="166.89" y2="268.45" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="79.85" y1="244.32" x2="166.89" y2="272.17" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="78.44" y1="247.82" x2="163.74" y2="275.11" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="75.42" y1="250.97" x2="164.46" y2="278.84" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="74.54" y1="254.36" x2="163.21" y2="282.74" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="73.4" y1="257.72" x2="161.22" y2="285.82" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="62.35" y1="258" x2="149.47" y2="285.87" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="62.43" y1="261.74" x2="149.47" y2="289.59" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="61.02" y1="265.24" x2="146.32" y2="292.53" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="58" y1="268.39" x2="147.04" y2="296.26" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="57.12" y1="271.79" x2="145.78" y2="300.16" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="55.98" y1="275.14" x2="143.8" y2="303.24" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      </g>
-    </g>
-    <text transform="translate(99.41 251.66)" style="font-size: 22.908559799194336px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700">77.8<tspan x="48.41" y="0" style="font-size: 12.409845352172852px">%</tspan></text>
-    <text transform="translate(111.07 267.88)" style="font-size: 10.948104858398438px;fill: #444;font-family: 'Spoqa Han Sans'">아니다</text>
-    <text transform="translate(187.16 208.21)" style="font-size: 11.137109756469727px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700">22.2%</text>
-  </g>
-  <g>
-    <g>
-      <path d="M151.6,52.79l2.7-3.3A44.48,44.48,0,0,0,130,40.24l.21,4.29A40.25,40.25,0,0,1,151.6,52.79Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      <path d="M82.22,84.86A44.73,44.73,0,1,0,154.3,49.5l-2.7,3.3A40.44,40.44,0,1,1,127,44.38c1.08,0,2.15.06,3.22.14L130,40.24c-1-.07-2-.11-3-.11A44.78,44.78,0,0,0,82.22,84.86Z" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-    </g>
-    <g style="clip-path: url(#hearing-b)">
-      <g>
-        <line x1="98.02" y1="33.97" x2="183.32" y2="61.26" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="98.02" y1="37.69" x2="183.32" y2="64.98" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="98.02" y1="41.59" x2="183.32" y2="68.88" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="98.02" y1="45.31" x2="183.32" y2="72.6" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="90.6" y1="47.06" x2="175.9" y2="74.35" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="90.6" y1="50.78" x2="175.9" y2="78.07" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="90.6" y1="54.68" x2="175.9" y2="81.97" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="90.6" y1="58.4" x2="175.9" y2="85.69" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="87.45" y1="61.33" x2="172.75" y2="88.63" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="84.43" y1="64.49" x2="173.48" y2="92.36" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="83.55" y1="67.88" x2="172.22" y2="96.26" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="82.41" y1="71.24" x2="170.23" y2="99.34" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="81.11" y1="74.98" x2="170.23" y2="103.5" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="81.03" y1="78.86" x2="168.15" y2="106.74" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="81.11" y1="82.6" x2="168.15" y2="110.46" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="79.7" y1="86.1" x2="165" y2="113.39" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="76.68" y1="89.25" x2="165.72" y2="117.12" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="75.8" y1="92.65" x2="164.47" y2="121.02" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="74.66" y1="96" x2="162.48" y2="124.1" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="63.61" y1="96.28" x2="150.73" y2="124.16" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="63.69" y1="100.02" x2="150.73" y2="127.88" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="62.28" y1="103.52" x2="147.58" y2="130.81" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="59.26" y1="106.68" x2="148.3" y2="134.54" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="58.38" y1="110.07" x2="147.05" y2="138.44" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-        <line x1="57.24" y1="113.42" x2="145.06" y2="141.52" style="fill: none;stroke: #062c5e;stroke-miterlimit: 10"/>
-      </g>
-    </g>
-    <text transform="translate(101.63 89.77)" style="font-size: 22.563655853271484px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700">93.3<tspan x="47.68" y="0" style="font-size: 12.222999572753906px">%</tspan></text>
-    <text transform="translate(170.01 41.04)" style="font-size: 10.941715240478516px;fill: #062c5e;font-family: 'Spoqa Han Sans';font-weight: 700">6.7%</text>
-    <text transform="translate(117.84 106.08)" style="font-size: 10.632155418395996px;fill: #444;font-family: 'Spoqa Han Sans'">있다</text>
-    <text transform="translate(147.93 41.04)" style="font-size: 10.941715240478516px;fill: #777;font-family: 'Spoqa Han Sans'">없다</text>
-    <text transform="translate(154.4 208.21)" style="font-size: 10.941715240478516px;fill: #777;font-family: 'Spoqa Han Sans'">그렇다</text>
-  </g>
-  <text transform="translate(0 14.08) scale(0.97 1)" style="font-size: 16px;fill: #222;font-family: 'Spoqa Han Sans';letter-spacing: -0.02501183029340418em">1. 근무 중 언어폭력을 경험한 적이 있나?</text>
-  <text transform="translate(0 167.01) scale(0.97 1)" style="font-size: 16px;fill: #222;font-family: 'Spoqa Han Sans';letter-spacing: -0.02501183029340418em">2. 전화상담원으로서의 나는 존중 <tspan x="0" y="22.5" xml:space="preserve">     받으며 일하고 있다.</tspan></text>
-  <path d="M2.5,142.57H247.4" style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.5px;fill-rule: evenodd"/>
-  <text transform="translate(0 317.75)" style="font-size: 10px;fill: #999;font-family: 'Spoqa Han Sans'">*자료: 잡코리아X알바몬/ 콜센터 근무자 <tspan x="0" y="15">1128명 대상 설문 결과</tspan></text>
-</svg>
               </div>
             </div>
-            <div class="box padding box-phone">
-              <div class="tab phone-tab">
-                <div class="tab-nav">
-                  <a class="active" href="javascript:void(0)" data-name="통화 전"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="41" viewBox="0 0 36 41">
-  <line x1="9.36" y1="34.18" x2="14.28" y2="34.18" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  <g>
-    <path d="M23.15,37.45h0V6.4a2.7,2.7,0,0,0-2.7-2.7H3.2A2.7,2.7,0,0,0,.5,6.4V37.45a2.7,2.7,0,0,0,2.7,2.7H20.45A2.71,2.71,0,0,0,23.15,37.45Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M25.46,15A3.28,3.28,0,0,1,27,17.75a3.21,3.21,0,0,1-1.51,2.68" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M27.52,13.08a5.66,5.66,0,0,1,2.61,4.68,5.54,5.54,0,0,1-2.61,4.64" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M30.28,11.63a7.42,7.42,0,0,1,3.42,6.13,7.27,7.27,0,0,1-3.42,6.08" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M28.35,9a1.33,1.33,0,0,1-1.41-1.23,1.42,1.42,0,0,1,2.81,0A1.33,1.33,0,0,1,28.35,9Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M33.7,7.4a1.33,1.33,0,0,1-1.41-1.23,1.42,1.42,0,0,1,2.81,0A1.33,1.33,0,0,1,33.7,7.4Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <polyline points="29.76 7.93 29.76 2.93 29.76 1.21 35.11 0.56 35.11 6.17" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="35.11" y1="2.25" x2="29.76" y2="2.93" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  </g>
-</svg>
-</span> 통화 전</a>
-                  <a href="javascript:void(0)" data-name="통화 시"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="41" viewBox="0 0 37 41">
-  <g>
-    <path d="M25.16,5.35l0-1.64A2.89,2.89,0,0,0,22.35.78L3.93.5A2.89,2.89,0,0,0,1,3.34L.5,36.51a2.89,2.89,0,0,0,2.84,2.93l18.42.28a2.89,2.89,0,0,0,2.93-2.85l.16-10.51" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <path d="M18.56,26.87a.86.86,0,0,0,.31.07.77.77,0,0,0,.55-.22l4.43-4.15,8.27.09a3.28,3.28,0,0,0,3.32-3.24l.1-9.24a3.28,3.28,0,0,0-3.24-3.32L17.13,6.7a3.28,3.28,0,0,0-3.32,3.24l-.1,9.24A3.28,3.28,0,0,0,17,22.5h1.17l0,3.63A.77.77,0,0,0,18.56,26.87Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="17.76" y1="11.28" x2="31.41" y2="11.48" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="17.72" y1="14.43" x2="31.36" y2="14.64" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <line x1="17.67" y1="17.59" x2="31.31" y2="17.8" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-  </g>
-</svg>
-</span> 통화 시</a>
-                  <a href="javascript:void(0)" data-name="통화 마무리"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="38" viewBox="0 0 35 39">
-  <g>
-    <polyline points="23.75 35.15 23.75 35.15 23.75 25.04" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    <g>
-      <path d="M23.75,4.85V3.27A2.78,2.78,0,0,0,21,.5H3.27A2.78,2.78,0,0,0,.5,3.27V35.15a2.78,2.78,0,0,0,2.77,2.77H21a2.78,2.78,0,0,0,2.77-2.78" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-      <line x1="9.85" y1="34.01" x2="15.9" y2="34.01" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-      <path d="M18.09,25.63a.83.83,0,0,0,.3.06.74.74,0,0,0,.53-.22l4.2-4,7.95,0a3.15,3.15,0,0,0,3.14-3.17l0-8.88A3.15,3.15,0,0,0,31,6.2l-14.56.06a3.15,3.15,0,0,0-3.14,3.17l0,8.88a3.15,3.15,0,0,0,3.17,3.14h1.12l0,3.49A.74.74,0,0,0,18.09,25.63Z" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-      <line x1="20.06" y1="10.08" x2="28.17" y2="17.51" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-      <line x1="28.17" y1="10.27" x2="20.06" y2="17.69" style="fill: none;stroke: #999;stroke-miterlimit: 10"/>
-    </g>
-  </g>
-</svg>
-</span> 통화 마무리</a>
-                </div>
-                <div class="tab-content">
-                  <div class="item active">
-                    <ol class="call-tip">
-                      <li>전화 거는 시간, 장소, 상황이 적절한지 생각<br>(지하철, 공공장소에서 다른 사람에게 방해 되지 않도록 주의)</li>
-                      <li>상대 전화번호, 소속 확인</li>
-                      <li>전화 용건 정리</li>
-                    </ol>
+            <div class="card t2004-1 even">
+              <div id="t2004-1" class="swiper-container contribute">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-1.jpg">
+                    <div class="slider-label">차량 전달식</div>
                   </div>
-                  <div class="item">
-                    <ol class="call-tip">
-                      <li>밝은 목소리로 상대방과 인사</li>
-                      <li>용건을 말하기 전 이름과 신분 밝히기</li>
-                      <li>잘 들리지 않을 때 '여보세요' 연발하지 않기</li>
-                      <li>간결하게 용건을 말하고 높임말 사용</li>
-                    </ol>
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-2.jpg">
+                    <div class="slider-label">차량 전달식</div>
                   </div>
-                  <div class="item">
-                    <ol class="call-tip">
-                      <li>끝인사</li>
-                      <li>상대방이 전화 끊은 것을 먼저 확인</li>
-                    </ol>
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-3.jpg">
+                    <div class="slider-label">어르신 탁구대회</div>
+                  </div>
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-4.jpg">
+                    <div class="slider-label">어르신 탁구대회</div>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="descText">
+                <p class="text">
+                  KT&amp;G 사회공헌의 주요한 운영 철학은 세심 함과 꾸준함이다. 디테일한 관찰과 분석을 통해 사업을 발굴하고 뚝심 있게 지원한다는 것이다.
+                </p>
+                <p class="text">
+                  사회복지재단에 경승용차를 지원하는 사업 이 대표적이다. 현장의 사회복지 프로그램 이 ‘찾아가는 복지사업’으로 전환되고 있다 는 점에 착안했다. KT&amp;G복지재단은 2004년 부터 매년 100대씩, 지금까지 1400대의 경 차를 전달했다.
+                </p>
+                <p class="text">
+                  노인 복지와 건강 증진을 위해 기획한 ‘어르 신 탁구대회’는 올해 14회째를 맞았다. 지난달 서울 송파구 SK핸드볼경기장에서 열린 대회에는 전국 160개 노인복지시설 소 속 60세 이상 노인 1280여 명이 참여했다. 응원단까지 합치면 3000명 가까이 모이는 대형 행사다.
+                </p>
               </div>
             </div>
+            <div class="card t2013 odd">
+              <div id="t2013" class="swiper-container contribute">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-1.jpg">
+                    <div class="slider-label">북한산 생태복원 프로젝트</div>
+                  </div>
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-2.jpg">
+                    <div class="slider-label">북한산 생태복원 프로젝트</div>
+                  </div>
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-3.jpg">
+                    <div class="slider-label">마을벽화 그리기</div>
+                  </div>
+                  <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-4.jpg">
+                    <div class="slider-label">마을벽화 그리기</div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="descText">
+                <p class="text">
+                  KT&amp;G 사회공헌의 또 다른 키워드는 ‘청춘’ 이다. 미래 세대와 함께 나눔 활동을 실천해 더불어 가꾸는 사회를 만들겠다는 취지에서 다.
+                </p>
+                <p class="text">
+                  2013년부터 ‘도심 속 자연공원을 보존하다’ 는 캐치프레이즈를 내걸고 북한산 생태복원 프로젝트를 진행하고 있다. 매년 대학생 자 원봉사자 100여 명이 참여한다.
+                </p>
+                <p class="text">
+                  마을벽화 그리기는 지금까지 70여 회가 실 시돼 8000명 넘게 참여한 인기 프로그램이 다. 노후화된 옛 도심에 벽화를 그리고 화단 을 가꿔 생기 있는 도시로 탈바꿈시킨다는 프로젝트다. 올해는 부산·인천·대전·창원·전주 등에서 열렸다.
+                </p>
+              </div>
+            </div>
+            <div class="col line-wrapper"> <b></b> </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="ja_section_wrap" ja-section-title="Outro">
-      <div id="outro">
-        <div class="section s-outro">
-          <p class="lead">우리는 아름다움으로 <br>세상을 변화시킵니다.</p>
-          <div class="footer lazyload" data-src="./img/outro/bg-outro.jpg">
-            <p class="logo"><img class="lazyload" data-src="../img/outro/logo.png" alt="Amore Pacific"></p>
-            <a href="http://www.apgroup.com/" target="_blank" class="more"><span>아모레퍼시픽 더 보러가기</span></a>
-          </div>
-        </div>
+    </section>
+    <section id="contribute-destination" class="ja_section_wrap" ja-section-title="물고기가 마음껏 헤엄치는 환경 만드는 게 최종 목표">
+      <div class="wrapper">
+        <h2 class="heading-1">
+          “물고기가 마음껏 헤엄치는<br> 환경 만드는 게 최종 목표”
+        </h2>
+        <p class="text">
+          물고기를 잡아 사회취약계층에게 전달하는 단순 기부자를 넘어 물고기 잡는 법을 가르쳐주는 것으로 KT&amp;G 사회공헌의 역할은 진화했다. 한 걸음 더 나아가 물고기가 마음껏 헤엄칠 수 있는 자생 환경을 만드는 최종 목표다. 사회공헌실 관계자의 말이다.
+        </p>
+        <p class="text">
+          “궁극적으로는 (기업의 사회공헌은) 사회적 이슈를 발굴하고, 이를 주도적으로 개선&#183;해결할 수 있어야 한다. <span class="bold">사회공헌 활동의 최종 목표는 경제적 목적이 아니라 사회적 목적이어서다.</span> 그래서 물고기 잡는 법을 가르치는 것 뿐만 아니라 물고기가 살 수 있는 토대를 만드는 것이 중요하다. 이에 따라 구체적인 프로그램도 자연스럽게 맞춤형으로 업그레이드됐다.”
+        </p>
       </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright by JoongAng Ilbo Co.,Ltd. All Rights Reserved</p>
-    </div>
+    </section>
+    <section id="more" class="ja_section_wrap" ja-section-title="더 알아보기">
+      <div id="video-more" class="video-play" style="background:url('./img/video/more.jpg">
+        <a href="javascript:void(0)" class="play"></a>
+        <video></video>
+      </div>
+      <p class="text">
+        자카르타에서 낯선 청춘에게 낯선 제안을 꺼낸 지 2년,<br> 이들의 이야기는 이젠 상상이 아닙니다.<br> 이미 도전하고 탐색하며, 발산하고 있습니다.
+      </p>
+      <h2 class="heading-3">구스티와 무띠아라, 프란스의 <br><span class="blue">상상 실현</span>을 응원합니다.</h2>
+      <button class="btn btn-1 btn-lg btn-aqua" href="http://jakarta.sangsanguniv.com"><span class="bold">상상유니브 자카르타</span> 더 알아보기</button>
+      <button class="btn btn-2 btn-lg btn-blue" href="http://www.sangsangmadang.com"><span class="bold">상상마당</span> 더 알아보기</button>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </section>
+  <div class="copyright">
+    <p>Copyright by JoongAng Ilbo Co.,Ltd. All Rights Reserved</p>
+  </div>
+  </div>
   <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js"></script>
   <script src="../js/lib/SplitText.min.js"></script>
-  <script src="./js/script.js?v=1513093620972"></script>
+  <script src="./js/script.js?v=1513155813071"></script>
 </body>
 
 </html>

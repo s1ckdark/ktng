@@ -12,8 +12,12 @@
     text-align: center;
     display:block;
     margin:0 auto;
+    color: #fff;
+    font-weight:500;
+    letter-spacing: rem(5px);
   }
   .container {
+    margin: 0 0 rem(20px);
     .col {
 		padding:rem(30px);
     position: relative;
@@ -44,7 +48,7 @@
         }
       }
       .descText {
-        margin-left: rem(200px);
+        margin: rem(30px) 0 0 rem(200px);
         .bold {
           padding: rem(25px) 0 rem(15px);
         }

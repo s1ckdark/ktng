@@ -131,5 +131,12 @@ $(function(){
     // });
   });
 
+  //
+  // video Play
+  //
+  $('.video-play .play').on('click', function(e){
+    e.preventDefault();
+    $(this).hide().next('video')[0].play();
+  });
 
 });

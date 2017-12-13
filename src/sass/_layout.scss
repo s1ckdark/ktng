@@ -42,9 +42,9 @@ body {
 }
 
 %has-bg {
-  &, * {
+  p, .heading-0, .heading-1, .heading-2, .heading-3 {
     color: #ffffff;
-  }
+  } 
 }
 
 // Section

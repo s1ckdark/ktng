@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    font-size: $font-size-small;
+    font-size: $font-size-medium;
     color: #ffffff;
     letter-spacing: normal;
     text-align: center;
@@ -22,9 +22,10 @@
     &:after {
       content: 'Play Movie';
       display: block;
-      padding-top: 60px;
-      background: url('../../img/play.svg') 50% 0 no-repeat;
-      background-size: 55px auto;
+      width: 96px;
+      padding-top: 100px;
+      background: url('../img/video/play.svg') 50% 0 no-repeat;
+      background-size: 96px auto;
     }
     &:after,
     div { // after  보다 위로
@@ -41,6 +42,9 @@
       background: #000 50% 50% no-repeat;
       background-size: cover;
       transition: transform .4s;
+    }
+    &:hover .poster {
+      transform: scale(1.15) !important;
     }
   }
   video {

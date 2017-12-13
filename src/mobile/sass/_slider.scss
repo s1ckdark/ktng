@@ -1,61 +1,32 @@
-// Slider
+// 
+// Swiper-slide
 //
-//
 
-// owl carousel
-.owl-carousel {
-  position: static;
-}
-
-.owl-carousel-normal {
-
-  .owl-nav {
-    > * {
-      position: absolute;
-      bottom: 0;
-      width: 36px;
-      height: 36px;
-      line-height: 35px;
-      background: $brand-primary;
-      font-size: 1rem;
-      color: rgba(#fff, .6);
-      text-align: center;
-    }
-    .disabled {
-      //opacity: .1;
-      //cursor: default !important;
-    }
-    .owl-prev {
-      left: 0;
-    }
-    .owl-next {
-      right: 0;
-    }
-    &.disabled {
-      display: none;
-    }
-  }
-
-  .owl-dots {
-    position: absolute;
-    bottom: rem(9px);
-    right: 36px;
-    left: 36px;
-    color: $text-color-lighter;
-    letter-spacing: normal;
-    font-size: $font-size-small;
-    text-align: center;
-    @extend .buri;
-    .owl-dot {
-      display: inline;
-      &.active {
-        color: $brand-primary;
-      }
-      &:not(:last-child):after {
-        content: ' / ';
-        display: inline;
-        color: $text-color-lighter;
+#info {
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+        width: rem(8px);
+        height: rem(8px);
+        border-radius: 50%;
+        background-color: rgb(91, 95, 126);
+        &-active {
+          background-color: rgb(255, 255, 255);
       }
     }
   }
 }
+
+.contribute {
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        &-active {
+        border-radius: 50%;
+        background-color: rgb(245, 148, 30);
+      }
+    }
+  }
+}
+

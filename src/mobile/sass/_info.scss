@@ -1,0 +1,45 @@
+//
+// Info 
+//
+
+#info {
+  background: url('../img/info/bg-info.jpg') no-repeat 50% 50%/cover;
+  .wrapper {
+    // padding: rem(216px) 0 rem(275px);
+    .heading-1 {
+      text-align: center;
+      color: #fff;
+      padding: 0 0 rem(155px);
+    }
+    .swiper-slide {
+      width:23%;
+      margin:0 auto;
+      .number {
+        font-weight: 500;
+        font-size: rem(36px);
+        color: #fff;
+        text-align: center;
+        position:relative;
+        padding: 0 0 rem(60px);
+        &:after {
+          content:'';
+          position: absolute;
+          width: rem(30px);
+          height: rem(4px);
+          background-color: rgb(245, 148, 30);
+          left:50%;
+          top: rem(68px);
+          margin:0 0 0 rem(-15px);
+        }
+      }
+      .descText {
+        .text {
+          text-align: left;
+          color: #fff;
+          line-height: rem(28px);
+        }
+      }
+    }
+  }
+}
+

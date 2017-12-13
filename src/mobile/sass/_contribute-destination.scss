@@ -1,0 +1,17 @@
+// 
+// contribute-destination
+//
+
+#contribute-destination {
+  @extend %flex-v-center;
+  @extend %section-margin;
+  @extend %has-bg;
+  background: url('../img/contribute/bg-dest.jpg') no-repeat 50% 50%/cover;
+	.heading-1 {
+		line-height: rem(60px);
+		padding: 0 0 rem(80px);
+	}
+	.text {
+		padding:0 0 rem(40px);
+  	}
+}
