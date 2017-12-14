@@ -152,14 +152,22 @@ function initScrollMagic() {
       }
 
     })
-    .addTo(controller);
-
-  
+    .addTo(controller); 
 
   TweenMax.set('#bg-hero .tween', {autoAlpha:0});
   window.setTimeout(function(){
+    TweenMax.set('#bg-hero .tween', {autoAlpha:1});
     textTween('#bg-hero .tween', .5, 'random');
   }, 2000);
+
+  // var mySplitText = new SplitText("#quote", {type:"chars, words"}),
+  //   tl = new TimelineLite(),
+  //   numChars = mySplitText.chars.length;
+
+  // for(var i = 0; i < numChars; i++){
+  //   //random value used as position parameter
+  //   tl.from(mySplitText.chars[i], 2, {opacity:0}, Math.random() * 2);
+  // }
 
   moveTween('#hero-sub .tween', .5, 'up');
   moveTween('#hero-sub .heading-2', .5, 'up');
@@ -370,8 +378,7 @@ function initScrollMagic() {
   //
 
   textTween('#contribute-timeline .heading-1',.6, 'zigzag');
-  TweenMax.set('.odd .card', {autoAlpha:0, x:50});
-  TweenMax.set('.even .card', {autoAlpha:0, x:-50});
+  TweenMax.set('.card', {autoAlpha:0, y:-50});
 
   var chartTween = new TimelineMax({paused:true});
   $('.bar-chart .chart-bar').each(function(){
@@ -392,32 +399,10 @@ function initScrollMagic() {
     .reverse(false)
     .addTo(controller);
   
-  // $('.card').each(function(e){
-  //   var $this = this, movePos;
-  //   var tl = new TimelineMax({paused:true});
-  //   if($this.parents().hasClass('odd')){
-  //     movePos = '=-50';
-  //   } else {
-  //     movePos = '=+50';
-  //   }
-  //   tl.to($this, .5, {autoAlpha:1,x:movePos});
-  //   var cardScene = new ScrollMagic.Scene({
-  //     triggerElement: $this,
-  //     triggerHook: .6,
-  //   })
-  //     .on('start', function(){
-  //       tl.play();
-  //     })
-  //     .reverse(false)
-  //     .addTo(controller);
-  // });
-
-
-  $('.odd .card').each(function(e){
+  $('.card').each(function(e){
     var $this = this, movePos;
     var tl = new TimelineMax({paused:true});
-    movePos = '=-50';
-    tl.to($this, .5, {autoAlpha:1,x:movePos,ease:Bounce.easeInOut,zIndex:11});
+    tl.to($this, .5, {autoAlpha:1,y:'=+50',ease:Bounce.easeInOut,zIndex:11});
     var cardScene = new ScrollMagic.Scene({
       triggerElement: $this,
       triggerHook: .6,
@@ -429,21 +414,6 @@ function initScrollMagic() {
       .addTo(controller);
   });
 
-  $('.even .card').each(function(e){
-    var $this = this, movePos;
-    var tl = new TimelineMax({paused:true});
-    movePos = '=+50';
-    tl.to($this, .5, {autoAlpha:1,x:movePos,ease:Bounce.easeInOut,zIndex:11});
-    var cardScene = new ScrollMagic.Scene({
-      triggerElement: $this,
-      triggerHook: .6,
-    })
-      .on('start', function(){
-        tl.play();
-      })
-      .reverse(false)
-      .addTo(controller);
-  });
 
   //
   // contribute-destination
@@ -460,6 +430,6 @@ function initScrollMagic() {
   moveTween('#more .heading-3',.6, 'right');
   moveTween('#more .heading-3',.6, 'right');
   moveTween('#video-more',.6, 'left');
-  moveTween('#more .btn-1',.8, 'down');
-  moveTween('#more .btn-2',.8, 'up');
+  moveTween('#more .btn-1',.9, 'down');
+  moveTween('#more .btn-2',.9, 'up');
 }

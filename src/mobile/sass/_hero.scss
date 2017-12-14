@@ -7,6 +7,7 @@
   @extend %has-bg;
   position: relative;
   background-color: #000;
+  overflow:hidden;
   #bg-hero {
     @extend %full-screen;
     @extend %flex-v-center;
@@ -47,10 +48,10 @@
     position:absolute;
     @extend %full-screen;
     overflow:hidden; 
-    top: 0;
+    top: 50px;
     left: 0;
     right: 0;
-    bottom: 0;
+    // bottom: 0;
     .lazyload {
       background-size: cover;
       background-position: 50% 50%;

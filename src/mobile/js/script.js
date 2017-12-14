@@ -109,11 +109,26 @@ $(function(){
     fnSendSns(type, url);
   });
 
+  //
+  // localizing
+  //
+
+  var local = 0;
+  $('#localizing .btn').click(function(){
+    var $this = $(this);
+    if(local++ % 2 === 0) {
+      $this.prev('.hide-content').addClass('active');
+      $this.addClass('close');
+    } else {
+      $this.prev('.hide-content').removeClass('active');
+      $this.removeClass('close');
+    } 
+  });
+
   // 
   // profressor 
   //
-
-  var qna = 0, $qna = $('#qna');
+  var qna = 0;
   $('#professor .btn').click(function(){
     if(qna++ % 2 === 0) {
       $('#qna').addClass('active');
@@ -122,7 +137,6 @@ $(function(){
       $('#qna').removeClass('active');
       $('#professor .btn-circle').removeClass('close');
     } 
-
   });
 
   //

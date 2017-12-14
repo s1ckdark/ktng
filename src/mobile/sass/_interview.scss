@@ -157,16 +157,17 @@
         margin: rem(-7.5px) 0 0 rem(-7.5px);
         background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhDA4KOQA38PDZAAAALklEQVQ4y2P8z4AX/GdgxC3JxEABGNU8qnlUMxbA+P8/JZrxy4/m51HNo5pJBQCftAY2e3bnXgAAAABJRU5ErkJggg==') no-repeat 50% 50%/cover;
       }
-    &.close {
-      &:after {
-        content:'';
-        position: absolute;
-        width: rem(15px);
-        height: rem(1px);
-        left: 50%;
-        top: 50%;
-        margin: rem(-0.5px) 0 0 rem(-7.5px);
-        background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAABAQAAAADhyyNBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAd2KE6QAAAAHdElNRQfhDA4OAxV4jWKXAAAADUlEQVQI12P4////HwAJ+AP6RVWoUAAAAABJRU5ErkJggg==') no-repeat 50% 50%/cover;      }
+      &.close {
+        &:after {
+          content:'';
+          position: absolute;
+          width: rem(15px);
+          height: rem(1px);
+          left: 50%;
+          top: 50%;
+          margin: rem(-0.5px) 0 0 rem(-7.5px);
+          background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAABAQAAAADhyyNBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAd2KE6QAAAAHdElNRQfhDA4OAxV4jWKXAAAADUlEQVQI12P4////HwAJ+AP6RVWoUAAAAABJRU5ErkJggg==') no-repeat 50% 50%/cover;    
+        }
       }
     }
   }
