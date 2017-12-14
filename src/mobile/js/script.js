@@ -113,22 +113,16 @@ $(function(){
   // profressor 
   //
 
-  var qna = 0, $qna = $('#qna'), qnacol = $('#qna div[class*="container"]');
-  $('#qna .btn').click(function(){
+  var qna = 0, $qna = $('#qna');
+  $('#professor .btn').click(function(){
     if(qna++ % 2 === 0) {
       $('#qna').addClass('active');
-      $('#qna .toggle').removeClass('close');
+      $('#professor .btn-circle').addClass('close');
     } else {
       $('#qna').removeClass('active');
-      $('#qna .toggle').addClass('close');
+      $('#professor .btn-circle').removeClass('close');
     } 
-    // 활성화 영역으로 스크롤하기
-    // $qna.find('.toggle').on('transitionend', function(){
-    //   var $parent = $(this).parent();
-    //   if ($parent.hasClass('active')) {
-    //     $('html, body').stop().animate({scrollTop: $parent.offset().top - $('#roof').outerHeight()}, 500);
-    //   }
-    // });
+
   });
 
   //

@@ -6,8 +6,9 @@
   @extend %flex-v-center;
   @extend %section-margin;
   .sub-title {
+    font-size: $font-size-medium;
     background-color: rgb(204, 204, 204);
-    height: rem(30px);
+    height: rem(20px);
     text-align: center;
     display:block;
     margin:0 auto;
@@ -15,14 +16,14 @@
     letter-spacing: rem(5px);
   }
   .iconbox {
-  	padding:rem(30px);
     position: relative;
+    min-height: rem(200px);
     .icon {
       border-radius: 50%;
       background-color: #fff;
       position: relative;;
-      width: rem(170px);
-      height: rem(170px);
+      width: rem(100px);
+      height: rem(100px);
       z-index: 9;
       margin: 0 auto;
       > * { 
@@ -31,27 +32,44 @@
         left: 50%;
       }
       .icon-1 {
-        margin: rem(-26.5px) 0 0 rem(-18px);
+         margin: rem(-25px) 0 0 rem(-20px);
+         svg {
+            width: rem(40px);
+            height: calc(40px * 96 / 73);
+         }
       }        
       .icon-2 {
-        margin: rem(-26px) 0 0 rem(-26px);
+        margin: rem(-23px) 0 0 rem(-25px);
+        svg {
+            width: rem(50px);
+            height: calc(50px * 90 / 96);
+        }
       }        
       .icon-3 {
-        margin: rem(-24px) 0 0 rem(-23px);
+        margin: rem(-40px) 0 0 rem(-35px);
+        svg {
+          width: rem(70px);
+          height: calc(70px * 135 / 131);
+        }
       }        
       .icon-4 {
-        margin: rem(-26px) 0 0 rem(-26px);
+        margin: rem(-27mpx) 0 0 rem(-27.5px);
+        svg {
+          width: rem(55px);
+          height: calc(55px * 101 / 100);
+        }
       }
       .bold {
         padding: rem(25px) 0 rem(15px);
       }
     }
     .descText {
-      margin: rem(50px) 0 0;
+      padding: rem(50px) 0 0;
+      text-align:center;
       .chart {
-        position:absolute;
         width: rem(271px);
         height: rem(81px);
+        margin:0 auto;
         svg {
           position: absolute;
           left: rem(-2px);

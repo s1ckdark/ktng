@@ -29,34 +29,15 @@ $(function(){
     },
   });
 
-  // TweenMax.set('#infoSwiper .heading-1', {perspective:400});
-  // localizing.on('slideChangeTransitionStart', function(){
-  //   TweenMax.set(['#infoSwiper .heading-1', '#infoSwiper .inner'], {opacity:0, y:30});
-  //   TweenMax.set('#infoSwiper img', {opacity:0, x:50});
-  // });
-  // localizing.on('slideChangeTransitionEnd', function () {
-  //   ani();
-  // });
+  // info pagination enable/disable
 
-  // var $local = $('#localizing'), index = $('#localizeSwiper .swiper-slide').index(), slideLen = $('#localizeSwiper .swiper-slide').length, localH = $local.height();
-  // $('#localizing, #localizeSwiper').css({height:localH});
-  // var Slide = new ScrollMagic.Scene({
-  //   triggerElement: '#localizeSwiper', 
-  //   triggerHook:'onLeave',
-  //   duration:localH*slideLen,
-  // })
-  //   .setPin('#localizeSwiper')
-  //   .addTo(controller);
-
-  // var localizeScene = new ScrollMagic.Scene({
-  //   triggerElement: '#localizeSwiper', 
-  //   offset:localH*index,
-  // })
-  //   .on('enter', function(){
-  //     localizing.slideNext();
-  //   })
-  //   .reverse(true)
-  //   .addTo(controller);
+  info.on('slideChange', function(){
+    if(info.activeIndex != 0) {
+      $('.swiper-pagination').addClass('enable');
+    } else {
+      $('.swiper-pagination').removeClass('enable');
+    }
+  });
 
   function ani(){
     TweenMax.to('#infoSwiper .heading-1', .5, {autoAlpha:1});

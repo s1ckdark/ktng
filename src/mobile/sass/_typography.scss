@@ -18,7 +18,7 @@ body {
   background: $body-bg;
   color: $text-color;
   font-family: $font-family;
-  font-weight: $font-weight;
+  font-weight: $font-weight-n;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
   -ms-text-size-adjust: 100%; // 방향 전화에 따른 폰트 사이즈 변경 방지
@@ -48,9 +48,7 @@ body {
 .heading-1,
 .heading-2,
 .heading-3,
-.heading-4,
-.heading-5,
-.heading-6 {
+.heading-4 {
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
   color: $heading-text-color;
@@ -73,6 +71,7 @@ body {
 }
 .heading-2 {
   font-size: $heading-2;
+  @extend .paper;
 }
 .heading-3 {
   font-size: $heading-3;
@@ -80,7 +79,12 @@ body {
     color: $blue;
   }
 }
-
+.heading-4 {
+  font-size: $heading-4;
+  .blue {
+    color: $blue;
+  }
+}
 //
 // Quotes
 //

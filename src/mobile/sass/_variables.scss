@@ -43,15 +43,16 @@ $font-sizes: ( // responsive font sizes
   xs: $font-size-base
 );
 
-$font-size-smaller:   rem(12px);
-$font-size-small:     rem(14px);
-$font-size-medium:    rem(16px);
-$font-size-lead:      rem(18px);
+$font-size-smaller:   rem(10px);
+$font-size-small:     rem(11px);
+$font-size-medium:    rem(12px);
+$font-size-lead:      rem(14px);
 
-$heading-3:           rem(24px);
-$heading-2:           rem(35px);
+$heading-4:           rem(18px);
+$heading-3:           rem(20px);
+$heading-2:           rem(25px);
 $heading-1:           rem(27px);
-$heading-0:			  rem(60px);
+$heading-0:			  rem(35px);
 
 $heading-font-weight:    $font-weight-b;
 $heading-text-color:     $text-color-dark;

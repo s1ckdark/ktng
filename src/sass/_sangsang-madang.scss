@@ -7,6 +7,11 @@
 	height:100%;
 	padding-top: rem(110px);
 	overflow:hidden;
+	h2 {
+		> div:nth-child(2) {
+			padding:0 0 0 rem(20px);
+		}
+	}
 	.col:nth-child(1) {
 		position: relative;
 		.heading-1 {

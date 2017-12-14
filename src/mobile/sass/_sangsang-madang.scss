@@ -2,29 +2,32 @@
 // Sangsang Madang
 //
 #sangsang-madang {
-	@extend %full-screen;
 	@extend %flex-v-center;
+	@extend %section-margin;
 	height: 100%;
-	padding-top: rem(110px);
 	overflow:hidden;
 	.heading-1 {
-		text-align: left;
-		line-height: rem(60px);
-		margin-bottom: rem(90px);
+		line-height: rem(30px);
 		span {
 			color: $blue;
+			padding: 0 0 0 rem(20px);
 		}
 	}
 	.text {
-		padding: 0 0 rem(50px);
+		padding: 0 0 rem(25px);
 	}
-	#artist-1 {
-	  margin: rem(70px) 0 rem(50px);
-	  width: rem(418px);
-	  height: rem(316px);
-	}
-	#artist-2 {
-	  width: rem(428px);
-	  height: rem(434px);
+	.lazyload {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		margin: rem(30px) auto;
+		&#artist-1 {
+		  width: 80vw;
+		  height: calc(80vw * 316 / 477);
+		}
+		&#artist-2 {
+		  width: 80vw;
+		  height: calc(80vw * 360 / 456);
+		}
 	}
 }

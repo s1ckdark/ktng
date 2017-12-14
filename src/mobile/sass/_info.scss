@@ -3,42 +3,124 @@
 //
 
 #info {
+  @extend %full-screen;
+  position: relative;
   background: url('../img/info/bg-info.jpg') no-repeat 50% 50%/cover;
-  .wrapper {
-    // padding: rem(216px) 0 rem(275px);
-    .heading-1 {
-      text-align: center;
-      color: #fff;
-      padding: 0 0 rem(155px);
-    }
-    .swiper-slide {
-      width:23%;
-      margin:0 auto;
+  .heading-1 {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 10vh;
+    z-index: 12;
+    width:100%;
+    text-align: center;
+  }
+  .cover {
+    .layer {
       .number {
         font-weight: 500;
-        font-size: rem(36px);
+        font-size: rem(24px);
         color: #fff;
         text-align: center;
         position:relative;
-        padding: 0 0 rem(60px);
+        padding: rem(20px) 0;
+        z-index: 12;
+        border-top: 1px solid #a2b2c8;
+        border-bottom: 1px solid #a2b2c8;
         &:after {
-          content:'';
-          position: absolute;
-          width: rem(30px);
-          height: rem(4px);
-          background-color: rgb(245, 148, 30);
-          left:50%;
-          top: rem(68px);
-          margin:0 0 0 rem(-15px);
+          content:none;
+        }
+        &:nth-child(1) {
+          border-top: none;
+        }
+        &:nth-child(4) {
+          border-bottom: none;
         }
       }
-      .descText {
-        .text {
-          text-align: left;
-          color: #fff;
-          line-height: rem(28px);
+    }
+    .swiper-more {
+      position: absolute;
+      bottom: 0; left:0; right:0; 
+      background:#1c566e;
+      width:100%;
+      height: 100%;
+      z-index:999;
+      display: block;
+      height: rem(20px);
+      padding: rem(10px) 0;
+      p {
+        font-size: rem(14px);
+        color: #fff;
+        text-align: center;
+        z-index:12;
+        width:100%;
+        span.arrow {
+          background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAeCAQAAABgMj2kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhDA4OLzeU3EjdAAAAmUlEQVQ4y4XTwQ3CMAyF4T/NMh2i2zAXlVkRzuj1gBBp8HPTQ1Lpiyw7dhN04I1dC52dne4JWvWS9FAX+YfQVqPPVqLvoUC/o0Xjj0HnGymaIyfoP4NNzzPKKjGhvKInZIo+IkcGtFAvcREofKABVEmHT3oC7gHCP0ACsmYI3wwGzI0ZvjELMA5J+CFZayCaOnfg5qe6XY/9AfwJ9vHzEh+cAAAAAElFTkSuQmCC') no-repeat 50% 50%/cover;
+          width:rem(15px);
+          height: rem(8.5px);
+          display:inline-block;
         }
       }
+    }
+  }
+  .swiper-slide {
+    @extend %full-screen;
+    @extend %flex-v-center;
+    margin:0 auto;
+    .icon {
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin:0 auto;
+      &.icon-1 {
+        width: rem(105px);
+        height: rem(29.5px);
+      }      
+      &.icon-2 {
+        width: rem(72px);
+        height: rem(72px);
+      }      
+      &.icon-3 {
+        width: rem(47px);
+        height: rem(51.5px);
+      }    
+      &.icon-4 {
+        width: rem(35.5px);
+        height: rem(48px);
+      }      
+    }
+    .number {
+      font-weight: 500;
+      font-size: rem(36px);
+      color: #fff;
+      text-align: center;
+      position:relative;
+      padding: 0 0 rem(60px);
+      &:after {
+        content:'';
+        position: absolute;
+        width: rem(30px);
+        height: rem(4px);
+        background-color: rgb(245, 148, 30);
+        left:50%;
+        top: rem(68px);
+        margin:0 0 0 rem(-15px);
+      }
+    }
+    .descText {
+      .text {
+        text-align: center;
+        color: #fff;
+        line-height: rem(28px);
+      }
+    }
+  }
+  .swiper-pagination {
+    z-index:0;
+    bottom: 10vh;
+    opacity:0;
+    &.enable {
+      opacity:1;
     }
   }
 }

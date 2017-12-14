@@ -3,82 +3,46 @@
 //
 
 .interview {
+  @extend %flex-v-center;
+  @extend %section-margin;
   .interview-video {
     width: 100%;
     height: 100%;
   }
   .interview-desc {
-    padding: rem(60px) 0 0;
+    padding: rem(30px) 0 0;
   }
   .heading-1 {
-    line-height: rem(60px);
+    padding: 0 0 rem(30px);
+    line-height: rem(35px);
   }
   .text {
-    line-height: rem(28px);
+    line-height: rem(20px);
   }
   &#fighter {
     @extend %has-bg;
     background: url('../img/interview/bg-fighter.jpg') no-repeat 50% 50%/cover;
-    .wrapper {
-    @extend %flex-v-center;
-    @extend %section-margin;
-    position: relative;
-      .heading-1 {
-        span {
-          color: $opacity-blue;
-        }
-      }
-      .bg-people {
-        position:absolute;
-        bottom:0px;
-        left:rem(-20px);
-        background: url('../img/interview/bg-people-fighter.png') no-repeat 50% 50%/cover;
-        width: rem(382px);
-        height: rem(405px); 
+    .heading-1 {
+      span {
+        color: $opacity-blue;
       }
     }
   }
   &#dancer {
     @extend %has-bg;
     background: url('../img/interview/bg-dancer.jpg') no-repeat 50% 50%/cover;
-    .wrapper {
-    @extend %flex-v-center;
-    @extend %section-margin;
-    position: relative;
-      .heading-1 {
-        span {
-          color: $opacity-aqua;
-        }
-      }
-      .bg-people {
-        position:absolute;
-        bottom:0px;
-        left:rem(-20px);
-        background: url('../img/interview/bg-people-dancer.png') no-repeat 50% 0%/cover;
-        width: rem(422px);
-        height: rem(560px); 
+    .heading-1 {
+      span {
+        color: $opacity-aqua;
       }
     }
   }
   &#barista {
     @extend %has-bg;
     background: url('../img/interview/bg-barista.jpg') no-repeat 50% 50%/cover;
-    .wrapper {
-    @extend %flex-v-center;
-    @extend %section-margin;
-    position: relative;
-      .heading-1 {
-        span {
-          color: $opacity-violet;
-        }
-      }
-      .bg-people {
-        position:absolute;
-        bottom:0px;
-        right:rem(-20px);
-        background: url('../img/interview/bg-people-barista.png') no-repeat 50% 50%/cover;
-        width: rem(329px);
-        height: rem(476px); 
+    .heading-1 {
+      span {
+        color: $opacity-violet;
       }
     }
   }
@@ -88,69 +52,122 @@
     @extend %section-margin;
     .sub-heading-2 {
       background-color: rgb(0, 0, 0);
-      width: rem(290px);
       height: rem(16px);
       line-height: rem(16px);
       color: #fff;
       font-size: $font-size-medium;
-      text-align:left;
       padding: rem(5px) rem(20px);
+      width: rem(80px);
+      display:block;
+      margin:0 auto;
+      text-align:center;
     }
-    .heading-2 {
-      text-align: left;
+    .heading-3 {
       @extend .paper;
-      line-height: rem(48px);
-      padding: rem(16px) 0 0;
+      line-height: rem(25px);
+      padding: rem(15px) 0;
+      color: #000;
     }
     .interview-desc {
-      padding: rem(40px) 0 0;
+      padding: rem(25px) 0;
+      .text {
+        color: #000;
+      }
     }
     .bg-people {
-      background-position: rem(20px) 100%;
+      background-position: 50% 50%;
+      background-size: cover;
       background-repeat: no-repeat;
-      width: 90vw;
-      height: calc(90vw * 346 / 406);
+      width: 80vw;
+      height: calc(80vw * 300 / 520);
     }
-    #qna {
+    #qna, #fixedqna {
+      display: none;
+      &.active {
+        display: block;
+      }
       > div {
+        display: none;
         border-bottom: 1px solid #ccc;
-        padding: rem(30px) 0 rem(25px);
-        .answer {
-          line-height: rem(28px);
+        padding: 0 0 rem(25px);
+        .question, .answer {
+          text-align: left;
+          padding: 0 5vw;
+        }
+        .question {
+          // border-top: 1px solid #ccc;
+          background-color: $bg-gray;
+          display:block;
+          padding: rem(10px) 0;
+          margin: 0 0 rem(20px);
+        p {
+            width: 90vw;
+            color: #000;
+            padding: rem(10px) 5vw;
+          }
         }
       }
-      .close {
-        display:none;
-      }
-          .qna{
-            @extend %flex-v-center;
-            padding: rem(30px) 0;
-            .title {
-              background-color: rgb(134, 176, 223);
-              width: rem(100px);
-              height: rem(32px);
-              margin: 0 0 rem(20px);
-              border-radius: rem(20px);
-              color: #fff;
-              text-align: center;
-              .num {
-                letter-spacing: rem(-2px);
-              }
-            }
-            .text {
-              text-align: center;
-            }
+      .qna {
+        @extend %flex-v-center;
+        .title {
+          background-color: rgb(134, 176, 223);
+          width: rem(100px);
+          padding: rem(5px) 0;
+          margin: 0 0 rem(15px);
+          border-radius: rem(20px);
+          color: #fff;
+          text-align: center;
+          .num {
+            letter-spacing: rem(-2px);
           }
-          .han-1 {
-            background: #ebf3fd;
-          }    
-          .han-2 {
-            background: #dfedfe;
-          }    
-          .han-3 {
-            background: #ebf3fd;
-          }
+        }
+        .text {
+          text-align: center;
+        }
+        &.hanryu {
+          width:90vw;
+          margin: 0 auto;
+          border: none;
+          padding: rem(20px) 0;
+
+        }
+        &.han-1 {
+          margin: rem(15px) auto 0;
+          background: #ebf3fd;
+        }    
+        &.han-2 {
+          background: #dfedfe;
+        }    
+        &.han-3 {
+          background: #c9e1ff;
         }
       }
     }
-  
+    .btn-circle {
+      background-color: #cccccc;
+      position: relative;
+      margin: rem(20px) auto 0;
+      &:after {
+        content:'';
+        position: absolute;
+        width: rem(15px);
+        height: rem(15px);
+        left: 50%;
+        top: 50%;
+        margin: rem(-7.5px) 0 0 rem(-7.5px);
+        background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhDA4KOQA38PDZAAAALklEQVQ4y2P8z4AX/GdgxC3JxEABGNU8qnlUMxbA+P8/JZrxy4/m51HNo5pJBQCftAY2e3bnXgAAAABJRU5ErkJggg==') no-repeat 50% 50%/cover;
+      }
+    &.close {
+      &:after {
+        content:'';
+        position: absolute;
+        width: rem(15px);
+        height: rem(1px);
+        left: 50%;
+        top: 50%;
+        margin: rem(-0.5px) 0 0 rem(-7.5px);
+        background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAABAQAAAADhyyNBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAd2KE6QAAAAHdElNRQfhDA4OAxV4jWKXAAAADUlEQVQI12P4////HwAJ+AP6RVWoUAAAAABJRU5ErkJggg==') no-repeat 50% 50%/cover;      }
+      }
+    }
+  }
+}

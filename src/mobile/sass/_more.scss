@@ -3,25 +3,26 @@
 //
 
 #more {
-  @extend %section-margin;
   background: url('../img/more/bg-more.jpg') no-repeat 50% 50%/cover;
   #video-more {
     width: 100vw;
     height: calc(100vw * 9 / 16);
   }
-  .heading-3 {
-  	text-align: left;
-  	padding: rem(25px) 0 rem(35px);
+  .heading-4 {
+    text-align: center;
+    padding:rem(30px);
   }
   .text {
+    text-align: center;
   	color: $text-color-light;
+    padding: rem(30px) 0 rem(15px);
   }
   .btn {
-  	margin:0 0 rem(5px);
-  	height: rem(60px);
-  	border-radius:0;
+  	margin:0 auto rem(5px);
+   	border-radius:0;
+    height:rem(40px);
     display:block;
-    width:rem(320px);
+    width: 80vw;
   }
 } 
 
