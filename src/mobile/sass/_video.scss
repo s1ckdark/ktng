@@ -32,20 +32,6 @@
       position: relative;
       z-index: 1;
     }
-    .poster { // poster image
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #000 50% 50% no-repeat;
-      background-size: cover;
-      transition: transform .4s;
-    }
-    &:hover .poster {
-      transform: scale(1.15) !important;
-    }
   }
   video {
     display: block;

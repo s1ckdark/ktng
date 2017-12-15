@@ -48,7 +48,7 @@ $(function(){
   var contribute = new Swiper('.contribute', {
     speed: 400,
     spaceBetween: 100,
-    autoplay: true,
+    autoplay: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',

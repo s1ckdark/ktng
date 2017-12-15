@@ -156,6 +156,7 @@ function initScrollMagic() {
 
   TweenMax.set('#bg-hero .tween', {autoAlpha:0});
   window.setTimeout(function(){
+    TweenMax.set('#bg-hero .tween', {autoAlpha:1});
     textTween('#bg-hero .tween', .5, 'random');
   }, 2000);
 
@@ -287,7 +288,7 @@ function initScrollMagic() {
   //
   
   textTween('#localizing .heading-1', .6, 'zigzag');
-  moveTween('#localizing .text', .6, 'left');
+  moveTween('#localizing .text', .7, 'left');
   moveTween('#localizing img', .6, 'right');
 
   //

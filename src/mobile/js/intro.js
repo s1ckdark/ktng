@@ -23,13 +23,18 @@ $(function(){
         percentage = pixels / screenHeight * 100; // 0.92%
       }
     }
-    var img = [[0, 0, 190, 100], [190, 0, 250, 100], [440, 0, 200, 250], [0, 100, 140, 450], [140, 100, 300, 300], [440, 250, 200, 250], [0, 550, 140, 270], [140, 400, 300, 300], [440, 500, 200, 200], [140, 700, 200, 120], [340, 700, 300, 120]];
-    //640, 820
+    var img = [[0, 0, 190, 100], [190, 0, 250, 100], [440, 0, 200, 250], [0, 100, 140, 450], [140, 100, 300, 300], [440, 250, 200, 250], [0, 550, 140, 350], [140, 400, 300, 300], [440, 500, 200, 200], [140, 700, 200, 200], [340, 700, 300, 300], [0, 900, 340,380],[340, 1000, 200,200],[590, 1140, 100,280],[440, 1240, 200,80]];
+    //640, 1280
     for (var i = 0; i<img.length; i++) {
+      // var posX = img[i][0] / 640 * screenWidth;
+      // var posY = img[i][1] / 1280 * screenHeight;
+      // var heightImg = img[i][3] / 1280 * screenHeight;
+      // var widthImg = img[i][2 ] / 640 * screenWidth;     
+
       var posX = img[i][0] / 640 * screenWidth;
-      var posY = img[i][1] / 820 * screenHeight;
-      var widthImg = img[i][2] / 640 * screenWidth;
-      var heightImg = img[i][3] / 820 * screenHeight;
+      var posY = img[i][1] / 1280 * screenHeight * 2;
+      var heightImg = img[i][3] * screenHeight / 1280 * 2;
+      var widthImg = heightImg * img[i][2] / img[i][3];
       var random = Math.floor(Math.random() * 2);
       var fileNum = i + 1;
       var file = '.pic-' + fileNum, filebox = '.pic-'+ fileNum +'-bg';
@@ -37,8 +42,6 @@ $(function(){
       TweenMax.to(filebox, random,{x:posX,y:posY,width:widthImg,height:heightImg,transformOrigin:'50% 50%'});
       TweenMax.to(file, random,{width:widthImg,height:heightImg,transformOrigin:'50% 50%'});
     }
-    var ratio = $('#bg-img').height() / 250;
-    TweenMax.set('#bg-img', {scale:ratio});
   }
   positioning();
   var imgTween = new TimelineMax({repeat:-1,repeatDelay:1});

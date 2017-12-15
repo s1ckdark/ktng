@@ -103,6 +103,9 @@
       @extend .paper;
       line-height: rem(48px);
       padding: rem(16px) 0 0;
+      div:nth-child(2) {
+        padding-left: rem(10px);
+      }
     }
     .interview-desc {
       padding: rem(40px) 0 0;

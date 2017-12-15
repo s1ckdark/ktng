@@ -21,36 +21,37 @@ function initScrollMagic() {
   var roofHeight = $('#roof').height();
 
   // scroll auto play
-  var $videos = $('.video-play');
-  $videos.each(function(){
-    var $this = $(this);
-    var $videos = $this.find('video');
-    new ScrollMagic.Scene({
-      triggerElement: this,
-      duration: $this.height()
-    })
-      .on('enter leave', function(event){
-        var $video = $this;
-        var video = $video.find('video')[0];
-        var timer;
-        var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2;
-        if (event.type === 'enter') {
-          timer = setTimeout(function(){ // enter -> leave 이벤트 연속 발생시 play() 방지
-            if (!isPlaying) {
-              $video.find('.play').click(); // play
-            }
-          }, 600);
-        } else {
-          if (timer) {
-            clearTimeout(timer);
-          }
-          if (isPlaying) {
-            video.pause(); // pause
-          }
-        }
-      })
-      .addTo(controller);
-  });
+  // var $videos = $('.video-play');
+  // $videos.each(function(){
+  //   var $this = $(this);
+  //   var $videos = $this.find('video');
+  //   new ScrollMagic.Scene({
+  //     triggerElement: this,
+  //     duration: $this.height()
+  //   })
+  //     .on('enter leave', function(event){
+  //       var $video = $this;
+  //       var video = $video.find('video')[0];
+  //       var timer;
+  //       var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2;
+  //       if (event.type === 'enter') {
+  //         timer = setTimeout(function(){ // enter -> leave 이벤트 연속 발생시 play() 방지
+  //           if (!isPlaying) {
+  //             $video.find('.play').click(); // play
+  //           }
+  //         }, 600);
+  //       } else {
+  //         if (timer) {
+  //           clearTimeout(timer);
+  //         }
+  //         if (isPlaying) {
+  //           video.pause(); // pause
+  //         }
+  //       }
+  //     })
+  //     .reverse(true)
+  //     .addTo(controller);
+  // });
   function moveTween(e, hook, direction){
     var $e = $(e), sectionTitTween;
     TweenMax.set($e, {perspective:400});
@@ -170,7 +171,7 @@ function initScrollMagic() {
   // }
 
   moveTween('#hero-sub .tween', .5, 'up');
-  moveTween('#hero-sub .heading-2', .5, 'up');
+  moveTween('#hero-sub .heading-3', .5, 'up');
   //
   // #intro
   // 
@@ -198,8 +199,9 @@ function initScrollMagic() {
   // interview-ltr
   //
 
-  TweenMax.set('.type-ltr .interview-video', {autoAlpha:0, x:'-100'});
-  TweenMax.set('.type-rtl .interview-video', {autoAlpha:0, x:'+100'});
+  TweenMax.set('#fighter .interview-video', {autoAlpha:0, x:'-100'});
+  TweenMax.set('#dancer .interview-video', {autoAlpha:0, x:'-100'});
+  TweenMax.set('#barista .interview-video', {autoAlpha:0, x:'+100'});
   TweenMax.set('.bg-people', {autoAlpha:0, y:'+50'});
 
 
@@ -275,13 +277,14 @@ function initScrollMagic() {
     .addTo(controller);
   
   moveTween('.interview .sub-heading-2', .6, 'up');
-  textTween('.interview .heading-2', .6, 'zigzag');
+  textTween('.interview .heading-3', .6, 'zigzag');
+  moveTween('#fixedqna .qna', .6, 'down');
   //
   // interview-common
   //
 
   textTween('.interview .heading-1', .6, 'zigzag');
-  moveTween('.interview-desc',.7, 'up');
+  moveTween('.interview-desc',.7, 'down');
   
   //
   // localizing
@@ -295,36 +298,13 @@ function initScrollMagic() {
   // sangsang-univ
   //
 
-  TweenMax.set(['#sangsang-univ .icon', '#sangsang-univ .icon icon-*','#sangsang-univ .text'], {autoAlpha:0, y:+30});
-  TweenMax.set(['#sangsang-univ .col', '#sangsang-univ .descText'], {autoAlpha:0});
   textTween('#sangsang-univ .heading-1', .6, 'cwl');
   moveTween('#sangsang-univ .sub-title', .6, 'down');
+  moveTween('#sangsang-univ .icon', .6, 'down');
+  moveTween('#sangsang-univ .text', .6, 'down');
+  moveTween('#sangsang-univ .chart', .6, 'down');
   
-  var sangsangUnivTween = new TimelineMax({paused:true})
-    .to('#sangsang-univ .col', .5, {autoAlpha:1, y:'=-30', onComplete:function(){
-      drawIcon.play();}});
 
-  
-  var drawIcon = new TimelineMax({paused:true});
-  drawIcon.to('#sangsang-univ .icon', .5, {ease:Bounce.easeIn,autoAlpha:1,onComplete:iconic});
-  function iconic(){
-    TweenMax.to('#sangsang-univ icon div', .5, {autoAlpha:0, ease:Bounce.easeInOut,y:'=+30'});
-    TweenMax.to('#sangsang-univ .descText', .5, {autoAlpha:1,y:'=+30'});
-    TweenMax.to('#sangsang-univ .bold', .5, {autoAlpha:1,y:'=+30'});
-    TweenMax.to('#sangsang-univ .text', .5, {autoAlpha:1,y:'=+30'});
-    TweenMax.from('#sangsang-univ path', 1, {autoAlpha:0,drawSVG:'0%',fill:'none'});
-    TweenMax.from('#sangsang-univ circle', 1, {delay:1,autoAlpha:0,drawSVG:'0%',fill:'none'});
-    TweenMax.from('#sangsang-univ text', 1, {delay:1,autoAlpha:0,drawSVG:'0%'});
-  }
-  var sangsangUnivScene = new ScrollMagic.Scene({
-    triggerElement: '#sangsang-univ .container', 
-    triggerHook: .6
-  })
-    .on('enter', function(){
-      sangsangUnivTween.play();
-    })
-    .reverse(true)
-    .addTo(controller);
  
   //
   // curriculum
@@ -338,7 +318,7 @@ function initScrollMagic() {
   //
 
   textTween('#sangsang-madang .heading-1', .6, 'cwl');
-  textTween('#sangsang-madang .text', .7, 'twist');
+  moveTween('#sangsang-madang .text', .6, 'up');
   moveTween('#artist-1',.6, 'left');
   moveTween('#artist-2',.6, 'right');
   moveTween('.bg-circle',.6, 'down');

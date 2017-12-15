@@ -61,10 +61,8 @@
           position: relative;
         }
       }
-      .swiper-slide {
-        img {
+       img {
           width:100%;
-        }
       }
       .descText {
         padding: rem(15px);
@@ -99,12 +97,12 @@
         &.t2004 {
           .bar-chart {
             position: relative;
-            width:80vw;
+            width:100%;
             height: rem(220px);
             margin:0 auto;
             .x-axis {
               position: absolute;
-              width:100%;
+              // width:75vw;
               background-color:#ccc;
               height:rem(1px);
               left:0;right:0;
@@ -119,8 +117,10 @@
               position: absolute;
               top: rem(50px);
               left: 50%;
-              margin: 0 0 0 -40vw;
+              margin: 0  0 0 -50%;
               height: rem(135px);
+              width: 100%;
+              text-align: center;
               .height-fix {
                 background:transparent;
                 height: 135px;
@@ -131,8 +131,8 @@
               }
               .chart-bar {
                 transform-origin: 50% 100%;
-                width: 1.5vw;
-                margin: 0 2vw;
+                width: 1%;
+                margin: 0 2.5%;
                 display:inline-block;
                 position:relative;
                 &.color-2004 {
@@ -155,20 +155,56 @@
                   left:50%;
                   margin-left: rem(-14px);
                   top: rem(-30px);
+                  font-size: rem(11px);
                 }
                }
              }
+            .label {
+              &:after {
+                position: absolute;
+                bottom: rem(-20px);
+                left: 50%;
+                margin: 0 0 0 rem(-15px);
+                font-size: rem(9px);
+                width: rem(30px);
+              }
+              &.l2004 {
+                &:after {
+                  content:'2004년';
+                }
+              }
+              &.l2007 {
+                &:after {
+                  content:'2007년';
+                }
+              }  
+              &.l2008 {
+                &:after {
+                  content:'2010년';
+                }
+              } 
+              &.l2011 {
+                &:after {
+                  content:'2013년';
+                }
+              }  
+              &.l2016 {
+                &:after {
+                  content:'2016년';
+                }
+              }
+            }
             .year-label {
               position:absolute;
-              bottom:rem(10px);
+              bottom:rem(9px);
               width:100%;
               * {
-                font-size: rem(9px);
+                font-size: rem(8px);
                 color: #666;
-                display: inline;
+                display: inline-block;
               }
               .y2007, .y2013 {
-                padding:0 11vw;
+                padding:0 13%;
               }
             }
           }

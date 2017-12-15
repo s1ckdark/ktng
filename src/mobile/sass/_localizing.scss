@@ -5,6 +5,7 @@
 #localizing {
   .content {
     padding: rem(35px) 0;
+    background-color: #f4f4f4;
     .heading-3 {
       line-height: rem(30px);
       @extend .paper;
@@ -52,8 +53,12 @@
     }
     .hide-content {
       display: none;
+      visibility: hidden;
+      opacity: 0;
       &.active {
         display: block;
+        visibility: visible;
+        opacity: 1;
       }
     }
 
@@ -75,29 +80,34 @@
       }
     }
     &#content-2 {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       .heading-2 {
         span {
           font-size: rem(22px);
         }
       }
       .btn-circle {
-        background-color: #dc3b7e;
+        background-color: #37be96;
       }
      .lazyload {
         width: 40vw;
         height: calc(40vw * 420 / 333);
       }
+      .inner, .text {
+        border: none;
+      }
     }
     &#content-3 {
       .btn-circle {
-        background-color: rgb(26, 183, 202);
+        background-color: #dc3b7e;
       }
       .lazyload {
         width: 60vw;
         height: calc(60vw * 384 / 355);
       }
       .quote {
-        padding: rem(25px) 0;
+        padding: rem(0px) 0 rem(25px);
       }  
     }
   }

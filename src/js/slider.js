@@ -38,6 +38,18 @@ $(function(){
     ani();
   });
 
+  localizing.on('slideChange', function(){
+    if(localizing.activeIndex == 0) {
+      $('.swiper-button-prev').removeClass('enable');
+      $('.swiper-button-next').addClass('enable');
+    } else if(localizing.activeIndex == 1) {
+      $('.swiper-button-prev').addClass('enable');
+      $('.swiper-button-next').addClass('enable');
+    } else if(localizing.activeIndex == 2) {
+      $('.swiper-button-next').removeClass('enable');
+      $('.swiper-button-prev').addClass('enable');
+    }
+  });
   // var $local = $('#localizing'), index = $('#localizeSwiper .swiper-slide').index(), slideLen = $('#localizeSwiper .swiper-slide').length, localH = $local.height();
   // $('#localizing, #localizeSwiper').css({height:localH});
   // var Slide = new ScrollMagic.Scene({

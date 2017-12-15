@@ -14,10 +14,11 @@
     margin:0 auto;
     color: #fff;
     letter-spacing: rem(5px);
+    font-weight: 500;
   }
   .iconbox {
+    margin-top: rem(30px);
     position: relative;
-    min-height: rem(200px);
     .icon {
       border-radius: 50%;
       background-color: #fff;
@@ -64,16 +65,15 @@
       }
     }
     .descText {
-      padding: rem(50px) 0 0;
+      padding: rem(15px) 0 rem(10px);
       text-align:center;
       .chart {
-        width: rem(271px);
-        height: rem(81px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 50vw;
+        height: calc(50vw * 170 / 407);
         margin:0 auto;
-        svg {
-          position: absolute;
-          left: rem(-2px);
-        }
       }
     }
   }
