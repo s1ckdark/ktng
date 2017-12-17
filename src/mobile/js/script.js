@@ -19,7 +19,7 @@
 //   });
 // }
 // if you want to use webFont Loader..
-
+ 
 $(function(){
 
   // lazyLoad
@@ -113,27 +113,43 @@ $(function(){
   // localizing
   //
 
-  var local = 0;
-  $('#localizing .btn').click(function(){
-    var $this = $(this);
-    if($('.hide-content.active').length>0){
-    // if(local++ % 2 === 0) {
-      TweenMax.to($this, .5, {rotation:360, onComplete:function(){
-        TweenMax.to($this, .5, {className:'-=close', onComplete:function(){
-          TweenMax.to($this.parents('.content'), .5, {background:'#f4f4f4'});
-          TweenMax.to($this.prev('.hide-content'), .5, {className:'-=active',ease:Expo.easeInOut,transformOrigin:'50% 100%'});
-        }});
+
+  function closeContent(ele){
+    var $this = $(ele);
+    TweenMax.to($this, .5, {rotation:360, onComplete:function(){
+      TweenMax.to($this, .5, {className:'-=close', onComplete:function(){
+        TweenMax.to($this.parents('.content'), .5, {background:'#f4f4f4'});
+        TweenMax.to($this.prev('.hide-content'), .5, {className:'-=active',ease:Expo.easeInOut,transformOrigin:'50% 100%'});
       }});
-    } else {
+    }});
+  }
+  function openContent(ele){
+    var $this = $(ele);
       TweenMax.to($this, .5, {rotation:360, onComplete:function(){
         TweenMax.to($this, .5, {className:'+=close', onComplete:function(){
           TweenMax.to($this.parents('.content'), .5, {background:'#fff'});
           TweenMax.to($this.prev('.hide-content'), .5, {className:'+=active',ease:Expo.easeInOut,transformOrigin:'50% 100%'});
         }});
       }});
+  }
+
+  $('#localizing .btn').click(function(){
+    var $this = $(this), $activeContent = $('.hide-content.active');
+    if($activeContent.length>0){
+      if($this.prev().hasClass('active')){
+        closeContent(this);
+      } else {
+        TweenMax.to($activeContent.next('.btn'), .5, {className:'-=close', onComplete:function(){
+          TweenMax.to($activeContent.parents('.content'), .5, {background:'#f4f4f4'});
+          TweenMax.to($activeContent, .5, {className:'-=active',ease:Expo.easeInOut,transformOrigin:'50% 100%'});
+        }});
+        openContent(this);
+      }
+    } else {
+      openContent(this);
     } 
   });
-
+ 
   // 
   // profressor 
   //
