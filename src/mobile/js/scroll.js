@@ -20,38 +20,6 @@ $(function(){
 function initScrollMagic() {
   var roofHeight = $('#roof').height();
 
-  // scroll auto play
-  // var $videos = $('.video-play');
-  // $videos.each(function(){
-  //   var $this = $(this);
-  //   var $videos = $this.find('video');
-  //   new ScrollMagic.Scene({
-  //     triggerElement: this,
-  //     duration: $this.height()
-  //   })
-  //     .on('enter leave', function(event){
-  //       var $video = $this;
-  //       var video = $video.find('video')[0];
-  //       var timer;
-  //       var isPlaying = video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2;
-  //       if (event.type === 'enter') {
-  //         timer = setTimeout(function(){ // enter -> leave 이벤트 연속 발생시 play() 방지
-  //           if (!isPlaying) {
-  //             $video.find('.play').click(); // play
-  //           }
-  //         }, 600);
-  //       } else {
-  //         if (timer) {
-  //           clearTimeout(timer);
-  //         }
-  //         if (isPlaying) {
-  //           video.pause(); // pause
-  //         }
-  //       }
-  //     })
-  //     .reverse(true)
-  //     .addTo(controller);
-  // });
   function moveTween(e, hook, direction){
     var $e = $(e), sectionTitTween;
     TweenMax.set($e, {perspective:400});
@@ -103,7 +71,7 @@ function initScrollMagic() {
         textTween = new SplitText($this, {type:'chars, words'});
         tl.staggerFrom(textTween.chars, 0.6, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:'0% 50% -50',  ease:Back.easeOut}, 0.01, '+=0');
       } else if(type=='random') {
-        textTween = new SplitText($this, {type:'chars, words'});
+        textTween = new SplitText($this,  {type: 'chars,words'});
         for(var i = 0; i < textTween.chars.length; i++){
           tl.from(textTween.chars[i], 2, {opacity:0}, Math.random() * 2);
         }

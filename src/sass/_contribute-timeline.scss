@@ -242,9 +242,14 @@
         }
       }
     }
-    .swiper-container {
+
+    .owl-carousel {
       padding:rem(30px);
       position:relative;
+      width: rem(470px);
+      .owl-stage-outer {
+        overflow: visible !important;
+      }
       .slider-label {
         position:absolute;
         bottom: rem(-30px);
@@ -254,7 +259,7 @@
         font-size: rem(16px);
         font-weight:200;
       }
-      .swiper-pagination {
+      .owl-dots {
         position: static;
         text-align: left;
       } 

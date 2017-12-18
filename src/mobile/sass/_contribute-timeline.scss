@@ -112,6 +112,7 @@
               position: absolute;
               top:0;
               left:0;
+              font-size: rem(11px);
             }
             .bar {
               position: absolute;
@@ -253,9 +254,12 @@
         }
         &.t2007 {
           label { 
+            color: $text-color-light;
             width:100%;
             text-align: right;
             display:block;
+            font-size: rem(12px);
+            margin: rem(5px) 0 0;
           }
          .descText {
            border-top: 1px solid #efefef;

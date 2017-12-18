@@ -17,7 +17,10 @@
     right: 0;
     bottom:0;
     .tween {
+      text-align: center;
+      p {display:inline;}
       span {
+        display:inline-block;
         position: relative;
         &.big {
           font-size: rem(45px); 

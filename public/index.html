@@ -33,12 +33,12 @@
       location.replace(location.pathname.replace('mobile/', ''));
     }
   </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
-  <link rel="stylesheet" href="./css/style.css?v=1513443142485">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/style.css?v=1513588331466">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="./js/common.js?v=1513443142485"></script>
+  <script src="./js/common.js?v=1513588331466"></script>
   <!-- Begin GA -->
   <script>
     (function(i, s, o, g, r, a, m) {
@@ -75,19 +75,19 @@
   <!-- Dable 스크립트 종료 / 문의 support@dable.io -->
   <!-- Begin JA Tracker Script -->
   <script type="text/javascript">
-    // (function (jaW, jaD, jaS, jaG, jaR, jaA, jaM) {
-    //   jaW['JaTrackerObject'] = jaR;
-    //   jaW[jaR] = jaW[jaR] || function () {
-    //     (jaW[jaR].q = jaW[jaR].q || []).push(arguments);
-    //   }, jaW[jaR].l = 1 * new Date();
-    //   jaA = jaD.createElement(jaS),
-    //     jaM = jaD.getElementsByTagName(jaS)[0];
-    //   jaA.async = 1;
-    //   jaA.src = jaG;
-    //   jaM.parentNode.insertBefore(jaA, jaM);
-    // })(window, document, 'script', 'http://jtracker.joins.com/jatracker.min.js?v2', 'jatracker');
-    // jatracker('require', 'heightChecker', true);
-    // jatracker('require', 'sectionTimer', true);
+    (function(jaW, jaD, jaS, jaG, jaR, jaA, jaM) {
+      jaW['JaTrackerObject'] = jaR;
+      jaW[jaR] = jaW[jaR] || function() {
+        (jaW[jaR].q = jaW[jaR].q || []).push(arguments);
+      }, jaW[jaR].l = 1 * new Date();
+      jaA = jaD.createElement(jaS),
+        jaM = jaD.getElementsByTagName(jaS)[0];
+      jaA.async = 1;
+      jaA.src = jaG;
+      jaM.parentNode.insertBefore(jaA, jaM);
+    })(window, document, 'script', 'http://jtracker.joins.com/jatracker.min.js?v2', 'jatracker');
+    jatracker('require', 'heightChecker', true);
+    jatracker('require', 'sectionTimer', true);
   </script>
   <!-- End JA Tracker Script -->
   <!-- Facebook Pixel Code -->
@@ -245,11 +245,12 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
       </div>
     </section>
     <section id="localizing" class="ja_section_wrap" ja-section-title="&#34;한국 문화만을 고집하지 않았다&#34;사회공헌도 현지 맞춤형">
-      <div id="localizeSwiper" class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+      <div class="owl-wrapper">
+        <div class="owl-carousel" id="localizeOwl">
+          <div class="owl-item">
             <div class="wrapper">
-              <h2 class="heading-1">“한국 문화만을 고집하지 않았다”<br>사회공헌도 현지 소통형</h2>
+              <h2 class="heading-1">“한국 문화만을 고집하지 않았다”</h2>
+              <h2 class="heading-1">사회공헌도 현지 소통형</h2>
               <div class="container col2 type-localizing">
                 <div class="col">
                   <div class="inner">
@@ -267,9 +268,10 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="owl-item">
             <div class="wrapper">
-              <h2 class="heading-1">인도네시아 최초의<br>대학생 맞춤형 강좌를 열다</h2>
+              <h2 class="heading-1">인도네시아 최초의</h2>
+              <h2 class="heading-1">대학생 맞춤형 강좌를 열다</h2>
               <div class="container col2 type-localizing">
                 <div class="col">
                   <div class="inner">
@@ -288,9 +290,10 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="owl-item">
             <div class="wrapper">
-              <h2 class="heading-1">불과 2년 만에<br>수강생 2000명으로 </h2>
+              <h2 class="heading-1">불과 2년 만에</h2>
+              <h2 class="heading-1">수강생 2000명으로</h2>
               <div class="container col2 type-localizing">
                 <div class="col">
                   <div class="inner">
@@ -312,10 +315,6 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
               </div>
             </div>
           </div>
-        </div>
-        <div id="localizing-nav">
-          <div class="swiper-button-prev"><span class="local-button-prev"></span></div>
-          <div class="swiper-button-next enable"><span class="local-button-next"></span></div>
         </div>
       </div>
     </section>
@@ -704,12 +703,12 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
                   게 무엇보다 중요하다. 상상유니브 같은 소프트웨어가 한국 브랜드를 살찌우는 자양분 역할을 할 것이다.” </div>
               </div>
             </div>
-            <div class="container-flex toggle close">
+            <div class="container-han toggle close">
               <div class="col">
                 <div class="title">한류 <span class="num">1.0</span></div>
                 <div class="descText">
                   <p class="text">
-                    1990년대 후반 현지에서<br> 자생적으로 한국 문화에 호감
+                    드라마 ‘겨울연가’ ‘대장금’ 등이 인기 끌면서<br> 현지에서 자생적으로 한국 문화에 호감
                   </p>
                 </div>
               </div>
@@ -717,7 +716,7 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
                 <div class="title">한류 <span class="num">2.0</span></div>
                 <div class="descText">
                   <p class="text">
-                    2005년 이후 국내에서 체계적 스타 육성과<br> 기획·마케팅으로 수출 상품화
+                    2002년 월드컵 이후 체계적인 스타 육성과<br> 기획·마케팅으로 수출 상품화 성공
                   </p>
                 </div>
               </div>
@@ -725,7 +724,7 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
                 <div class="title">한류 <span class="num">3.0</span></div>
                 <div class="descText">
                   <p class="text">
-                    2015년 이후 현지 문화와 눈높이를<br> 맞추면서 맞춤형으로 업그레이드
+                    현지의 문화 소비층과 직접 소통을 통해<br> ‘맞춤형 한류’로 업그레이드
                   </p>
                 </div>
               </div>
@@ -786,7 +785,7 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
     <section id="info" class="ja_section_wrap" ja-section-title="숫자로 보는 상상마당">
       <div class="wrapper">
         <h2 class="heading-1">숫자로 보는 상상마당</h2>
-        <div class="container-flex col4">
+        <div class="container col4">
           <div class="col">
             <div class="number"><span class="info-num" data-count="1">0</span>위</div>
             <div class="descText">
@@ -807,7 +806,7 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
             <div class="number"><span class="info-num" data-count="3000">0</span>건</div>
             <div class="descText">
               <p class="text">
-                인재 육성 아카데미부터 영화·공연<br> ·전시 등 지난해 운영된 프로그램.<br> 누적 3만여 건에 이른다.
+                인재 육성 아카데미부터 영화·공연<br> ·전시 등 2016년 운영된 프로그램.<br> 누적 3만여 건에 이른다.
               </p>
             </div>
           </div>
@@ -889,18 +888,18 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
                 </div>
               </div>
               <div class="card t2013">
-                <div id="t2013" class="swiper-container contribute">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-1.jpg">
+                <div id="t2013" class="owl-wrapper owl-carousel-normal">
+                  <div class="owl-carousel contribute">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2013-1.jpg">
                       <div class="slider-label">북한산 생태복원 프로젝트</div>
                     </div>
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-2.jpg">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2013-2.jpg">
                       <div class="slider-label">북한산 생태복원 프로젝트</div>
                     </div>
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-3.jpg">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2013-3.jpg">
                       <div class="slider-label">마을벽화 그리기</div>
                     </div>
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2013-4.jpg">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2013-4.jpg">
                       <div class="slider-label">마을벽화 그리기</div>
                     </div>
                   </div>
@@ -962,18 +961,18 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
                 </div>
               </div>
               <div class="card t2004-1">
-                <div id="t2004-1" class="swiper-container contribute">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-1.jpg">
+                <div id="t2004-1" class="owl-wrapper owl-carousel-normal">
+                  <div class="owl-carousel contribute">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2004-1.jpg">
                       <div class="slider-label">차량 전달식</div>
                     </div>
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-2.jpg">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2004-2.jpg">
                       <div class="slider-label">차량 전달식</div>
                     </div>
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-3.jpg">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2004-3.jpg">
                       <div class="slider-label">어르신 탁구대회</div>
                     </div>
-                    <div class="swiper-slide lazyload" data-src="./img/contribute/t2004-4.jpg">
+                    <div class="owl-item lazyload" data-src="./img/contribute/t2004-4.jpg">
                       <div class="slider-label">어르신 탁구대회</div>
                     </div>
                   </div>
@@ -987,7 +986,7 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
                     사회복지재단에 경승용차를 지원하는 사업이 대표적이다. 현장의 사회복지 프로그램이 ‘찾아가는 복지사업’으로 전환되고 있다는 점에 착안했다. 복지 수혜자의 특성상 도로시설이 열악한 곳을 운행하는데 적합한 경차로 지원 수단을 정했다. KT&amp;G복지재단은 2004년부터 ‘경승용차 공급사업’을 실시해 매년 100대씩, 지금까지 1400대의 경차를 전달했다.
                   </p>
                   <p class="text">
-                    노인 복지와 건강 증진을 위해 주최한 ‘어르신 탁구대회’는 올해 14회째를 맞았다. 지난달 서울 송파구 SK핸드볼경기장에서 열린 탁구 대회에는 전국 160개 노인복지시설 소속 60세 이상 노인 1280여 명이 참여했다. 응원단까지 합치면 3000명 가까이 모이는 대형 행사다.
+                    노인 복지와 건강 증진을 위해 주최한 ‘어르신 탁구대회’는 올해 14회째를 맞았다. 2016년 11월 서울 송파구 SK핸드볼경기장에서 열린 탁구 대회에는 전국 160개 노인복지시설 소속 60세 이상 노인 1280여 명이 참여했다. 응원단까지 합치면 3000명 가까이 모이는 대형 행사다.
                   </p>
                 </div>
               </div>
@@ -1030,17 +1029,18 @@ d="M16.000,17.313 L0.444,1.757 L1.858,0.342 L16.000,14.484 L30.142,0.342 L31.556
       </div>
     </section>
     <div class="copyright">
+      <p><span class="bold">기획&nbsp;</span> 김창규 랩장, 이상재 기자, 곽재민 기자&nbsp;|&nbsp;<span class="bold">디자인&nbsp;</span>박지은&nbsp;|&nbsp;<span class="bold">개발</span>&nbsp;이정우</p>
       <p>Copyright by JoongAng Ilbo Co.,Ltd. All Rights Reserved</p>
     </div>
   </div>
-  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js"></script>
+  <script src="./js/lib/kakao.min.js"></script>
   <script src="./js/lib/SplitText.min.js"></script>
-  <script src="./js/script.js?v=1513443142485"></script>
+  <script src="./js/script.js?v=1513588331466"></script>
 </body>
 
 </html>

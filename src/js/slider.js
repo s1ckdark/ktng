@@ -14,75 +14,41 @@
 $(function(){
 
   var roofHeight = $('#roof').height();
-  var $bodies = $('.s-sense-body');
-  var $original = $bodies.find('.original');
 
+  function ani(){
+    TweenMax.to('#localizeOwl .heading-1', .5, {autoAlpha:1});
+    TweenMax.to('#localizeOwl .inner', .5, {autoAlpha:1, y:'=+30'});
+    TweenMax.to('#localizeOwl img', .5, {autoAlpha:1,x:'=-50'});
+  }
 
-  var localizing = new Swiper('#localizeSwiper', {
-    spaceBetween: 100,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    fadeEffect: {
-      crossFade: true
-    },
+  TweenMax.set('#localizeOwl .heading-1', {perspective:400});
+  // TweenMax.set(['#localizeOwl .heading-1', '#localizeOwl .inner'], {opacity:0, y:30});
+  // TweenMax.set('#localizeOwl img', {opacity:0, x:50});
+
+  var $localize = $('#localizeOwl');
+  $localize.owlCarousel({
+    nav: true,
+    dots: true,
+    items: 1,
+    loop:false,
+    navClass:['owl-button-prev', 'owl-button-next'],
+    center:true,
+    navText: ['<span class="local-button-prev"></span>', '<span class="local-button-next"></span>']
   });
 
-  TweenMax.set('#localizeSwiper .heading-1', {perspective:400});
-  localizing.on('slideChangeTransitionStart', function(){
-    TweenMax.set(['#localizeSwiper .heading-1', '#localizeSwiper .inner'], {opacity:0, y:30});
-    TweenMax.set('#localizeSwiper img', {opacity:0, x:50});
-  });
-  localizing.on('slideChangeTransitionEnd', function () {
+  $localize.on('initialized.owl.carousel changed.owl.carousel', function(event) {
+    var item = event.item.index;
+    TweenMax.set(['#localizeOwl .heading-1', '#localizeOwl .inner'], {opacity:0, y:30});
+    TweenMax.set('#localizeOwl img', {opacity:0, x:50});
     ani();
   });
 
-  localizing.on('slideChange', function(){
-    if(localizing.activeIndex == 0) {
-      $('.swiper-button-prev').removeClass('enable');
-      $('.swiper-button-next').addClass('enable');
-    } else if(localizing.activeIndex == 1) {
-      $('.swiper-button-prev').addClass('enable');
-      $('.swiper-button-next').addClass('enable');
-    } else if(localizing.activeIndex == 2) {
-      $('.swiper-button-next').removeClass('enable');
-      $('.swiper-button-prev').addClass('enable');
-    }
-  });
-  // var $local = $('#localizing'), index = $('#localizeSwiper .swiper-slide').index(), slideLen = $('#localizeSwiper .swiper-slide').length, localH = $local.height();
-  // $('#localizing, #localizeSwiper').css({height:localH});
-  // var Slide = new ScrollMagic.Scene({
-  //   triggerElement: '#localizeSwiper', 
-  //   triggerHook:'onLeave',
-  //   duration:localH*slideLen,
-  // })
-  //   .setPin('#localizeSwiper')
-  //   .addTo(controller);
-
-  // var localizeScene = new ScrollMagic.Scene({
-  //   triggerElement: '#localizeSwiper', 
-  //   offset:localH*index,
-  // })
-  //   .on('enter', function(){
-  //     localizing.slideNext();
-  //   })
-  //   .reverse(true)
-  //   .addTo(controller);
-
-  function ani(){
-    TweenMax.to('#localizeSwiper .heading-1', .5, {autoAlpha:1});
-    TweenMax.to('#localizeSwiper .inner', .5, {autoAlpha:1, y:'=+30'});
-    TweenMax.to('#localizeSwiper img', .5, {autoAlpha:1,x:'=-50'});
-  }
-
-  var contribute = new Swiper('.contribute', {
-    speed: 400,
-    spaceBetween: 100,
-    autoplay: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
+  var $contribute = $('.contribute');
+  $contribute.owlCarousel({
+    loop: true,
+    dots: true,
+    margin:30,
+    items: 1,
+    autoplay:true
   });
 });

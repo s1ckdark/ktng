@@ -6,7 +6,7 @@ $(function(){
     'src': 'http://cf.c.ooyala.com/U4cGJuZDE6UuOhe6PpnMz---HJoFAnPj/DOcJ-FxaFrRg4gtDEwOjFyazowODE7G_',    
     'controls':true,
     'controlsList':'nodownload',
-    'preload':'auto',
+    'preload':'none',
     'loop':false,
     'poster': ''
   });
@@ -15,7 +15,7 @@ $(function(){
     'src': 'http://cf.c.ooyala.com/o5bXdtZDE6Z-nWtRBIGp6ot3zDGpTbNW/DOcJ-FxaFrRg4gtDEwOjFyazowODE7G_',
     'controls':true,
     'controlsList':'nodownload',
-    'preload':'auto',
+    'preload':'none',
     'loop':false,
     'poster': ''
   });
@@ -24,7 +24,7 @@ $(function(){
     'src': 'http://cf.c.ooyala.com/FsaXdtZDE6R_f1figA6Wb76LmLwbrS0f/DOcJ-FxaFrRg4gtDEwOjFyazowODE7G_',
     'controls':true,
     'controlsList':'nodownload',
-    'preload':'metadata',
+    'preload':'none',
     'loop':false,
     'poster': ''
   });
@@ -33,7 +33,7 @@ $(function(){
     'src': 'http://cf.c.ooyala.com/U5aXdtZDE6CHLvKpez8ARxsyHm0HAe_r/DOcJ-FxaFrRg4gtDEwOjFyazowODE7G_',
     'controls':true,
     'controlsList':'nodownload',
-    'preload':'metadata',
+    'preload':'none',
     'loop':false,
     'poster': ''
   });
@@ -42,7 +42,7 @@ $(function(){
     'src': 'http://cf.c.ooyala.com/Z3aHdtZDE6BrkxscCuRM8SYspuClX464/DOcJ-FxaFrRg4gtDEwOjFyazowODE7G_',
     'controls':true,
     'controlsList':'nodownload',
-    'preload':'metadata',
+    'preload':'none',
     'loop':false,
     'poster': ''
   });

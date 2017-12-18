@@ -8,11 +8,14 @@
   position: relative;
   #bg-hero {
     @extend %full-screen;
-    @extend %flex-v-center;
+    // @extend %flex-v-center;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    width: rem(1120px);
+    height: rem(238px);
+    margin: rem(-169px) 0 0 rem(-560px);
+    position: absolute;
     .tween {
       span {
         position: relative;

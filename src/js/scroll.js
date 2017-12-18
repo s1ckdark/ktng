@@ -287,9 +287,9 @@ function initScrollMagic() {
   // localizing
   //
   
-  textTween('#localizing .heading-1', .6, 'zigzag');
-  moveTween('#localizing .text', .7, 'left');
-  moveTween('#localizing img', .6, 'right');
+  // textTween('#localizing .heading-1', .6, 'cwl');
+  // moveTween('#localizing .text', .7, 'left');
+  // moveTween('#localizing img', .6, 'right');
 
   //
   // sangsang-univ

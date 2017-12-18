@@ -13,6 +13,7 @@
       padding: 0 0 rem(155px);
     }
     .col {
+      float:left;
       width:23%;
       margin:0 auto;
       .number {
@@ -26,7 +27,7 @@
           content:'';
           position: absolute;
           width: rem(30px);
-          height: rem(4px);
+          height: rem(4px); 
           background-color: rgb(245, 148, 30);
           left:50%;
           top: rem(68px);

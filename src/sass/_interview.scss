@@ -139,17 +139,18 @@
       .close {
         display:none;
       }
-        .container-flex {
+        .container-han {
+          @extend %clearfix;
           border: none;
           .col {
-            @extend %flex-v-center;
+            float:left;
             width: 33.3%;
             padding: rem(30px) 0;
             .title {
               background-color: rgb(134, 176, 223);
               width: rem(100px);
               height: rem(32px);
-              margin: 0 0 rem(20px);
+              margin: 0 auto rem(20px);
               border-radius: rem(20px);
               color: #fff;
               text-align: center;
