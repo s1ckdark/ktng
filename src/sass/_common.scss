@@ -224,3 +224,109 @@ address{font-style:normal}
   letter-spacing: 0;
 }
 
+.copyright {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    color: #818181;
+
+
+    /*border: 1px solid #ddd;*/
+}
+.copyright:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.copyright .copy_left{
+    width: 49%;
+    text-align: left;
+    float: left;
+}
+.copyright .copy_right{
+    width: 350px;
+    text-align: left;
+    float: right;
+}
+
+.copyright p {
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #666;
+}
+
+
+.copyright p.p-text {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+.copyright p .bold {
+    font-weight: 600
+}
+
+
+
+.copyright .copy_right {
+ position:relative;
+ top: -3px;
+  p.p-text {
+
+    font-weight: 400;
+    color: #818181;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+}
+
+.copyright .copy_right p.p_colnom {
+
+    line-height: 22px;
+}
+
+.copyright .copy_right .footer_mail {
+    transition: color .3s ease;
+    color: #818181;
+    text-decoration: none;
+}
+.copyright .copy_right .footer_mail i {
+    width: 18px;
+    height: 12px;
+    background: url(/ilab/img/sprite.png?v=2) no-repeat -150px 0;
+    background-size: 200px;
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: baseline;
+    opacity: 0.5;
+}
+
+
+.copyright .copy_right .footer_tel {
+    transition: color .3s ease;
+    color: #818181;
+    text-decoration: none;
+}
+.copyright .copy_right .footer_tel i {
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background: url(/ilab/img/sprite.png?v=2) no-repeat -170px 0;
+    background-size: 200px;
+    position: relative;
+    display: inline-block;
+    margin-right: 0px;
+    vertical-align: baseline;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+
+

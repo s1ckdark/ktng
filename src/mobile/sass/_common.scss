@@ -158,3 +158,118 @@ address{font-style:normal}
 .copyright p {
   letter-spacing: 0;
 }
+
+.copyright a, .copyright:hover  {
+  color: #818181;
+}
+
+.copyright {
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    color: #818181;
+    position: relative;
+}
+.copyright p {
+    letter-spacing: 0;
+    height: 16px;
+    font-size: 11px;
+    margin: 8px 0;
+}
+.copyright p .bold {
+    font-weight: 600
+}
+.copyright p.p-text {
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 15px;
+    margin: 8px 0;
+}
+.copyright p.eng01 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 24px;
+    font-size: 0.6rem;
+    padding-top: 0px;
+    margin: 0px 0 30px 0;
+}
+
+
+
+
+
+.copyrightfooter_btnset{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.copyrightfooter_btnset:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.copyrightfooter_btnset .copy_footer_btn1{
+    float: left;
+    width: calc(50vw - 1px);
+    text-align: center;
+    min-height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #ccc;
+}
+.copyrightfooter_btnset .copy_footer_btn2{
+    float: left;
+    width: calc(50vw - 1px);
+    text-align: center;
+    min-height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+
+
+
+.copyright .copyrightfooter_btnset .footer_mail {
+    transition: color .3s ease;
+    /*font-weight: 500;*/
+    color: #818181;
+    text-decoration: none;
+}
+.copyright .copyrightfooter_btnset .footer_mail i {
+    width: 18px;
+    height: 12px;
+    top:2px;
+    background: url(/ilab/img/sprite.png?v=2) no-repeat -150px 0;
+    background-size: 200px;
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: baseline;
+    /*margin-left: 10px;*/
+    opacity: 0.5;
+}
+
+
+.copyright .copyrightfooter_btnset .footer_tel {
+    transition: color .3s ease;
+    /*font-weight: 500;*/
+    color: #818181;
+    text-decoration: none;
+}
+.copyright .copyrightfooter_btnset .footer_tel i {
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url(/ilab/img/sprite.png?v=2) no-repeat -170px 0;
+    background-size: 200px;
+    position: relative;
+    display: inline-block;
+    margin-right: 0px;
+    vertical-align: baseline;
+    margin-left: 10px;
+    opacity: 0.5;
+}
