@@ -13,7 +13,7 @@
 
 $(function(){
   function positioning(){
-    var screenWidth = $(window).width(), screenHeight = $(window).width();
+    var screenWidth = $(window).width(), screenHeight = $(window).height();
     function convert(pos, ele){
       var pixels = ele;
       var percentage;
@@ -32,8 +32,8 @@ $(function(){
       // var widthImg = img[i][2 ] / 640 * screenWidth;     
 
       var posX = img[i][0] / 640 * screenWidth;
-      var posY = img[i][1] / 1280 * screenHeight * 2;
-      var heightImg = img[i][3] * screenHeight / 1280 * 2;
+      var posY = img[i][1] / 1280 * screenHeight;
+      var heightImg = img[i][3] * screenHeight / 1280;
       var widthImg = heightImg * img[i][2] / img[i][3];
       var random = Math.floor(Math.random() * 2);
       var fileNum = i + 1;
