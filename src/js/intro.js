@@ -13,7 +13,7 @@
 
 $(function(){
   function positioning(){
-    var screenWidth = $(window).width(), screenHeight = $(window).width();
+    var screenWidth = $(window).width(), screenHeight = $(window).height();
     // function convert(pos, ele){
     //   var pixels = ele;
     //   var percentage;
@@ -26,9 +26,9 @@ $(function(){
     var img = [[0, 0, 80, 350], [80, 0, 350, 350], [430, 0, 300, 99], [730, 0, 200, 99], [930, 0, 250, 99], [1180, 0, 250, 250], [1430, 0, 170, 50], [1430, 50, 170, 450], [1380, 500, 220, 283], [1080, 700, 300, 83], [880, 700, 200, 83], [530, 549, 350, 233], [230, 549, 300, 233], [0, 349, 230, 434], [230, 349, 200, 200], [430, 99, 450, 450], [880, 99, 300, 300], [1180, 250, 250, 250], [1180, 500, 200, 200], [880, 400, 300, 300]];//1600, 783
     for (var i = 0; i<img.length; i++) {
       var posX = img[i][0] / 1600 * screenWidth;
-      var posY = img[i][1] / 783 * screenHeight / 2;
+      var posY = img[i][1] / 783 * screenHeight;
       var widthImg = img[i][2] / 1600 * screenWidth;
-      var heightImg = img[i][3] / 783 * screenHeight / 2;
+      var heightImg = img[i][3] / 783 * screenHeight;
       var random = Math.floor(Math.random() * 2);
       var fileNum = i + 1;
       var file = '.pic-' + fileNum, filebox = '.pic-'+ fileNum +'-bg';
